@@ -1,0 +1,670 @@
+/********** Template CSS **********/
+:root {
+    --primary: #06A3DA;
+    --secondary: #F57E57;
+    --light: #EEF9FF;
+    --dark: #091E3E;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+.top-shape::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 100%;
+    top: 0;
+    left: -17px;
+    background: var(--primary);
+    transform: skew(40deg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    padding: 35px 15px;
+    font-size: 18px;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 20px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link,
+    .sticky-top.navbar-light .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .85);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (min-width: 991.98px) {
+    .banner {
+        position: relative;
+        margin-top: -90px;
+        z-index: 1;
+    }
+}
+
+.section-title h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    right: -55px;
+    bottom: 11px;
+    background: var(--primary);
+}
+
+.section-title h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    right: -75px;
+    bottom: 11px;
+    background: var(--secondary);
+}
+
+.twentytwenty-wrapper {
+    height: 100%;
+}
+
+.hero-header {
+    background: url(../img/super/background/sdt.png) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 15%;
+}
+
+/* .bg-appointment {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+} */
+
+.appointment-form {
+    background: rgba(6, 163, 218, .7);
+}
+
+.service-item img,
+.service-item .bg-light,
+.service-item .bg-light h5,
+.team-item .team-text {
+    transition: .5s;
+}
+
+.service-item:hover img {
+    transform: scale(1.15);
+}
+
+.team-item .team-text::after,
+.service-item .bg-light::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-radius:100px / 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+
+.team-item:hover .team-text::after,
+.service-item:hover .bg-light::after {
+    opacity: 1;
+}
+
+/* .bg-offer {
+    background:url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+} */
+
+.offer-text {
+    background: rgba(6, 163, 218, .85);
+}
+
+.price-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 45px);
+    height: 45px;
+    top: calc(50% - 22.5px);
+    left: -22.5px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+}
+
+.price-carousel:hover .owl-nav {
+    opacity: 1;
+}
+
+
+/* this code is for next and priv button in the product slider in the hidex.html */
+.price-carousel .owl-nav .owl-prev,
+.price-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #FFFFFF;
+    background: var(--secondary); */
+
+    background-image: linear-gradient(to right, #29e90f, #faf606);
+    color: rgb(7, 7, 7); 
+
+    border-radius: 2px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.price-carousel .owl-nav .owl-prev:hover,
+.price-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+}
+
+
+/* this code is for next and priv button in the product slider in the hidex.html */
+.bg-testimonial {
+    background: url(../img/super/background/sdt.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.testimonial-carousel {
+    background: rgba(6, 163, 218, .85);
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: calc(100% + 46px);
+    height: 46px;
+    top: calc(50% - 23px);
+    left: -23px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 2px;
+    font-size: 22px;
+    transition: 0.01s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 120px;
+    height: 120px;
+}
+
+
+/*===========================
+	Start Hero Area CSS
+=============================*/
+.slider .single-slider {
+	height: 600px;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+.slider .single-slider .text{
+	margin-top:120px;
+}
+.slider.index2 .single-slider .text{
+	margin-top:150px;
+}
+.slider .single-slider h1 {
+	color: #2C2D3F;
+	font-size: 38px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 42px;
+}
+.slider .single-slider h1 span{
+	color:#1a76d1;
+}
+.slider .single-slider p {
+	color: #2C2D3F;
+	margin-top: 27px;
+	font-weight: 400;
+}
+.slider .single-slider .button{
+	margin-top:30px;
+}
+.slider .single-slider .btn{
+	color:#fff;
+	background:#1a76d1;
+	font-weight:500;
+	display:inline-block;
+	margin:0;
+	margin-right:10px;
+}
+.slider .single-slider .btn:last-child{
+	margin:0;
+}
+.slider .single-slider .btn.primary{
+	background:#2C2D3F;
+	color:#fff;
+}
+.slider .single-slider .btn.primary:before{
+	background:#b6d11a;
+}
+.slider .owl-carousel .owl-nav {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+	margin-top:-25px;
+}
+.slider .owl-carousel .owl-nav div {
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: #45d11a;
+	color: #fff;
+	font-size: 26px;
+	position: absolute;
+	margin: 0;
+	-webkit-transition: all 1.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding: 0;
+	border-radius: 50%;
+}
+.slider .owl-carousel .owl-nav div:hover{
+	background:#2C2D3F;
+	color:#fff;
+}
+.slider .owl-carousel .owl-controls .owl-nav .owl-prev{
+	left:20px;
+}
+.slider .owl-carousel .owl-controls .owl-nav .owl-next{
+	right:20px;
+}
+
+/* Slider Animation */
+.owl-item.active .single-slider h1{
+    animation: fadeInUp 1s both 0.6s;
+}
+.owl-item.active .single-slider p{
+    animation: fadeInUp 1s both 1s;
+}
+.owl-item.active .single-slider .button{
+    animation: fadeInDown 1s both 1.5s;
+}
+/*===========================
+	End Hero Area CSS
+=============================*/
+
+/* the begnig of paint your house */
+
+
+
+
+
+/* Social media container (initially hidden) */
+.social-media {
+  position: fixed;
+  right: -120px; /* Initially hide the container off-screen */
+  top: 50%; /* Center the container vertically */
+  transform: translateY(-50%); /* Adjust for exact vertical center */
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  width: 50px; /* Smaller container size */
+  height: auto; /* Adjust height to content */
+  border-radius: 12px; /* Slightly rounded corners for a more refined look */
+  background-color: rgba(0, 0, 0, 0.15); /* Soft background color */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Softer, professional shadow */
+  opacity: 0; /* Initially hidden */
+  transition: all 0.5s ease-out; /* Smooth transition for appearance */
+}
+
+/* Social icon styles */
+.social-icon {
+  width: 35px; /* Smaller size for icons */
+  height: 35px; /* Smaller size for icons */
+  background-color: #333; /* Default dark background */
+  color: white;
+  border-radius: 50%; /* Keep rounded edges for icons */
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Smaller font size */
+  transition: all 0.3s ease; /* Smooth transition */
+  margin: 8px 0; /* Adjusted spacing between icons */
+  border: 2px solid transparent; /* Subtle border effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Icon specific colors */
+.social-icon.telegram {
+  background-color: #0088cc;
+}
+
+.social-icon.whatsapp {
+  background-color: #25d366;
+}
+
+.social-icon.instagram {
+  background-color: #e4405f;
+}
+
+/* On scroll: animate and show social icons */
+.social-media.scrolled {
+  right: 20px; /* Slide the container to the right border */
+  opacity: 1;  /* Show the container */
+}
+
+/* Hover effect for icons */
+.social-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+  border: 2px solid #fff; /* Add a white border on hover */
+  background-color: #444; /* Slightly darken the background color on hover */
+  opacity: 0.9; /* Slight transparency effect */
+}
+
+/* "Wave" effect for the icons */
+.social-media.scrolled .social-icon:nth-child(1) {
+  animation: waveIn 0.5s ease-out forwards;
+}
+
+.social-media.scrolled .social-icon:nth-child(2) {
+  animation: waveIn 0.7s ease-out forwards;
+}
+
+.social-media.scrolled .social-icon:nth-child(3) {
+  animation: waveIn 0.9s ease-out forwards;
+}
+
+/* Keyframe animation for the "wave" effect */
+@keyframes waveIn {
+  0% {
+    transform: scale(0) translateX(0) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media query for large devices: revert to vertical stacking */
+@media (min-width: 601px) {
+  .social-media {
+    flex-direction: column; /* Stack icons vertically */
+    width: 60px; /* Smaller container size for professional look */
+    padding: 12px; /* Adjust padding */
+  }
+
+  /* Adjust icon sizes for large devices */
+  .social-icon {
+    width: 40px; /* Smaller icons */
+    height: 40px; /* Smaller icons */
+    font-size: 20px; /* Adjusted font size */
+  }
+}
+
+/* Media query for small devices (mobile) */
+@media (max-width: 600px) {
+  .social-media {
+    right: 10px; /* Adjust the container position for smaller screens */
+    width: 45px; /* Smaller container size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .social-icon {
+    width: 30px; /* Even smaller icons */
+    height: 30px; /* Even smaller icons */
+    font-size: 16px; /* Smaller font size */
+  }
+}
+
+
+/* This mainly used for index */
+/* For small screens (mobile) */
+@media (max-width: 576px) {
+    .navbar-brand h5 {
+      font-size: 16px;
+      /* Adjust font size for smaller screens */
+      white-space: normal;
+      /* Ensures the text wraps */
+      word-wrap: break-word;
+      /* Breaks long words if necessary */
+      text-align: center;
+      /* Centers the text */
+    }
+
+    .navbar-brand h6 {
+      font-size: 14px;
+      /* Adjust font size for smaller screens */
+      white-space: normal;
+      /* Ensures the slogan text wraps */
+      word-wrap: break-word;
+      /* Breaks long words if necessary */
+      text-align: center;
+      /* Ensures the slogan is centered */
+    }
+
+    .navbar-brand img {
+      width: 30px;
+      /* Adjust logo size for small screens */
+      height: 30px;
+      /* Adjust logo size for small screens */
+    }
+  }
+
+  /* For medium screens (tablets) */
+  @media (max-width: 768px) {
+    .navbar-brand h5 {
+      font-size: 18px;
+      /* Adjust font size for tablet screens */
+      white-space: normal;
+      word-wrap: break-word;
+    }
+
+    .navbar-brand h6 {
+      font-size: 16px;
+      /* Adjust font size for tablet screens */
+      white-space: normal;
+      word-wrap: break-word;
+    }
+  }
+
+  /* For larger screens (desktops) */
+  @media (min-width: 992px) {
+    .navbar-brand h5 {
+      font-size: 22px;
+      /* Adjust font size for larger screens */
+    }
+
+    .navbar-brand h6 {
+      font-size: 18px;
+      /* Adjust font size for larger screens */
+    }
+  }
+
+  #slide-div {
+    border: 2px solid transparent;
+    /* Creates a transparent border */
+    border-image: linear-gradient(to right, #15f50196, #f8e801ad);
+    /* Apply gradient */
+    border-image-slice: 1;
+    /* Ensures the gradient is stretched across the border */
+  }
+
+  /* custom tsgayes suggestion */
+  #text-style1 {
+    color: green
+  }
+
+  #text-style2 {
+    color: rgb(243, 180, 8)
+  }
+
+  #button-style {
+
+    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+    color: rgb(7, 7, 7);
+    border: none;
+  }
+
+  #footer-div {
+    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+    color: rgb(7, 7, 7);
+    border: none;
+  }
+
+  #text-div {
+    background-image: linear-gradient(to right, #28e90f3b, #faf60641);
+
+  }
+
+  #check {
+    color: #16f501;
+  }
+
+  

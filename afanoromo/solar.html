@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Super Double "T" General Trading PLC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        
+        h6 {
+            font-size: 1.8em;
+            color: #333;
+            margin-top: 20px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        p {
+            font-size: 1.1em;
+        }
+        
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        
+        .ceo-image {
+            width: 65%;
+            margin-top: 5%;
+            margin-left: 20%;
+        }
+        
+        .owner-info {
+            margin-left: 15%;
+        }
+        
+        .owner-inf {
+            margin-left: 20%;
+        }
+        /* For small screens (mobile) */
+        
+        @media (max-width: 576px) {
+            .navbar-brand h5 {
+                font-size: 16px;
+                /* Adjust font size for smaller screens */
+                white-space: normal;
+                /* Ensures the text wraps */
+                word-wrap: break-word;
+                /* Breaks long words if necessary */
+                text-align: center;
+                /* Centers the text */
+            }
+            .navbar-brand h6 {
+                font-size: 14px;
+                /* Adjust font size for smaller screens */
+                white-space: normal;
+                /* Ensures the slogan text wraps */
+                word-wrap: break-word;
+                /* Breaks long words if necessary */
+                text-align: center;
+                /* Ensures the slogan is centered */
+            }
+            .navbar-brand img {
+                width: 30px;
+                /* Adjust logo size for small screens */
+                height: 30px;
+                /* Adjust logo size for small screens */
+            }
+        }
+        /* For medium screens (tablets) */
+        
+        @media (max-width: 768px) {
+            .navbar-brand h5 {
+                font-size: 18px;
+                /* Adjust font size for tablet screens */
+                white-space: normal;
+                word-wrap: break-word;
+            }
+            .navbar-brand h6 {
+                font-size: 16px;
+                /* Adjust font size for tablet screens */
+                white-space: normal;
+                word-wrap: break-word;
+            }
+        }
+        /* For larger screens (desktops) */
+        
+        @media (min-width: 992px) {
+            .navbar-brand h5 {
+                font-size: 22px;
+                /* Adjust font size for larger screens */
+            }
+            .navbar-brand h6 {
+                font-size: 18px;
+                /* Adjust font size for larger screens */
+            }
+        }
+        
+        .owner-info {
+            color: rgb(0, 0, 0);
+            /* Correct color value */
+            font-size: 2rem;
+            /* Default font size (responsive for larger screens) */
+            text-align: center;
+            /* Center text on smaller devices */
+            margin: 0;
+        }
+        /* Media query for smaller devices */
+        
+        @media (max-width: 768px) {
+            .owner-info {
+                font-size: 1.5rem;
+                /* Adjust font size for mobile devices */
+            }
+        }
+        /* Media query for very small devices */
+        
+        @media (max-width: 480px) {
+            .owner-info {
+                font-size: 1.2rem;
+                /* Further reduce font size for very small screens */
+            }
+        }
+        
+        #slide-div {
+            border: 2px solid transparent;
+            /* Creates a transparent border */
+            border-image: linear-gradient(to right, #15f50196, #f8e801ad);
+            /* Apply gradient */
+            border-image-slice: 1;
+            /* Ensures the gradient is stretched across the border */
+        }
+        
+        #mission-div {
+            background: linear-gradient(to right, #4a7945f3, #85f801e8);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #footer-div {
+            background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #button-style {
+            background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #check {
+            color: #16f501;
+        }
+        
+        .big-letter {
+            font-family: 'Arial', sans-serif;
+            font-size: 40px;
+            /* Reduced size */
+            font-weight: bold;
+            color: black;
+            /* Black color for the letter */
+            background: white;
+            /* White background inside the border */
+            border: 3px solid #FFD700;
+            /* Golden border */
+            border-radius: 10px;
+            /* Rounded corners of the rectangle */
+            width: 40px;
+            /* Set width */
+            height: 40px;
+            /* Set height */
+            display: inline-flex;
+            /* Keeps the letter inline with text */
+            justify-content: center;
+            /* Centers the letter horizontally */
+            align-items: center;
+            /* Centers the letter vertically */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow effect */
+            margin-right: 5px;
+            /* Small space between letter and the text */
+            line-height: 1;
+            /* Ensures it aligns well with the text */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Social Media Fixed Circular Container -->
+    <div class="social-media">
+        <a href="https://t.me/yourtelegram" target="_blank" class="social-icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/yourinstagram" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Social Media Fixed Circular Container -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
+            <h5 class="m-0 text-secondary d-flex flex-wrap">
+                <img class="img-fluid" src="../img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
+            </h5>
+            <h6 class="m-0 text-center" style="font-weight: bolder;">
+
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">Waaqayyotti ni amanna!!</span>
+            </h6>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Mana</a>
+                <a href="about.html" class="nav-item nav-link">Waa'ee Keenya</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false" aria-haspopup="true">Oomishaale</a>
+                    <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+                        <a href="fiberproduct.html" class="dropdown-item">Oomishaale Faayibara Super</a>
+                        <a href="paintproduct.html" class="dropdown-item">Oomishaalee Halluu rodas</a>
+                        <a href="otherSector.html" class="dropdown-item">Seektaroota biroo</a>
+                    </div>
+                </div>
+                <a href="public-sevice.html" class="nav-item nav-link">Tajaajila Hawaasa</a>
+                <a href="contact.html" class="nav-item nav-link">Nu Qunnamaa</a>
+
+                <!-- Language Selector Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+
+            Afaan
+          </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                        <!-- Amharic -->
+                        <li>
+                            <a class="dropdown-item" href="../amharic/solar.html">
+                                <img src="../img/ethiopia.png" alt="Amharic" style="width: 20px; height: 15px;"> አማርኛ
+                            </a>
+                        </li>
+                        <!-- English -->
+                        <li>
+                            <a class="dropdown-item" href="../solar.html">
+                                <img src="../img/eng.png" alt="English" style="width: 20px; height: 15px;"> English
+                            </a>
+                        </li>
+                        <!-- afaan oromo -->
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="../img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan Oromoo
+                            </a>
+                        </li>
+
+                        <!-- Chinese -->
+                        <!-- <li><a class="dropdown-item" href="../chinese/solar.html">
+                <img src="../img/china.png" alt="Chinese" style="width: 20px; height: 15px;">中文
+              </a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid  py-5 hero-header mb-5" id="slide-div">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h3 class="text text-center" id="pro-id">
+                    BAGA GARA SUPER SOLAR ENERGY NAYAAN DHUFTAN</h3>
+                <a href="index.html" class="h4 text-black">Mana</a>
+                <i class="far fa-circle text-black px-2"></i>
+                <a href="otherSector.html" class="h4 text-black">Seektaroota Biroo</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container" id="slide-div">
+            <div class="row gx-6 bg-light">
+                <div class="col-lg-6 py-5 ">
+                    <div class="py-5 ">
+                        <div id="english" class="language-text">
+                            <h3 class="text text-center" id="pro-id"> ANNAA ADDUU SUPER SOLAAR </h3>
+
+                            <p style="color: #051225; ">
+                                Super Hani maqaa Super Double "T" General Trading PLC jalatti argamu yoo ta'u, furmaata aduu qulqullina olaanaa qabu dhiyeessa. Hoo’isitoota Bishaan Humna Aduu, Paanaalii Aduu Footovoltaayikii (PV), fi Elektirikii galchina, geessina, fi dhaabna Hoo’isitoota
+                                Bishaanii maamiltoonni mana jireenyaa fi daldalaa maallaqa akka qusatan, kaarboonii miila isaanii hir’isuuf, fi gahumsa anniisaa guddisuu.
+                            </p>
+
+
+                            <p style="color: #051225;">
+                                1. Humna Aduu (Fotovoltaic) .
+                                <br> Moojuloonni footovoltaayikii (PV) ifa aduu gara humna ibsaatti jijjiiru. Salphaa, bu’a qabeessaa fi yeroo dheeraa kan turu, isaan kun sirnoonni kutaalee socho’an kan hin qabnee fi mana keessaniif humna kennuu, baatirii
+                                chaarjii gochuu ykn anniisaa gara giiriitti nyaachisuu danda’u. Faayidaalee:
+                                <br> Maallaqa Qusachuu: Humna aduu amma humna ibsaa giiridii caalaa gatii salphaadha. Sirna aduu dhaabuun irraa nama eega baasii humna ibsaa dabaluu fi qusannoo yeroo dheeraa kan argamsiisudha. Dhiibbaa Naannoo: Humna aduu
+                                gadi lakkifamuu zeeroo kan maddisiisu yoo ta’u, kunis kaarboonii keessan hir’isuuf gargaara.
+                            </p>
+
+
+                            <p style="color: #051225;">
+
+                                2. Solar Water Heaters
+                                <br> Ho’isuun Bishaan Aduu (SWH) anniisaa aduu fayyadamuun bishaan ho’isuun bishaan ho’aa maddisiisuudhaaf karaa baasii xiqqaa fi itti fufiinsa qabu kenna. Faayidaalee:
+                                <br> Kaffaltii Annisaa Hir’isuu: Bishaan hoo’isitoonni aduu baasii hoo’isuu gadi buusu, kunis kaffaltii anniisaa giddu galeessaa keessaa %25 ta’a. Ikoo-Friendly: Gaasiiwwan kaarboonii fi boba’aa fosiilii irratti hirkatanii
+                                jiraachuu hir’isu. Gatii Manaa Dabaluu: Sirnoonni kun gahumsa anniisaa mana keessanii kan fooyyessuu fi gatii qabeenyaa dabaluu danda’u.
+                            </p>
+
+
+                            <p style="color: #051225;">
+
+
+                                3. Bishaan Ho'isaa Elektirikii
+                                <br> Hoo’isitoonni Bishaan Elektirikii bishaan fedhii irratti ho’isuuf humna ibsaa fayyadamu. Isaanis kompaaktii, gahumsa kan qabaniifi dhaabuuf salphaadha.
+                            </p>
+                            <br>
+                            <p>
+                                Faayidaa: Bakka Qusachuu:Taankii kuusaa aadaa wajjin wal bira qabamee yoo ilaalamu guddina xiqqaa. Baasii xiqqaa: Gatii madaalawaa, gahumsa kan qabuu fi dhaabuuf salphaadha. Bishaan Ho’aa Fedhii irratti: Bishaan ho’aa dhuma hin qabne battalumatti ho’isuun
+                                mi’eeffadhaa.
+
+                            </p>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+
+                    <form>
+                        <div class="row g-3">
+                            <img src="../img/super/otherSectors/solar2.png" alt="" class="ceo-image">
+
+                            <img src="../img/super/otherSectors/solar1.png" alt="" class="ceo-image">
+
+                            <img src="../img/super/otherSectors/solar3.jpg" alt="" class="ceo-image">
+                            <img src="../img/super/otherSectors/solar3.png" alt="" class="ceo-image">
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+    <!-- Banner Start -->
+
+    <!-- Banner Start -->
+
+
+
+
+
+    <!-- Newsletter Start -->
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
+        <div class="container">
+            <div class=" p-5" id="footer-div">
+                <form class="mx-auto" style="max-width: 900px;">
+                    <div class="input-group">
+
+                        <div class="container">
+                            <h5 style="color: rgb(5, 5, 5);font-weight: bolder;">Waggaa 20+ Faaya Qulqullina Qabu fi Taankeroota Bishaanii Yeroo Turan Oomisha. Akka Dhumaatti Ijaarame.</h5>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-12">
+                    <a href="index.html" class="navbar-brand p-0">
+
+
+                        <h2 class="m-0 " style="text-align: center; color: rgb(7, 7, 7);"> Suppar Dabil<span class="text-secondary">"T"
+                </span> </h2><br>
+                        <h6 class=" " style="text-align: center; color: rgb(5, 5, 5); margin-top: -32PX;">Jeneraal Tireediing Dh/Dh/I/G/I/M
+                        </h6>
+                        <br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">
+                        Liinkii Saffisaa</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2" id="check"></i>Mana</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2" id="check"></i>Waa'ee
+             keenya</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2" id="check"></i>Oomisha
+             halluU rodaasi
+
+           </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2" id="check"></i>Oomisha
+             fayibarglaasi super</a>
+                        <a class="text-dark mb-2" href="otherSector.html"><i class="bi bi-arrow-right  me-2" id="check"></i>damee
+             biroo</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2" id="check"></i>nu
+             qunnamaa</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Teessoo</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">Finfinne,Itoopiyaa
+           </span></p>
+                    <p class="mb-2"><i class="bi bi-envelope-open  me-2" id="check"></i><span style="color: rgb(5, 5, 5);">supertt2012@gmail.com</span></p>
+                    <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
+             +251911212053</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Nu hordofaa</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(15, 221, 15, 0.651); color: white;"><i
+               class="fab fa-telegram fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(24, 212, 24, 0.795);  color: white;"><i
+               class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(27, 201, 27, 0.795); color: white;"><i
+               class="fab fa-whatsapp fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="about.html">Suppar Dabil T Jeneraal Tireediing Dh/Dh/I/G/I/M
+           </a>mirgi hunduu kan eegamedha</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0"> <a class="text-white border-bottom" href="#">Kutaa ICT dhan kan qophaayeedha</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

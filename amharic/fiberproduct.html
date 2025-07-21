@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Super Double "T" General Trading Plc</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <style>
+        #searchInput {
+            width: 20%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #080808;
+            border-radius: 50px;
+            margin-left: 80%;
+        }
+        
+        #searchInput:focus {
+            outline: none;
+            border-color: #f5067d;
+        }
+        /* Ensure the modal takes full-screen height */
+        
+        .modal-dialog-fullscreen {
+            max-width: 50%;
+            margin-top: 10%;
+            margin-right: 10%;
+            margin-left: 25%;
+            margin-bottom: 10%;
+            height: 50%;
+            width: 50%;
+        }
+        
+        .modal-body {
+            overflow: hidden;
+            /* Prevents scrolling */
+        }
+        /* Gallery Layout */
+        
+        .image-gallery .gallery {
+            display: none;
+        }
+        /* Default gallery visibility (first gallery shown by default) */
+        
+        .image-gallery #gallery1,
+        #gallery2,
+        #gallery3,
+        #gallery4,
+        #gallery5,
+        #gallery6 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            /* Space between images */
+            justify-items: center;
+        }
+        /* Button active state */
+        
+        .btn.active-btn {
+            background-color: #f700ff;
+            border-color: #f700ff;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Hover effect on images */
+        
+        .image-gallery img:hover {
+            opacity: 0.8;
+        }
+        /* Style for each figure (image) */
+        
+        .image-gallery .gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+        /* Style the images */
+        
+        .image-gallery .gallery img {
+            width: 100%;
+            max-width: 100%;
+            height: 90%;
+            border-radius: 5px;
+        }
+        /* Style for the captions under the images */
+        
+        .image-gallery .gallery figcaption {
+            font-size: 14px;
+            color: #555;
+            padding: 5px 0;
+        }
+        
+        figure {
+            background-color: light;
+            padding-bottom: 10%;
+            border: 0.05px solid lightblue;
+        }
+        
+        #pro-id {
+            text-align: center;
+        }
+        
+        @media (max-width: 576px) {
+            .image-gallery #gallery1,
+            #gallery2,
+            #gallery3,
+            #gallery4,
+            #gallery5,
+            #gallery6 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+                /* Space between images */
+                justify-items: center;
+            }
+        }
+        /* Basic styling */
+        
+        figure {
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        figcaption {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        /* Popup overlay style */
+        
+        .popup-overlay {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            top: 15%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        /* Popup content style */
+        
+        .popup-content {
+            position: relative;
+            padding: 20px;
+            background-color: #fff;
+            max-width: 100%;
+            max-height: 100%;
+            border: 1px solid rgb(11, 205, 240);
+        }
+        
+        .popup-content img {
+            width: 80%;
+            height: 100%;
+            margin-top: -15%;
+        }
+        /* Close button style */
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(34, 32, 32);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        /* For small screens (mobile) */
+        
+        @media (max-width: 576px) {
+            .navbar-brand h5 {
+                font-size: 16px;
+                /* Adjust font size for smaller screens */
+                white-space: normal;
+                /* Ensures the text wraps */
+                word-wrap: break-word;
+                /* Breaks long words if necessary */
+                text-align: center;
+                /* Centers the text */
+            }
+            .navbar-brand h6 {
+                font-size: 14px;
+                /* Adjust font size for smaller screens */
+                white-space: normal;
+                /* Ensures the slogan text wraps */
+                word-wrap: break-word;
+                /* Breaks long words if necessary */
+                text-align: center;
+                /* Ensures the slogan is centered */
+            }
+            .navbar-brand img {
+                width: 30px;
+                /* Adjust logo size for small screens */
+                height: 30px;
+                /* Adjust logo size for small screens */
+            }
+        }
+        /* For medium screens (tablets) */
+        
+        @media (max-width: 768px) {
+            .navbar-brand h5 {
+                font-size: 18px;
+                /* Adjust font size for tablet screens */
+                white-space: normal;
+                word-wrap: break-word;
+            }
+            .navbar-brand h6 {
+                font-size: 16px;
+                /* Adjust font size for tablet screens */
+                white-space: normal;
+                word-wrap: break-word;
+            }
+        }
+        /* For larger screens (desktops) */
+        
+        @media (min-width: 992px) {
+            .navbar-brand h5 {
+                font-size: 22px;
+                /* Adjust font size for larger screens */
+            }
+            .navbar-brand h6 {
+                font-size: 18px;
+                /* Adjust font size for larger screens */
+            }
+        }
+        
+        #slide-div {
+            border: 2px solid transparent;
+            /* Creates a transparent border */
+            border-image: linear-gradient(to right, #15f50196, #f8e801ad);
+            /* Apply gradient */
+            border-image-slice: 1;
+            /* Ensures the gradient is stretched across the border */
+        }
+        
+        #property-div {
+            background: linear-gradient(to right, #4fee41, #f3e632e8);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #button-style {
+            background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #footer-div {
+            background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+            color: rgb(7, 7, 7);
+            border: none;
+        }
+        
+        #check {
+            color: #16f501;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
+            <h5 class="m-0 text-secondary d-flex flex-wrap">
+                <img class="img-fluid" src="../img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
+            </h5>
+            <h6 class="m-0 text-center" style="font-weight: bolder;">
+
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">እግዚአብሔር ይባረክ !!</span>
+            </h6>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">መነሻ</a>
+                <a href="about.html" class="nav-item nav-link">ስለ እኛ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false" aria-haspopup="true">ምርቶች</a>
+                    <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+                        <a href="fiberproduct.html" class="dropdown-item">ሱፐር ፋይበር ምርት</a>
+                        <a href="paintproduct.html" class="dropdown-item">ሮዳስ ቀለም ምርት</a>
+                        <a href="otherSector.html" class="dropdown-item">ሌሎች ዘርፎች</a>
+                    </div>
+                </div>
+                <a href="public-sevice.html" class="nav-item nav-link">ህብረተሰብ አገልግሎት</a>
+                <a href="contact.html" class="nav-item nav-link">አግኙን</a>
+
+                <!-- Language Selector Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+
+                        ቋንቋ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                        <!-- Amharic -->
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="../img/ethiopia.png" alt="Amharic" style="width: 20px; height: 15px;"> አማርኛ
+                            </a>
+                        </li>
+                        <!-- English -->
+                        <li>
+                            <a class="dropdown-item" href="../fiberproduct.html">
+                                <img src="../img/eng.png" alt="English" style="width: 20px; height: 15px;"> English
+                            </a>
+                        </li>
+                        <!-- afaan oromo -->
+                        <li>
+                            <a class="dropdown-item" href="../afanoromo/fiberproduct.html">
+                                <img src="../img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;">Afaan Oromoo
+                            </a>
+                        </li>
+
+                        <!-- Chinese -->
+                        <!-- <li><a class="dropdown-item" href="../chinese/fiberproduct.html.html">
+                                <img src="../img/china.png" alt="Chinese" style="width: 20px; height: 15px;"> 中文
+                            </a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid  py-5 hero-header mb-5" style="background-image: url(../img/super/background/2q.png);" id="slide-div">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h2 class="display-3 text-white animated zoomIn">እንኳን ወደ ሱፐር ፋይበር ምርት በደህና መጡ</h2>
+                <a href="index.html" class="h4 text-white">መነሻ</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="fiberproduct.html" class="h4 text-white">ፋይበር ምርት</a>
+            </div>
+        </div>
+    </div>
+    <!-- Social Media Fixed Circular Container -->
+    <div class="social-media">
+        <a href="https://t.me/yourtelegram" target="_blank" class="social-icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/yourinstagram" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <!-- =============================================================== -->
+    <div class="container-fluid  bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container" id="slide-div">
+            <div class="row gx-6 bg-light">
+                <div class="col-lg-12 py-5 ">
+                    <div class="py-5 ">
+                        <h1 style="color: rgb(0, 0, 0); font-weight: bolder;" class="text-center"> ፋይበር ግላስ ምንድን ነው?
+                        </h1>
+
+
+                        <p style="color: rgb(0, 0, 0); font-weight: bolder;">
+                            ፋይበርግላስ በፕላስቲክ (ፖሊመር) ማትሪክስ ውስጥ የፋይበርግላስ ማጠናከሪያዎችን ያካተተ የተዋሃደ ቁሳቁስ ነው። የሁለቱም ማጠናከሪያዎች እና ፖሊመሮች ልዩነቶች አስደናቂ የሆኑ አካላዊ እና ሜካኒካል ለውጦችን እንድናረግ ይፈቅዱልናል፡፡ባህላዊ ቁሳቁሶት ከሆኑት እንደ እንጨት ፣ ብረት ፣ ሴራሚክስ እና ከመሳስሉት በተለየ መልኩ ሊዳብር እና ለተለያየ አገልገሎት ሊውል ይችላል ።ፋይበርግላስን ልዩ እና
+                            ተስማሚ የሚያደርገው ለተለያዩ ምርቶች መተግበሪያዎች ማድረግ ስለሚችል ነው ።
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid banner mb-5">
+        <div class="container">
+            <div class="row gx-0" id="property-div">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column p-5" style="height: 250px;" id="slide-div">
+
+                        <h4 style=" font-weight: bolder;"><i class="fas fa-cogs icon"></i> ባህሪ
+                        </h4>
+                        <div class="d-flex justify-content-between text-dark mb-3">
+                            <p>
+
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px;"><strong
+                                        style="font-size: larger;">ጥንካሬ
+                                        እና ዘላቂነት</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px;"><strong
+                                        style="font-size: larger;">ዝገት
+                                        መቋቋም</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;">የሙቀት እና የኤሌክትሪክ መከላከል</strong></span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;">ቀላል ክብደት</strong> </span>
+                                <br>
+                            </p>
+
+
+                        </div>
+
+                        <div class="d-flex justify-content-between text-white mb-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class=" d-flex flex-column p-5" style="height: 250px;" id="slide-div">
+                        <h4 style=" font-weight: bolder;"><i class="fas fa-briefcase icon"></i> አጠቃቀሞች </h4>
+                        <div class="date mb-3" id="date" data-target-input="nearest">
+                            <p>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;"> ለግንባታ</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;"> ለአውቶሞቲቭ</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;"> ለማሪን(መርከብ) ስራ</strong> </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;"> ለስፖርት</strong> </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;"> ለኢንዱስትሪ</strong></span>
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="d-flex flex-column p-5" style="height: 250px;" id="slide-div">
+                        <h4><i class="fas fa-thumbs-up icon"></i> ጥቅሞች</h4>
+                        <div class="d-flex justify-content-between text-dark mb-3">
+                            <p>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px;"><strong
+                                        style="font-size: larger;">ሁለገብነት</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;">ወጪ ቆጣቢነት</strong>
+                                </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px; "><strong
+                                        style="font-size: larger;">የአየር ሁኔታ መቋቋም</strong> </span>
+                                <br>
+                                <i class="fas fa-hand-point-right"></i><span style="margin-left: 20px;"><strong
+                                        style="font-size: larger;">ቀላል ግን ጠንካራ</strong></span>
+                                <br>
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- Popup Overlay -->
+    <div id="popupOverlay" class="popup-overlay" onclick="closePopup()">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <img id="popupImage" src="" alt="">
+        </div>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="container">
+                <h1 class="position-relative text-dark text-uppercase mb-4" id="pro-id">
+                    የፋይበር ምርቶች</h1>
+                <hr class="text-primary w-50 mx-auto mt-0" id="slide-div">
+                <div class="container">
+                    <div class="row mb-2 justify-content-center">
+                        <!-- Button 1 -->
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center mb-3">
+                            <button class="btn  py-3 px-5 wow zoomIn" data-wow-delay="0.6s" aria-label="Water Tanker" id="button-style"><span class="text-class">የውሃ ታንከር</span></button>
+                        </div>
+                        <!-- Button 2 -->
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center mb-3">
+                            <button class="btn  py-3 px-5  wow zoomIn" data-wow-delay="0.6s" aria-label="Flower Pot" id="button-style"><span class="text-class">የአበባ ማስቀመጫ</span></button>
+                        </div>
+                        <!-- Button 3 -->
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center mb-3">
+                            <button class="btn  py-3 px-5  wow zoomIn" data-wow-delay="0.6s" aria-label="Shower Tray" id="button-style"><span class="text-class">መታጠቢያ</span></button>
+                        </div>
+                        <!-- Button 6 -->
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center mb-3">
+                            <button class="btn  py-3 px-5 wow zoomIn" data-wow-delay="0.6s" aria-label="Sink" id="button-style"><span>ሲንክ እና ተርኪሽ</span class="text-class"></button>
+                        </div>
+                        <!-- Button 6 -->
+                        <div class="col-6 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center mb-3">
+                            <button class="btn  py-3 px-5 wow zoomIn" data-wow-delay="0.6s" aria-label="Sink" id="button-style"><span>ሌሎች</span class="text-class"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Image Galleries -->
+            <div class="image-gallery">
+                <!-- Gallery 1: Water Tanker -->
+                <div class="gallery" id="gallery1">
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/200.png')" id="slide-div">
+                        <img src="../img/super/fiber/waterTanker/200.png" alt="200">
+                        <figcaption>
+                            <h2>200 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/500.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/500.png" alt="500">
+                        <figcaption>
+                            <h2>500 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/1000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/1000.png" alt="1000">
+                        <figcaption>
+                            <h2>1,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/1500.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/1500.png" alt="1500">
+                        <figcaption>
+                            <h2>1,500 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/2000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/2000.png" alt="2000">
+                        <figcaption>
+                            <h2>2,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/3000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/3000.png" alt="3000">
+                        <figcaption>
+                            <h2>3,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/4000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/4000.png" alt="4000">
+                        <figcaption>
+                            <h2>4,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/5000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/5000.png" alt="5000">
+                        <figcaption>
+                            <h2>5,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/7000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/7000.png" alt="7000">
+                        <figcaption>
+                            <h2>7,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../mg/super/fiber/waterTanker/8000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/8000.png" alt="8000">
+                        <figcaption>
+                            <h2>8,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/10000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/10000.png" alt="10000">
+                        <figcaption>
+                            <h2>10,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/15000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/15000.png" alt="20000">
+                        <figcaption>
+                            <h2>15,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/20000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/20000.png" alt="25000">
+                        <figcaption>
+                            <h2>20,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/waterTanker/25000.png')" id="slide-div"><img src="../img/super/fiber/waterTanker/25000.png" alt="25000">
+                        <figcaption>
+                            <h2>25,000 ሊትር</h2>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- Gallery 2: Flower Pot -->
+                <div class="gallery" id="gallery2">
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 001.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 001.png" alt="Flower Pot 1">
+                        <figcaption>
+                            <h2>SF-001</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 002.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 002.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-002</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 003.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 003.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-003</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 004.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 004.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-004</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 005.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 005.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-005</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 006.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 006.png" alt="Flower Pot 1">
+                        <figcaption>
+                            <h2>SF-006</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 007.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 007.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-007</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 008.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 008.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-008</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 009.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 009.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-009</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 010.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 010.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-010</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 011.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 011.png" alt="Flower Pot 1">
+                        <figcaption>
+                            <h2>SF-011</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 012.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 012.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-012</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 013.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 013.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-013</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 014.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 014.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-014</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 015.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 015.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-015</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 016.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 016.png" alt="Flower Pot 1">
+                        <figcaption>
+                            <h2>SF-016</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 017.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 017.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-017</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 018.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 018.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-018</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 019.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 019.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-019</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 020.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 020.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-020</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 021.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 021.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-021</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 022.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 022.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-022</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 023.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 023.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-023</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 024.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 024.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-024</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 025.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 025.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-025</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 026.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 026.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-026</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 027.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 027.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-027</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 028.png')" id="slide-div"><img src="../img/super/fiber/flowerpoT/SF - 028.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-028</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 029.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 029.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-029</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 030.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 030.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-030</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 031.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 031.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-031</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 032.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 032.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-032</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 033.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 033.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-033</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 034.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 034.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-034</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 035.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 035.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-035</h2>
+                        </figcaption>
+                    </figure>
+                    <!-- <figure><img src="img/super/fiber/flowerpot/SF - 036.png" alt="Flower Pot 4">
+                        <figcaption><h2>SF-036</h2></figcaption>
+                    </figure> -->
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 037.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 037.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-037</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 038.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 038.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-038</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 039.png')" id="slide-div"><img src="../img/super/fiber/flowerpoT/SF - 039.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-039</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 040.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 040.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-040</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 041.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 041.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-041</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 042.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 042.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-042</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 043.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 043.png" alt="Flower Pot 2">
+                        <figcaption>
+                            <h2>SF-043</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 044.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 044.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-044</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 045.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 045.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-045</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 046.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 046.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-046</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 047.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 047.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-047</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 048.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 048.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-048</h2>
+                        </figcaption>
+                    </figure>
+                    <!-- <figure><img src="img/super/fiber/flowerpot/SF - 049.png" alt="Flower Pot 2">
+                        <figcaption><h2>SF-049</h2></figcaption>
+                    </figure> -->
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 050.png')" id="slide-div"><img src="../img/super/fiber/flowerpoT/SF - 050.png" alt="Flower Pot 3">
+                        <figcaption>
+                            <h2>SF-050</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 051.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 051.png" alt="Flower Pot 4">
+                        <figcaption>
+                            <h2>SF-051</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 052.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 052.png" alt="Flower Pot 5">
+                        <figcaption>
+                            <h2>SF-052</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/SF - 053.png')" id="slide-div"><img src="../img/super/fiber/flowerpot/SF - 053.png" alt="Flower Pot 5" class="custom_image">
+                        <figcaption>
+                            <h2>SF-053</h2>
+                        </figcaption>
+                    </figure>
+
+
+
+
+                    <figure onclick="openPopup('../img/super/fiber/flowerpoT/CS-010.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpoT/CS-010.jpg" alt="Flower Pot 3">
+                        <figcaption>
+                            <h6>የኢትዮጵያ ንግድ ባንክ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-003.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-003.jpg" alt="Flower Pot 4">
+                        <figcaption>
+                            <h6>የአዲስ አበባ ከተማ መንገድ አስተዳደር</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-004.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-004.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ሸገር ከተማ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-005.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-005.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ሜድሮክ ኢትዮጵያ</h6>
+                        </figcaption>
+                    </figure>
+
+
+
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-006.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-006.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ዋቢ ትምህርታዊ ኮንሰልታንሲ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-007.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-007.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ኤክስትሪም ተከታታይ መጽሐፍ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-008.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-008.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ሱካፊና ኤስ.ኤ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-009.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-009.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ሲራኖ ሆቴል</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('./img/super/fiber/flowerpot/CS-010.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-010.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>የኢትዮጵያ ንግድ ባንክ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-012.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-012.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>ኢትዮ ቴሌኮም</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/flowerpot/CS-013.jpg')" id="slide-div"><img src="../img/super/fiber/flowerpot/CS-013.jpg" alt="Flower Pot 5">
+                        <figcaption>
+                            <h6>Ayb ትሬዲንግ ኃ.የተ.የግ.ማ</h6>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <!-- Luxury Bath Systems-------------->
+
+                <div class="gallery" id="gallery3">
+
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/S1.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/S1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>የሻወር ትሪ(50*70ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/S2.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/S2.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>የሻወር ትሪ(60*60ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/S345.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/S3.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>የሻወር ትሪ(70*70ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/S6.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/S6.png" alt="Shower Tray ላውንድሪ ባዝ1">
+                        <figcaption>
+                            <h6>የሻወር ትሪ(80*80ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/S7.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/S7.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>የሻወር ትሪ(85*85ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+
+
+
+
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L1.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(80*80ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L2.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L2.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(100*70ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L3.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L3.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(140*60ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L4.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L4.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(170*70ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L5.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L5.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(140*60*92ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L6.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L6.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(160*70*92ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/L7.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/L7.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ላውንድሪ ባዝ(170*70*92ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B1.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (120*70 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B23.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B3.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (150*70 ሴ.ሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B4.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B4.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*70 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B5.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B5.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*75 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B76.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B7.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*80 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B8.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B8.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (180*80 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B9.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B9.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (120*70*57ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B10.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B10.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*75*57ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B11.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B11.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*80*57ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B12.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B12.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (170*70*57ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/showerTray & bath/B13.png')" id="slide-div"><img src="../img/super/fiber/showerTray & bath/B13.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>መታጠቢያ (150*70*5 ሴሜ)</h6>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/white.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/white.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ (ነጭ)</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/green.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/green.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ (አረንጓዴ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/blue.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/blue.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ (ሰማያዊ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/yellow.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/yellow.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ (ቢጫ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/purple.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/purple.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ (ሐምራዊ)</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/jacuzzi/brown.png')" id="slide-div"><img src="../img/super/fiber/jacuzzi/brown.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ጃኩዚ(ቡናማ)</h6>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- Gallery 4: Jacuzzi -->
+
+                <div class="gallery" id="gallery6">
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/K1.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/K1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ኪችን ሲንክ</h6>
+                        </figcaption>
+                    </figure>
+
+                    <!-- <figure><img src="img/super/fiber/sink &Turkish/K1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>kichen sink</h6>
+                        </figcaption>
+                    </figure> -->
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/K2.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/K2.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ኪችን ሲንክ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/K3.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/K3.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ኪችን ሲንክ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/K4.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/K4.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ኪችን ሲንክ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/K5.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/K5.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ኪችን ሲንክ</h6>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/t1.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/t1.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ተርኪሽ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/t2.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/t2.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ተርኪሽ</h6>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/fiber/sink &Turkish/t3.png')" id="slide-div"><img src="../img/super/fiber/sink &Turkish/t3.png" alt="Shower Tray 1">
+                        <figcaption>
+                            <h6>ተርኪሽ</h6>
+                        </figcaption>
+                    </figure>
+
+
+
+                </div>
+                <div class="gallery" id="gallery3">
+                    <figure onclick="openPopup('../img/super/special/1.png')" id="slide-div">
+                        <img src="../img/super/special/1.png" alt="200">
+                        <figcaption>
+                            <h2>ዳክዪ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/2.png')" id="slide-div">
+                        <img src="../img/super/special/2.png" alt="200">
+                        <figcaption>
+                            <h2>ዳክዪ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/6.png')" id="slide-div">
+                        <img src="../img/super/special/6.png" alt="200">
+                        <figcaption>
+                            <h2>ዳክዪ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/1.png')" id="slide-div">
+                        <img src="../img/super/special/1.png" alt="200">
+                        <figcaption>
+                            <h2>ዳክዪ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/01.png')" id="slide-div">
+                        <img src="../img/super/special/01.png" alt="200">
+                        <figcaption>
+                            <h2>የቆሻሻ መታያ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/02.png')" id="slide-div">
+                        <img src="../img/super/special/02.png" alt="200">
+                        <figcaption>
+                            <h2>የቆሻሻ መታያ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/03.png')" id="slide-div">
+                        <img src="../img/super/special/03.png" alt="200">
+                        <figcaption>
+                            <h2>የቆሻሻ መታያ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/04.png')" id="slide-div">
+                        <img src="../img/super/special/04.png" alt="200">
+                        <figcaption>
+                            <h2>የቆሻሻ መታያ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/b2.png')" id="slide-div">
+                        <img src="../img/super/special/b2.png" alt="200">
+                        <figcaption>
+                            <h2>የአበባ ማስቀመጫ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/b5.png')" id="slide-div">
+                        <img src="../img/super/special/b5.png" alt="200">
+                        <figcaption>
+                            <h2>የአበባ ማስቀመጫ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/b6.png')" id="slide-div">
+                        <img src="../img/super/special/b6.png" alt="200">
+                        <figcaption>
+                            <h2>የአበባ ማስቀመጫ</h2>
+                        </figcaption>
+                    </figure>
+                    <figure onclick="openPopup('../img/super/special/tr.png')" id="slide-div"><img src="../img/super/special/tr.png" alt="2000">
+                        <figcaption>
+                            <h4>ግልጽ የጣሪያ ቆርቆሮ</h4>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
+        <div class="container">
+            <div class=" p-5" id="footer-div">
+                <form class="mx-auto" style="max-width: 900px;">
+                    <div class="input-group">
+
+                        <div class="container">
+                            <center>
+                                <h5 style="color: rgb(5, 5, 5);font-weight: bolder;">ምርቶቹን እንደፍላጎትዎ ለማበጀት ዝግጁ ነን::"</h5>
+                            </center>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-12">
+                    <a href="index.html" class="navbar-brand p-0">
+
+
+                        <h2 class="m-0 " style="text-align: center; color: rgb(7, 7, 7);"> ሱፐር ድብል <span class="text-secondary">ቲ </span> </h2><br>
+                        <h6 class=" " style="text-align: center; color: rgb(5, 5, 5); margin-top: -32PX;"> ጀነራል ትሬዲንግ ኃ.የተ.የግ.ማ </h6>
+                        <br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">
+                        ፈጣን አገናኞች</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>መነሻ</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2" id="check"></i>ስለ
+                            እኛ</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>ሮዳስ ቀለም ምርት
+                        </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>ሱፐር ፋይበር ምርት</a>
+                        <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right  me-2" id="check"></i>ሌሎች
+                            ዘርፎች</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>አግኙን</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">አድራሻ</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">አዲስ
+                            አበባ፣ኢትዮጵያ</span></p>
+                    <p class="mb-2"><i class="bi bi-envelope-open  me-2" id="check"></i><span style="color: rgb(5, 5, 5);">supertt2012@gmail.com</span></p>
+                    <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
+                            +251911212053</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">ተከተሉን</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(15, 221, 15, 0.651); color: white;"><i
+                                class="fab fa-telegram fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(24, 212, 24, 0.795);  color: white;"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(27, 201, 27, 0.795); color: white;"><i
+                                class="fab fa-whatsapp fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="about.html">ሱፐር ድብል ቲ ጀነራል ትሬዲንግ
+                            ኃ.የተ.የግ.ማ</a>.ሁሉም መብቶች የተጠበቁ ናቸው።</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0"> <a class="text-white border-bottom" href="#">በአይቲ ዲፓርትመንት የተሰራ</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"
+            id="up-button"></i></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../.lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        const buttons = document.querySelectorAll('.btn');
+        const galleries = document.querySelectorAll('.gallery');
+
+        function hideAllGalleries() {
+            galleries.forEach(gallery => {
+                gallery.style.display = 'none';
+            });
+        }
+
+        // Function to remove the active class from all buttons
+        function removeActiveClassFromButtons() {
+            buttons.forEach(button => {
+                button.classList.remove('active-btn');
+            });
+        }
+
+        // Function to show the selected gallery and mark the button as active
+        function showGallery(index) {
+            hideAllGalleries();
+            galleries[index].style.display = 'grid'; // Display the grid for the selected gallery
+            removeActiveClassFromButtons();
+            buttons[index].classList.add('active-btn');
+        }
+
+        // Add event listeners to buttons
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                showGallery(index);
+            });
+        });
+
+        // Initialize the first gallery as visible and the first button as active
+        showGallery(0); // 0 refers to the first gallery (index 0)
+    </script>
+
+    <script>
+        // Function to open the popup with the clicked image
+        function openPopup(imageSrc) {
+            document.getElementById('popupImage').src = imageSrc;
+            document.getElementById('popupOverlay').style.display = 'flex';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

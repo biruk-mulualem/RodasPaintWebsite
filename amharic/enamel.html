@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Super Double "T" General Trading Plc</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS (You can also use a CDN link) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (You can also use a CDN link) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="../lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    .rough-product {
+        text-align: left;
+        color: rgb(0, 0, 0);
+    }
+    
+    .wooden-products {
+        text-align: center;
+        background-color: rgb(31, 164, 241);
+        color: white;
+    }
+    
+    .metal-products {
+        text-align: center;
+        background-color: rgb(31, 164, 241);
+        color: white;
+    }
+    
+    .pro-name {
+        text-align: center;
+        margin-top: 2%;
+    }
+    
+    .img-div {
+        padding: 5%;
+        border-radius: 10%;
+    }
+    /* Custom Styles for the Info Boxes */
+    
+    .info-box {
+        background-color: rgba(0, 0, 0, 0.2);
+        /* Semi-transparent background for depth */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .info-box:hover {
+        transform: translateY(-10px);
+        /* Adds a floating effect */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .text-gold {
+        color: #FFD700;
+        /* Gold color */
+    }
+    
+    h3 {
+        font-weight: 600;
+        /* Slightly bold title */
+    }
+    
+    .mb-3 {
+        margin-bottom: 1rem;
+    }
+    
+    .fas {
+        transition: color 0.3s ease;
+    }
+    
+    .info-box:hover .fas {
+        color: #FFD700;
+        /* Icon color change on hover */
+    }
+    
+    @media (max-width: 576px) {
+        #productContainer {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+            gap: 2px;
+            /* Space between images */
+            justify-items: center;
+        }
+        .rough-product {
+            font-size: 32px;
+            /* Smaller font size for mobile */
+            letter-spacing: 1px;
+            /* Reduce letter-spacing for smaller screens */
+        }
+        .navbar-brand h5 {
+            font-size: 16px;
+            /* Adjust font size for smaller screens */
+            white-space: normal;
+            /* Ensures the text wraps */
+            word-wrap: break-word;
+            /* Breaks long words if necessary */
+            text-align: center;
+            /* Centers the text */
+        }
+        .navbar-brand h6 {
+            font-size: 14px;
+            /* Adjust font size for smaller screens */
+            white-space: normal;
+            /* Ensures the slogan text wraps */
+            word-wrap: break-word;
+            /* Breaks long words if necessary */
+            text-align: center;
+            /* Ensures the slogan is centered */
+        }
+        .navbar-brand img {
+            width: 30px;
+            /* Adjust logo size for small screens */
+            height: 30px;
+            /* Adjust logo size for small screens */
+        }
+        .modal-dialog {
+            width: 40%;
+            margin-left: 10%;
+            max-height: 30%;
+            margin-top: 20%;
+        }
+    }
+    /* For medium screens (tablets) */
+    
+    @media (max-width: 768px) {
+        .navbar-brand h5 {
+            font-size: 18px;
+            /* Adjust font size for tablet screens */
+            white-space: normal;
+            word-wrap: break-word;
+        }
+        .navbar-brand h6 {
+            font-size: 16px;
+            /* Adjust font size for tablet screens */
+            white-space: normal;
+            word-wrap: break-word;
+        }
+    }
+    /* For larger screens (desktops) */
+    
+    @media (min-width: 992px) {
+        .navbar-brand h5 {
+            font-size: 22px;
+            /* Adjust font size for larger screens */
+        }
+        .navbar-brand h6 {
+            font-size: 18px;
+            /* Adjust font size for larger screens */
+        }
+    }
+    
+    .modal-dialog {
+        height: 50%;
+        margin-right: 45%;
+    }
+    
+    .modal-content {
+        width: 200%;
+        height: 180%;
+        margin-right: 50%;
+    }
+    
+    #modalImage {
+        width: 100%;
+        height: 80%;
+    }
+    
+    .image-container {
+        position: relative;
+    }
+    
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0);
+        /* Optional: Adds shadow for better visibility */
+        cursor: pointer;
+        /* Show a pointer cursor to indicate clickability */
+        padding: 5px 10px;
+        background-color: rgba(0, 0, 0, 0.342);
+        /* Optional: Semi-transparent background for text */
+        border-radius: 5px;
+        /* Optional: Rounded corners */
+        display: none;
+        /* Initially hidden */
+    }
+    
+    .image-container:hover .overlay-text {
+        display: block;
+        /* Show the overlay text when hovering */
+    }
+    
+    #slide-div {
+        border: 2px solid transparent;
+        /* Creates a transparent border */
+        border-image: linear-gradient(to right, #15f50196, #f8e801ad);
+        /* Apply gradient */
+        border-image-slice: 1;
+        /* Ensures the gradient is stretched across the border */
+    }
+    
+    #property-div {
+        background: linear-gradient(to right, #4fee41, #f3e632e8);
+        color: rgb(7, 7, 7);
+        border: none;
+    }
+    
+    #button-style {
+        background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+        color: rgb(7, 7, 7);
+        border: none;
+    }
+    
+    #footer-div {
+        background-image: linear-gradient(to right, #76e967e8, #faf606ea);
+        color: rgb(7, 7, 7);
+        border: none;
+    }
+    
+    #check {
+        color: #16f501;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
+            <h5 class="m-0 text-secondary d-flex flex-wrap">
+                <img class="img-fluid" src="../img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
+            </h5>
+            <h6 class="m-0 text-center" style="font-weight: bolder;">
+
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">እግዚአብሔር ይባረክ !!</span>
+            </h6>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">መነሻ</a>
+                <a href="about.html" class="nav-item nav-link">ስለ እኛ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" id="navbarDropdown" role="button" aria-expanded="false" aria-haspopup="true">ምርቶች</a>
+                    <div class="dropdown-menu m-0" aria-labelledby="navbarDropdown">
+                        <a href="fiberproduct.html" class="dropdown-item">ሱፐር ፋይበር ምርት</a>
+                        <a href="paintproduct.html" class="dropdown-item">ሮዳስ ቀለም ምርት</a>
+                        <a href="otherSector.html" class="dropdown-item">ሌሎች ዘርፎች</a>
+                    </div>
+                </div>
+                <a href="public-sevice.html" class="nav-item nav-link">ህብረተሰብ አገልግሎት</a>
+                <a href="contact.html" class="nav-item nav-link">አግኙን</a>
+
+                <!-- Language Selector Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+
+            ቋንቋ
+          </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                        <!-- Amharic -->
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="../img/ethiopia.png" alt="Amharic" style="width: 20px; height: 15px;"> አማርኛ
+                            </a>
+                        </li>
+                        <!-- English -->
+                        <li>
+                            <a class="dropdown-item" href="../enamel.html">
+                                <img src="../img/eng.png" alt="English" style="width: 20px; height: 15px;"> English
+                            </a>
+                        </li>
+                        <!-- afaan oromo -->
+                        <li>
+                            <a class="dropdown-item" href="../afanoromo/enamel.html">
+                                <img src="../img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;">Afaan Oromoo
+                            </a>
+                        </li>
+
+                        <!-- Chinese -->
+                        <!-- <li><a class="dropdown-item" href="../chinese/enamel.html">
+                <img src="../img/china.png" alt="Chinese" style="width: 20px; height: 15px;"> 中文
+              </a></li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5" style="background-image: url(../img/super/background/z.png);" id="slide-div">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+
+                <div class="container">
+                    <h1 style=" color: rgb(0, 0, 0); ">እንኳን ወደ ሮዳስ ቀለም ምርቶች በደና መጡ</h1>
+                    <p style=" color: rgb(0, 0, 0); font-weight: bolder;">የእርስዎ የታመነ ምንጭ ለፕሪሚየም ጥራት ቀለም በኢትዮጵያ</p>
+                </div>
+                <a href="index.html" class="h4 text-black">መነሻ</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="paintproduct.html" class="h4 text-black">ቀለም ምርቶች</a>
+            </div>
+        </div>
+    </div>
+    <!-- Social Media Fixed Circular Container -->
+    <div class="social-media">
+        <a href="https://t.me/yourtelegram" target="_blank" class="social-icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/yourinstagram" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-2">
+                <h1 class="rough-product text-center"> ኢናሜል ቀለም</h1>
+                <div class="container-fluid  bg-appointment my-2 wow fadeInUp" data-wow-delay="0.1s">
+
+                    <!-- <hr class="text-primary w-50 mx-auto mt-0" id="slide-div"> -->
+                    <div class="container pt-6">
+                        <!-- RODAS ENAMEL -->
+                        <div class="row gx-6 bg-light" style="margin: 1% 1%;" id="slide-div">
+                            <div class="col-lg-5">
+                                <form>
+                                    <div class="row g-3">
+                                        <img class="img-fluid" src="../img/super/paint/enamel/en.png" alt="" style="margin-top: 20%;">
+                                        <br>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-7 py-5">
+                                <div class="py-5 ">
+                                    <h1 class="rough-product text-center"> ሮዳስ ኢናሜል</h1>
+                                    <hr class="text-primary w-50 mx-auto mt-0" id="slide-div">
+                                    <h4 class="text-dark text-center">የውስጥ እና የውጭ ግድግዳ</h4>
+
+                                    <div class="row">
+                                        <p><span class="mb-1" style="color: #000000; font-weight: bolder; font-size:15px">አዘገጃጀት-</span> ቀለም ከመቀባትዎ በፊት ግድግዳዎ ንፁህ እና ከአሮጌ ቀለም እና የኖራ ቀለሞች የፀዱ መሆን አለባቸው ።
+
+                                        </p>
+                                        <p><span class="mb-1" style="color: #000000; font-weight: bolder; font-size:15px;">ጥቅም-</span>በእንጨት ወይም በብረት ላይ ሊተገበር ይችላል፡፡ ነገር ግን ለውጫዊ አገልግሎት በዋናነት የሮዳስ የ ዝገት መከላከያን ይጠቀሙ።</p>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-clock" style="color: #55e750; font-size: 1.5rem; padding-right: 10px;"></i>
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">የሚደርቅበት ጊዜ</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;"><span style="font-weight: bolder;">4-6 ሰአት</span> በመደበኛ የሙቀት መጠን|ሙሉ በሙሉ ለመድረቅ 48 ሰአት ይፈጅበታል</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-paint-roller" style="color: #55e750; font-size: 1.5rem; padding-right: 10px;"></i>
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">ሽፋን</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;">
+                                                        10-13 ካሬ ሜትር በሊትር</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-box" style="color: #55e750; font-size: 1.5rem; padding-right: 10px;"></i>
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">ማሸጊያ</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;">4 ሊትር</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-tint" style="color: #55e750; font-size: 1.5rem; padding-right: 10px;"></i>
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">ማቅጠኛ</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;">አኳራጅ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-exclamation" style="color: #f80606; font-size: 1.5rem; padding-right: 10px;"></i>
+
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">ጥንቃቄ</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;">ከመጠቀምዎ በፊት በደንብ ያማስሉ </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-palette" style="color: #55e750; font-size: 1.5rem; padding-right: 10px;"></i>
+
+                                                <div>
+                                                    <h5 class="mb-1" style="color: #333;">የቀለም ዓይነቶች</h5>
+                                                    <p style="color: #7d7d7d; margin-bottom: 0;">ያልተገደበ የቀለም ምርጫ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="imageModalLabel">ቤትዎ ይህን ይመስላል</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Image will be injected here -->
+                    <img id="modalImage" class="img-fluid w-100" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h1 class="display-5 mb-0" style="text-align: center;">የቀለም ዓይነቶች </h1>
+                    <hr class="text-primary w-50 mx-auto mt-0" id="slide-div">
+                </div>
+            </div>
+            <div class="row g-4" id="productContainer">
+                <div class="row">
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/BRICK RED 424.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BRICK RED 424 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BRICK RED 424 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">BRICK RED 424</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/BROWN CHOCOLATE 423.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BROWN CHOCOLATE 423 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BROWN CHOCOLATE 423 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">BROWN CHOCOLATE 423</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/DARK GREY 414.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DARK GREY 414 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DARK GREY 414 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">DARK GREY 414</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/DEEP GREY 444.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DEEP GREY 444 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DEEP GREY 444 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">DEEP GREY 444</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/GOLDEN BROWN 465.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/GOLDEN BROWN 465 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/GOLDEN BROWN 465 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">GOLDEN BROWN 465</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LEAF GREEN 422.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEAF GREEN 422 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEAF GREEN 422 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LEAF GREEN 422</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/MEDIUM GREEN 429.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MEDIUM GREEN 429 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MEDIUM GREEN 429 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">MEDIUM GREEN 429</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/MINT GREEN 448.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MINT GREEN 448 house .png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MINT GREEN 448 house .png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">MINT GREEN 448</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/PASTEL GREEN 405.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PASTEL GREEN 405 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PASTEL GREEN 405 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">PASTEL GREEN 405</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/PICH GREEN 409.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PICH GREEN 409 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PICH GREEN 409 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">PICH GREEN 409</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/SILVER GREY 443.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/SILVER GREY 443 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/SILVER GREY 443 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">SILVER GREY 443</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/VIEL GREEN 445.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/enamel/VIEL GREEN 445 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/VIEL GREEN 445 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">VIEL GREEN 445</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LEMON GREEN 441.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEMON GREEN 441 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEMON GREEN 441 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LEMON GREEN 441</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LIGHT GREY 404.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT GREY 404 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT GREY 404 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LEMON GREEN 441</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/BLACK 402.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BLACK 402 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BLACK 402 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">BLACK 402</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/BRIGHT GREEN 415.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BRIGHT GREEN 415 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BRIGHT GREEN 415 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">BRIGHT GREEN 415</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/BROKEN WHITE 417.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BROKEN WHITE 417 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/BROKEN WHITE 417 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">BROKEN WHITE 417</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/CANARY YELLOW 432.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/CANARY YELLOW 432 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/CANARY YELLOW 432 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">CANARY YELLOW 432</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/CEAM 407.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/CEAM 407 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/CEAM 407 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">CREAM 407</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/DEEP ORANGE 442.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DEEP ORANGE 442 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DEEP ORANGE 442 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">DEEP ORANGE 442</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/DELPHINIUM BLUE 419.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DELPHINIUM BLUE 419 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DELPHINIUM BLUE 419 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">DELPHINIUM BLUE 419</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/DOWN GLOW 466.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DOWN GLOW 466 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/DOWN GLOW 466 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">DOWN GLOW 466</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/FOREST GREEN 403.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/FOREST GREEN 403 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/FOREST GREEN 403 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">FOREST GREEN 403</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/GEEN TURQUOISE 412.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/GEEN TURQUOISE 412 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/GEEN TURQUOISE 412 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">GREEN TURQUOISE 412</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/IVORY 450.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/IVORY 450 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/IVORY 450 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">IVORY 450</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LEMON YELLOW 408.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEMON YELLOW 408 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LEMON YELLOW 408 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LEMON YELLOW 408</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LIGHT BLUE 440.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT BLUE 440 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT BLUE 440 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LIGHT BLUE 440</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/LIGHT GREEN 418.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT GREEN 418 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/LIGHT GREEN 418 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">LIGHT GREEN 418</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/MEDIUM BLUE 460.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MEDIUM BLUE 460 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/MEDIUM BLUE 460 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">MEDIUM BLUE 460</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/OFF WHITE 420.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/OFF WHITE 420 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/OFF WHITE 420 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">OFF WHITE 420</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/ORANGE 411.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/ORANGE 411 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/ORANGE 411 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">ORANGE 411</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/P O RED 427.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/P O RED 427 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/P O RED 427 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">P.O RED 427</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/PARCHMENT 421.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PARCHMENT 421 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PARCHMENT 421 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">PARCHMENT 421</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/PHORPZI 430.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PHORPZI 430 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/PHORPZI 430 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">PHORPZI 430</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/ROSE 461.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/ROSE 461 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/ROSE 461 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">ROSE 461</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/TAN 425.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/TAN 425 house.png')">
+
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/TAN 425 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">TAN 425</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/VIOLET 426.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/VIOLET 426 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/VIOLET 426 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">VIOLET 426</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid rounded-top w-100" src="../img/super/paint/enamel/WHITE 401.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/WHITE 401 house.png')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('../img/super/paint/enamel/WHITE 401 house.png')">ለማየት</div>
+                        </div>
+                        <h6 style="text-align: center;">WHITE 401</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
+        <div class="container">
+            <div class=" p-5" id="footer-div">
+                <form class="mx-auto" style="max-width: 900px;">
+                    <div class="input-group">
+
+                        <div class="container">
+                            <h3 style="color: rgb(5, 5, 5);font-weight: bolder;" class="text-center">"ከእርስዎ ፍላጎት ጋር የሚጣጣሙ ወብ ቀለሞችን-አሁኑኑ ያግኙ!"</h3>
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-12">
+                    <a href="index.html" class="navbar-brand p-0">
+
+
+                        <h2 class="m-0 " style="text-align: center; color: rgb(7, 7, 7);"> ሱፐር ድብል <span class="text-secondary">ቲ </span> </h2><br>
+                        <h6 class=" " style="text-align: center; color: rgb(5, 5, 5); margin-top: -32PX;"> ጀነራል ትሬዲንግ ኃ.የተ.የግ.ማ </h6>
+                        <br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">
+                        ፈጣን አገናኞች</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2" id="check"></i>መነሻ</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2" id="check"></i>ስለ እኛ</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2" id="check"></i>ሮዳስ ቀለም ምርት
+          </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2" id="check"></i>ሱፐር ፋይበር ምርት</a>
+                        <a class="text-dark mb-2" href="#"><i class="bi bi-arrow-right  me-2" id="check"></i>ሌሎች ዘርፎች</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2" id="check"></i>አግኙን</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">አድራሻ</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">አዲስ
+          አበባ፣ኢትዮጵያ</span></p>
+                    <p class="mb-2"><i class="bi bi-envelope-open  me-2" id="check"></i><span style="color: rgb(5, 5, 5);">supertt2012@gmail.com</span></p>
+                    <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
+            +251911212053</a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">ተከተሉን</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(15, 221, 15, 0.651); color: white;"><i
+              class="fab fa-telegram fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(24, 212, 24, 0.795);  color: white;"><i
+              class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg  btn-lg-square rounded me-2" href="#" style="background-color: rgba(27, 201, 27, 0.795); color: white;"><i
+              class="fab fa-whatsapp fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="about.html">ሱፐር ድብል ቲ ጀነራል ትሬዲንግ ኃ.የተ.የግ.ማ</a>.ሁሉም መብቶች የተጠበቁ ናቸው።</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0"> <a class="text-white border-bottom" href="#">በአይቲ ዲፓርትመንት የተሰራ</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment.min.js"></script>
+    <script src="../lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="../lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="../lib/twentytwenty/jquery.twentytwenty.js"></script>
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Function to open modal and set the image source dynamically
+        function openModal(largeImageURL) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = largeImageURL; // Set the modal image source to the clicked image's larger version
+        }
+    </script>
+
+</body>
+
+</html>
