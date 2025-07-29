@@ -191,34 +191,3 @@ h3 {
     display: block;
     /* Show the overlay text when hovering */
 }
-
-#slide-div {
-    border: 2px solid transparent;
-    /* Creates a transparent border */
-    border-image: linear-gradient(to right, #15f50196, #f8e801ad);
-    /* Apply gradient */
-    border-image-slice: 1;
-    /* Ensures the gradient is stretched across the border */
-}
-
-#property-div {
-    background: linear-gradient(to right, #4fee41, #f3e632e8);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#button-style {
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#footer-div {
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#check {
-    color: #16f501;
-}

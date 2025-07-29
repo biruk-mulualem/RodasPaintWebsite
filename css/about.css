@@ -1,4 +1,3 @@
-
 /* **************************************************** about us page **************************************************** */
 
 header {
@@ -59,7 +58,6 @@ p {
 
 .ceo-image {
     width: 65%;
-
     margin-top: 5%;
     margin-left: 20%;
 }
@@ -74,6 +72,7 @@ p {
 
 
 /* For small screens (mobile) */
+
 @media (max-width: 576px) {
     .navbar-brand h5 {
         font-size: 16px;
@@ -85,7 +84,6 @@ p {
         text-align: center;
         /* Centers the text */
     }
-
     .navbar-brand h6 {
         font-size: 14px;
         /* Adjust font size for smaller screens */
@@ -96,7 +94,6 @@ p {
         text-align: center;
         /* Ensures the slogan is centered */
     }
-
     .navbar-brand img {
         width: 30px;
         /* Adjust logo size for small screens */
@@ -105,7 +102,9 @@ p {
     }
 }
 
+
 /* For medium screens (tablets) */
+
 @media (max-width: 768px) {
     .navbar-brand h5 {
         font-size: 18px;
@@ -113,7 +112,6 @@ p {
         white-space: normal;
         word-wrap: break-word;
     }
-
     .navbar-brand h6 {
         font-size: 16px;
         /* Adjust font size for tablet screens */
@@ -122,13 +120,14 @@ p {
     }
 }
 
+
 /* For larger screens (desktops) */
+
 @media (min-width: 992px) {
     .navbar-brand h5 {
         font-size: 22px;
         /* Adjust font size for larger screens */
     }
-
     .navbar-brand h6 {
         font-size: 18px;
         /* Adjust font size for larger screens */
@@ -145,7 +144,9 @@ p {
     margin: 0;
 }
 
+
 /* Media query for smaller devices */
+
 @media (max-width: 768px) {
     .owner-info {
         font-size: 1.5rem;
@@ -153,45 +154,14 @@ p {
     }
 }
 
+
 /* Media query for very small devices */
+
 @media (max-width: 480px) {
     .owner-info {
         font-size: 1.2rem;
         /* Further reduce font size for very small screens */
     }
-}
-
-#slide-div {
-    border: 2px solid transparent;
-    /* Creates a transparent border */
-    border-image: linear-gradient(to right, #15f50196, #f8e801ad);
-    /* Apply gradient */
-    border-image-slice: 1;
-    /* Ensures the gradient is stretched across the border */
-}
-
-#mission-div {
-    background: linear-gradient(to right, #1de40bf3, #f8e801e8);
-    color: rgb(7, 7, 7);
-    border: none;
-
-}
-
-#footer-div {
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#button-style {
-
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#check {
-    color: #16f501;
 }
 
 .big-letter {
@@ -231,7 +201,6 @@ p {
 }
 
 .text {
-  
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
@@ -245,7 +214,6 @@ p {
     0% {
         width: 0;
     }
-
     100% {
         width: 100%;
     }
@@ -258,31 +226,40 @@ p {
         /* Larger font size on smaller screens (like mobile) */
     }
 }
+
+
 /* Responsive adjustments */
+
 @media (max-width: 768px) {
-#pro-id {
-font-size: 1.5rem; /* Smaller font size on medium screens like tablets */
-margin-top: 15px;
-}
+    #pro-id {
+        font-size: 1.5rem;
+        /* Smaller font size on medium screens like tablets */
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 480px) {
-#pro-id {
-font-size: 1.2rem; /* Even smaller font size on small screens like smartphones */
-margin-top: 10px;
-}
+    #pro-id {
+        font-size: 1.2rem;
+        /* Even smaller font size on small screens like smartphones */
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 320px) {
-#pro-id {
-font-size: 1rem; /* Font size even smaller for very small devices */
-margin-top: 8px;
-}
+    #pro-id {
+        font-size: 1rem;
+        /* Font size even smaller for very small devices */
+        margin-top: 8px;
+    }
 }
 
+
 /* Ensure the container doesn't overflow on smaller screens */
+
 .message-container {
-padding: 20px;
+    padding: 20px;
 }
+
 
 /* **************************************************** about us page **************************************************** */

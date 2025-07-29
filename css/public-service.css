@@ -141,34 +141,6 @@ p {
     }
 }
 
-#slide-div {
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #15f50196, #f8e801ad);
-    border-image-slice: 1;
-}
-
-#property-div {
-    background: linear-gradient(to right, #4fee41, #f3e632e8);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#button-style {
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#footer-div {
-    background-image: linear-gradient(to right, #76e967e8, #faf606ea);
-    color: rgb(7, 7, 7);
-    border: none;
-}
-
-#check {
-    color: #16f501;
-}
-
 #proverb-color {
     color: gold;
 }
@@ -199,7 +171,7 @@ p {
     padding-top: 5px;
     /* border: 10px solid transparent; */
     /* border-image-slice: 1; */
-    background-image: linear-gradient(to right, #2c3e50, #34495e);
+    background-image: linear-gradient(to right, #1c6ee7e8, #1c6ee7e8);
     /* Dark gradient */
     color: #FFD700;
     /* Gold */

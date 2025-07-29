@@ -55,12 +55,49 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link ">Home</a>
                 <a href="about.html" class="nav-item nav-link ">About</a>
+
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Products</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu m-0">
-                        <a href="fiberproduct.html" class="dropdown-item">Super Fiber Product</a>
-                        <a href="paintproduct.html" class="dropdown-item">Rodas Paint product</a>
-                        <a href="otherSector.html" class="dropdown-item">Other Sectors</a>
+                        <!-- Super Fiber Product -->
+                        <div class="dropdown-submenu">
+                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Super Fiber Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
+                                <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
+                                <a class="dropdown-item" href="bathroom-equipments.html">Bathroom Equipments</a>
+                                <a class="dropdown-item" href="kitchen-sink.html">Kitchen Sinks</a>
+
+                                <a class="dropdown-item" href="laundary-bath.html">Laundry Bath</a>
+                                <a class="dropdown-item" href="otherfiber.html">Others Products</a>
+                            </div>
+                        </div>
+
+                        <!-- Rodas Paint Product -->
+                        <div class="dropdown-submenu">
+                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Rodas Paint Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
+                                <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
+                                <a class="dropdown-item" href="enamel.html">Enamel Paint</a>
+                                <a class="dropdown-item" href="special-paint.html">Special Paint</a>
+                                <a class="dropdown-item" href="industrial-paint.html">Industrial Paint</a>
+                                <a class="dropdown-item" href="varnish.html">Varnish</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti Rust</a>
+                                <a class="dropdown-item" href="glue.html"> Wood Glue</a>
+                            </div>
+                        </div>
+
+                        <!-- Other Sectors -->
+                        <div class="dropdown-submenu">
+                            <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="marble.html">Pomy Marble Factory</a>
+                                <a class="dropdown-item" href="waterprofing.html">Super Waterproofing</a>
+                                <a class="dropdown-item" href="solar.html">Super Solar Energy</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
@@ -246,8 +283,10 @@
                     <div class="input-group">
 
                         <div class="container">
-                            <h5 style="color: rgb(5, 5, 5);font-weight: bolder;">"Innovation Across Industries – Super Double T General Trading Plc."</h5>
 
+
+                            <p>
+                                "Innovation Across Industries – Super Double T General Trading Plc."
                             </p>
 
                         </div>
@@ -384,6 +423,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
+            tooltipTriggerList.map(function(el) {
+                return new bootstrap.Tooltip(el)
+            })
+        });
+    </script>
 
 
 </body>
