@@ -1,0 +1,18 @@
+  .popup-content {
+      position: relative;
+      background: white;
+      padding: 0;
+      border: none;
+      display: inline-block;
+      /* Size control */
+      max-width: 700px;
+      width: 90%;
+      background-image: linear-gradient(to right, #b9eeb2e8, #cecc61ea);
+  }
+  
+  #popupImage {
+      width: 100%;
+      /* Make image fit container */
+      height: auto;
+      display: block;
+  }
