@@ -287,3 +287,6 @@ h6 {
         /* Larger font size on smaller screens (like mobile) */
     }
 }
+
+
+/* Ensure the parent has overflow hidden to clip the image when zoomed */
