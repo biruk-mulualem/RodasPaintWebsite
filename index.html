@@ -24,7 +24,19 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 
-
+    <style>
+        .blessing-text {
+            font-size: clamp(32px, 8vw, 100px);
+            font-weight: bold;
+            color: orange;
+        }
+        
+        .trust-text {
+            font-size: clamp(24px, 5vw, 50px);
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
@@ -260,14 +272,8 @@
     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
         <div class="container">
             <div class="p-7 text-center">
-                <!-- removed bg-light -->
-                <h1 style="font-size: 100px; font-weight: bold;">
-                    <span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
-                </h1>
-                <h1 style="font-size: 50px; font-weight: bold;">
-                    <span style="color: green;">We Trust In God!!!</span>
-                </h1>
-
+                <h1 class="blessing-text">እግዚአብሔር ይባረክ!!!</h1>
+                <h1 class="trust-text">We Trust In God!!!</h1>
             </div>
         </div>
     </div>
@@ -293,8 +299,11 @@
                     <a href="paintproduct.html" class="btn  py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.01s" id="button-style" style="margin-left: 80px;">→ Rodas Paint</a>
                 </div>
                 <div class="col-lg-5">
-                    <iframe width="540" height="304" src="https://www.youtube.com/embed/RxhE2UGq3L4" title="Fiber ProductsS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/RxhE2UGq3L4" title="Fiber ProductsS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
                 </div>
                 <div class="col-lg-6">
                     <div class="ratio ratio-16x9">
