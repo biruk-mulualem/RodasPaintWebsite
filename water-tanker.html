@@ -45,8 +45,8 @@
                 <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
             </h5>
             <h6 class="m-0 text-center" style="font-weight: bolder;">
-                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">We Trust In God | እግዚአብሔር
-                    ይባረክ!!</span>
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: green;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                </span>
             </h6>
         </a>
 
@@ -57,14 +57,24 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="about.html" class="nav-item nav-link ">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints Industry</a>
+                        <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i> Magazine
+                        </a>
+                    </div>
+                </div>
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu m-0">
-                        <!-- Super Fiber Product -->
+                        <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Super Fiber Product</a>
+                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Fiber Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
@@ -75,9 +85,9 @@
                                 <a class="dropdown-item" href="otherfiber.html">Others Products</a>
                             </div>
                         </div>
-                        <!-- Rodas Paint Product -->
+                        <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Rodas Paint Product</a>
+                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Paint Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
@@ -85,8 +95,8 @@
                                 <a class="dropdown-item" href="special-paint.html">Special Paint</a>
                                 <a class="dropdown-item" href="industrial-paint.html">Industrial Paint</a>
                                 <a class="dropdown-item" href="varnish.html">Varnish</a>
-                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti Rust</a>
-                                <a class="dropdown-item" href="glue.html"> Rodas Glue</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Anti Rust</a>
+                                <a class="dropdown-item" href="glue.html"> Glue</a>
                                 <a class="dropdown-item" href="decorative.html"> Decorative Paints </a>
                                 <a class="dropdown-item" href="stoneGranite.html">Granite & Stone Paints </a>
 
@@ -96,23 +106,23 @@
                         <div class="dropdown-submenu">
                             <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="marble.html">POMY MARBLE FACTORY</a>
-                                <a class="dropdown-item" href="waterprofing.html">Super Waterproofing</a>
-                                <a class="dropdown-item" href="solar.html">Super Solar Energy</a>
+                                <a class="dropdown-item" href="marble.html">Marble Products</a>
+                                <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
+                                <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
 
                 <!-- Language Selector Dropdown -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;">  -->
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
                         Language
-                    </a>
+                    </a> -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!-- English -->
                         <li>
@@ -178,78 +188,116 @@
             <div class="image-gallery">
                 <!-- Gallery 1: Water Tanker -->
                 <div class="gallery" id="gallery1">
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/200.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/200.png" alt="200">
+
+                    <style>
+                        .tanker_div {
+                            position: relative;
+                            overflow: hidden;
+                            /* adjust as needed */
+                            margin: auto;
+                        }
+                        /* .tanker_div img {
+                            width: 100%;
+                            display: block;
+                        } */
+                        /* Remove the ::after bar and instead style figcaption */
+                        
+                        .tanker_div figcaption {
+                            position: relative;
+                            z-index: 2;
+                            background-color: rgb(87, 205, 226);
+                            height: 25%;
+                            /* 10% height of the figure */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            /* remove default margin */
+                            padding: 0;
+                            /* remove padding for exact 10% height */
+                        }
+                        /* Make sure h2 fills figcaption and is centered */
+                        
+                        .tanker_label {
+                            color: white;
+                            font-size: 20px;
+                            margin: 0;
+                            line-height: 1;
+                        }
+                    </style>
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/200.png')" id="slide-div" class="tanker_div">
+                        <img src="img/super/fiber/waterTanker/without-size/200.png" alt="200">
                         <figcaption>
                             <h2>200Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/500.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/500.png" alt="500">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/500.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/500.png" alt="500">
                         <figcaption>
                             <h2>500Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/1000.png" alt="1000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/1000.png" alt="1000">
                         <figcaption>
                             <h2>1,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1500.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/1500.png" alt="1500">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1500.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/1500.png" alt="1500">
                         <figcaption>
                             <h2>1,500Ltr</h2>
                         </figcaption>
                     </figure>
 
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1500.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/1500.png" alt="1500">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/1500circle.pngh')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/1500circle.png" alt="1500">
                         <figcaption>
                             <h2>1,500Ltr (Circle)</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/2000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/2000.png" alt="2000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/2000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/2000.png" alt="2000">
                         <figcaption>
                             <h2>2,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/3000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/3000.png" alt="3000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/3000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/3000.png" alt="3000">
                         <figcaption>
                             <h2>3,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/4000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/4000.png" alt="4000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/4000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/4000.png" alt="4000">
                         <figcaption>
                             <h2>4,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/5000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/5000.png" alt="5000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/5000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/5000.png" alt="5000">
                         <figcaption>
                             <h2>5,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/7000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/7000.png" alt="7000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/7000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/7000.png" alt="7000">
                         <figcaption>
                             <h2>7,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/8000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/8000.png" alt="8000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/8000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/8000.png" alt="8000">
                         <figcaption>
                             <h2>8,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/10000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/10000.png" alt="10000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/10000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/10000.png" alt="10000">
                         <figcaption>
                             <h2>10,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/15000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/15000.png" alt="20000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/15000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/15000.png" alt="20000">
                         <figcaption>
                             <h2>15,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/20000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/20000.png" alt="25000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/20000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/20000.png" alt="25000">
                         <figcaption>
                             <h2>20,000Ltr</h2>
                         </figcaption>
                     </figure>
-                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/25000.png')" id="slide-div"><img src="img/super/fiber/waterTanker/without-size/25000.png" alt="25000">
+                    <figure onclick="openPopup('img/super/fiber/waterTanker/with-size/25000.png')" id="slide-div" class="tanker_div"><img src="img/super/fiber/waterTanker/without-size/25000.png" alt="25000">
                         <figcaption>
                             <h2>25,000Ltr</h2>
                         </figcaption>

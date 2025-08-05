@@ -13,9 +13,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -48,12 +46,11 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
             <h5 class="m-0 text-secondary d-flex flex-wrap">
-                <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo"
-                    style="width: 220px; height: 100px;">
+                <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
             </h5>
             <h6 class="m-0 text-center" style="font-weight: bolder;">
-                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">We Trust In God | እግዚአብሔር
-                    ይባረክ!!</span>
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: green;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                </span>
             </h6>
         </a>
 
@@ -64,14 +61,24 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="about.html" class="nav-item nav-link ">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints Industry</a>
+                        <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i> Magazine
+                        </a>
+                    </div>
+                </div>
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu m-0">
-                        <!-- Super Fiber Product -->
+                        <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Super Fiber Product</a>
+                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Fiber Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
@@ -83,9 +90,9 @@
                             </div>
                         </div>
 
-                        <!-- Rodas Paint Product -->
+                        <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Rodas Paint Product</a>
+                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Paint Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
@@ -93,8 +100,8 @@
                                 <a class="dropdown-item" href="special-paint.html">Special Paint</a>
                                 <a class="dropdown-item" href="industrial-paint.html">Industrial Paint</a>
                                 <a class="dropdown-item" href="varnish.html">Varnish</a>
-                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti Rust</a>
-                                <a class="dropdown-item" href="glue.html"> Rodas Glue</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Anti Rust</a>
+                                <a class="dropdown-item" href="glue.html"> Glue</a>
                                 <a class="dropdown-item" href="decorative.html"> Decorative Paints </a>
                                 <a class="dropdown-item" href="stoneGranite.html">Granite & Stone Paints </a>
                             </div>
@@ -104,24 +111,23 @@
                         <div class="dropdown-submenu">
                             <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="marble.html">POMY MARBLE FACTORY</a>
-                                <a class="dropdown-item" href="waterprofing.html">Super Waterproofing</a>
-                                <a class="dropdown-item" href="solar.html">Super Solar Energy</a>
+                                <a class="dropdown-item" href="marble.html">Marble Products</a>
+                                <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
+                                <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
-                <a href="contact.html" class="nav-item nav-link ">Contact</a>
+                <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
 
                 <!-- Language Selector Dropdown -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;">  -->
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
                         Language
-                    </a>
+                    </a> -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!-- English -->
                         <li>
@@ -138,8 +144,7 @@
                         <!-- afaan oromo -->
                         <li>
                             <a class="dropdown-item" href="afanoromo/decorative.html">
-                                <img src="img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan
-                                Oromoo
+                                <img src="img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan Oromoo
                             </a>
                         </li>
                         <!-- Chinese -->
@@ -153,8 +158,7 @@
         </div>
     </nav>
     <!-- Hero Start -->
-    <div class="container-fluid py-5 hero-header mb-5"
-        style="background-image: url(img/super/background/granitebg.jpg); " id="slide-div">
+    <div class="container-fluid py-5 hero-header mb-5" style="background-image: url(img/super/background/granitebg.jpg); " id="slide-div">
         <div class="row py-3">
             <div class="col-12 text-center">
                 <div class="container">
@@ -197,8 +201,7 @@
                             <div class="col-lg-5">
                                 <form>
                                     <div class="row g-3">
-                                        <img class="img-fluid" src="img/super/paint/stone and granite/stonegranite.png"
-                                            alt="" style="margin-top: 20%;">
+                                        <img class="img-fluid" src="img/super/paint/stone and granite/stonegranite.png" alt="" style="margin-top: 20%;">
                                         <br>
                                     </div>
                                 </form>
@@ -210,11 +213,8 @@
 
 
                                     <div class="row">
-                                        <p>Granite & Stone Paints provide a natural stone-like finish with excellent
-                                            durability and aesthetic appeal for both interior and exterior surfaces. Our
-                                            company ensures top quality by using advanced technology and
-                                            high-grade materials to deliver a long-lasting, premium look that adds value
-                                            and elegance to any space</p>
+                                        <p>Granite & Stone Paints provide a natural stone-like finish with excellent durability and aesthetic appeal for both interior and exterior surfaces. Our company ensures top quality by using advanced technology and
+                                            high-grade materials to deliver a long-lasting, premium look that adds value and elegance to any space</p>
                                         <p>
                                             PACKAGING:- 16Lts and available based on custemers order
                                         </p>
@@ -261,26 +261,19 @@
                 <div class="row">
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd"
-                                src="img/super/paint/granite/Rodas Anxi Red Series.png" alt="Rodas Anxi Red Series"
-                                data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Anxi Red Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Anxi Red Series.png" alt="Rodas Anxi Red Series" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Anxi Red Series.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Anxi Red Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Anxi Red Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Anxi Red Series</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas British Brown Series 01.png"
-                                alt="Rodas British Brown Series 01" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas British Brown Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas British Brown Series 01.png" alt="Rodas British Brown Series 01" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas British Brown Series 01.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas British Brown Series 01.jpg')">Click Me
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas British Brown Series 01.jpg')">Click Me
                             </div>
                         </div>
                         <h6 style="text-align: center; font-size: 14px;">Rodas British Brown Series 01</h6>
@@ -288,418 +281,316 @@
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas British Brown Series 02.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas British Brown Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas British Brown Series 02.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas British Brown Series 02.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas British Brown Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas British Brown Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas British Brown Series 02</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Cagin Norkin Series 01.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Cagin Norkin Series 01.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 01.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 01.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Cagin Norkin Series 01.jpg</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Cagin Norkin Series 02.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Cagin Norkin Series 02.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 02.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Cagin Norkin Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Cagin Norkin Series 02</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Full Sky Star Series.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Full Sky Star Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Full Sky Star Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Full Sky Star Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Full Sky Star Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Full Sky Star Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Full Sky Star Series</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Gold Drill Series.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Gold Drill Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Gold Drill Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Gold Drill Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Gold Drill Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Gold Drill Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Gold Drill Series</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 01.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 01.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 01.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 01.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Golden Hemp Series 01</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 02.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 02.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 02.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Golden Hemp Series 02</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 03.png"
-                                alt="PICH GREEN 409" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 03.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Golden Hemp Series 03.png" alt="PICH GREEN 409" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 03.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 03.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Golden Hemp Series 03.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Golden Hemp Series 03</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 01.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 01.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 01.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 01.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Granite Series 01</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 02.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 02.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 02.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Granite Series 02</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 03.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 03.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 03.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 03.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 03.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 03.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Granite Series 03</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 04.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 04.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Granite Series 04.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 04.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Granite Series 04.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Granite Series 04.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Granite Series 04</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Loose Hemp Series.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('granite/Rodas Loose Hemp Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Loose Hemp Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Loose Hemp Series.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('granite/Rodas Loose Hemp Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Loose Hemp Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Loose Hemp Series</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/BRIGHT GREEN 415.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/BRIGHT GREEN 415 house.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Maple Leaf Red Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Maple Leaf Red Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/BRIGHT GREEN 415 house.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Maple Leaf Red Series.jpg')">Click Me</div>
                         </div>
-                        <h6 style="text-align: center;font-size: 14px;">BRIGHT GREEN 415</h6>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas Maple Leaf Red Series</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/BROKEN WHITE 417.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/BROKEN WHITE 417 house.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 01.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 01.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/BROKEN WHITE 417 house.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 01.jpg')">Click Me</div>
                         </div>
-                        <h6 style="text-align: center;font-size: 14px;">BROKEN WHITE 417</h6>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas RAS Series 01</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/CANARY YELLOW 432.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/CANARY YELLOW 432 house.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 02.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 02.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/CANARY YELLOW 432 house.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 02.jpg')">Click Me</div>
                         </div>
-                        <h6 style="text-align: center;font-size: 14px;">CANARY YELLOW 432</h6>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas RAS Series 02</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/CREAM 407.png"
-                                alt="CREAM 407" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/CEAM 407 house.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 03.png" alt="CREAM 407" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 03.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/CEAM 407 house.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 03.jpg')">Click Me</div>
                         </div>
-                        <h6 style="text-align: center;font-size: 14px;">CREAM 407</h6>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas RAS Series 03</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/DEEP ORANGE 442.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DEEP ORANGE 442 house.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 04.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 04.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DEEP ORANGE 442 house.jpg')">Click Me</div>
-                        </div>
-                        <h6 style="text-align: center;font-size: 14px;">DEEP ORANGE 442</h6>
-                    </div>
-
-                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
-                        <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/DELPHINIUM BLUE 419.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DELPHINIUM BLUE 419 house.jpg')">
-
-
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DELPHINIUM BLUE 419 house.jpg')">Click Me
-                            </div>
-                        </div>
-                        <h6 style="text-align: center;font-size: 14px;">DELPHINIUM BLUE 419</h6>
-                    </div>
-
-                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
-                        <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/DOWN GLOW 466.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DOWN GLOW 466 house.jpg')">
-
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/DOWN GLOW 466 house.jpg')">Click Me</div>
-                        </div>
-                        <h6 style="text-align: center;font-size: 14px;">DOWN GLOW 466</h6>
-                    </div>
-
-                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
-                        <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/enamel/FOREST GREEN 403.png"
-                                alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/FOREST GREEN 403 house.jpg')">
-
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/enamel/FOREST GREEN 403 house.jpg')">Click Me</div>
-                        </div>
-                        <h6 style="text-align: center;font-size: 14px;">FOREST GREEN 403</h6>
-                    </div>
-                    
-
-                    
-                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
-                        <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 04.png"
-                                alt="Rodas RAS Series 04" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas RAS Series 04.jpg')">
-
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas RAS Series 04.jpg')">Click Me
-                            </div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas RAS Series 04.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas RAS Series 04</h6>
                     </div>
+
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Ruststone Series.png"
-                                alt="Rodas Ruststone Series" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Ruststone Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Ruststone Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Ruststone Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Ruststone Series.jpg')">Click Me</div>
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Ruststone Series.jpg')">Click Me
+                            </div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Ruststone Series</h6>
                     </div>
+
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shidao Red Series.png"
-                                alt="Rodas Shidao Red Series" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Shidao Red Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shidao Red Series.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shidao Red Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Shidao Red Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shidao Red Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Shidao Red Series</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas RAS Series 01.png"
-                                alt="Rodas RAS Series 01" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas RAS Series 01.JPG')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shrimp Red Series 01.png" alt="BRICK RED 424" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 01.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas RAS Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 01.jpg')">Click Me</div>
                         </div>
-                        <h6 style="text-align: center;font-size: 14px;">Rodas RAS Series 01</h6>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas Shrimp Red Series 01</h6>
+                    </div>
+
+
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shrimp Red Series 02.png" alt="Rodas RAS Series 04" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 02.jpg')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 02.jpg')">Click Me
+                            </div>
+                        </div>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas Shrimp Red Series 02</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shrimp Red Series 03.png" alt="Rodas Ruststone Series" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 03.jpg')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 03.jpg')">Click Me</div>
+                        </div>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas Shrimp Red Series 03</h6>
+                    </div>
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Shrimp Red Series 04.png" alt="Rodas Shidao Red Series" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 04.jpg')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Shrimp Red Series 04.jpg')">Click Me</div>
+                        </div>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas Shrimp Red Series 04</h6>
+                    </div>
+
+                    <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
+                        <div class="image-container">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 01.png" alt="Rodas RAS Series 01" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 01.jpg')">
+
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 01.jpg')">Click Me</div>
+                        </div>
+                        <h6 style="text-align: center;font-size: 14px;">Rodas The Lotus Five Series 01</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
 
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 02.png"
-                                alt="Rodas The Lotus Five Series 02" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 02.png" alt="Rodas The Lotus Five Series 02" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 02.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas The Lotus Five Series 02</h6>
                     </div>
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 03.png"
-                                alt="Rodas The Lotus Five Series 03" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 03.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 03.png" alt="Rodas The Lotus Five Series 03" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 03.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 03.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 03.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas The Lotus Five Series 03</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 04.png"
-                                alt="Rodas The Lotus Five Series 04" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 04.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 04.png" alt="Rodas The Lotus Five Series 04" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 04.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 04.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas The Lotus Five Series 04.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas The Lotus Five Series 04</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Tianshan Lanbao Series.png"
-                                alt="Rodas Tianshan Lanbao Series" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Tianshan Lanbao Series.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas The Lotus Five Series 04.png" alt="Rodas Tianshan Lanbao Series" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Tianshan Lanbao Series.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Tianshan Lanbao Series.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Tianshan Lanbao Series.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Tianshan Lanbao Series</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Grey Series 01.png"
-                                alt="Rodas Wulian Grey Series 01" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Grey Series 01.png" alt="Rodas Wulian Grey Series 01" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 01.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 01.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Wulian Grey Series 01</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Grey Series 02.png"
-                                alt="Rodas Wulian Grey Series 02" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Grey Series 02.png" alt="Rodas Wulian Grey Series 02" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 02.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Grey Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Wulian Grey Series 02</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 01.png"
-                                alt="Rodas Wulian Red Series 01" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 01.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 01.png" alt="Rodas Wulian Red Series 01" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 01.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 01.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 01.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Wulian Red Series 01</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 02.png"
-                                alt="Rodas Wulian Red Series 02" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 02.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 02.png" alt="Rodas Wulian Red Series 02" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 02.jpg')">
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 02.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 02.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Wulian Red Series 02</h6>
                     </div>
 
                     <div class="col-lg-2 wow slideInUp" data-wow-delay="0.01s">
                         <div class="image-container">
-                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 03.png"
-                                alt="Rodas Wulian Red Series 03" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 03.jpg')">
+                            <img class="img-fluid w-100" id="brd" src="img/super/paint/granite/Rodas Wulian Red Series 03.png" alt="Rodas Wulian Red Series 03" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 03.jpg')">
 
 
-                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal"
-                                onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 03.jpg')">Click Me</div>
+                            <div class="overlay-text" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('img/super/paint/granite/Rodas Wulian Red Series 03.jpg')">Click Me</div>
                         </div>
                         <h6 style="text-align: center;font-size: 14px;">Rodas Wulian Red Series 03</h6>
                     </div>
-              
-                 
 
-                  
 
-                 
+
+
+
+
 
 
 
@@ -735,8 +626,7 @@
         </div>
         <!-- Newsletter End -->
         <!-- Footer Start -->
-        <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s"
-            style="margin-top: -75px;" id="slide-div">
+        <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
             <div class="container pt-5">
                 <div class="row g-5 pt-4">
                     <div class="col-lg-3 col-md-12">
@@ -769,21 +659,18 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-dark mb-4">Get In Touch</h3>
-                        <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span
-                                style="color: rgb(5, 5, 5);">Addis
+                        <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">Addis
                                 Ababa,Ethiopia</span></p>
 
                         <p class="mb-2">
                             <i class="bi bi-envelope-open me-2" id="check"></i>
-                            <a href="mailto:supertt2012@gmail.com"
-                                style="color: rgb(5, 5, 5); text-decoration: none;">supertt2012@gmail.com </a>
+                            <a href="mailto:supertt2012@gmail.com" style="color: rgb(5, 5, 5); text-decoration: none;">supertt2012@gmail.com </a>
 
 
                         </p>
 
 
-                        <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);"
-                                href="tel:+1234567890">
+                        <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
                                 +251911212053</a>
                         </p>
 
@@ -797,9 +684,7 @@
                             <i class="fab fa-telegram fw-normal"></i>
                         </a> -->
                             <!-- Facebook -->
-                            <a class="btn btn-lg btn-lg-square rounded me-2"
-                                href="https://web.facebook.com/people/Super-Double-T-General-Trading/100063671937085/"
-                                target="_blank" style="background-color: #3b5998; color: white;" title="Facebook">
+                            <a class="btn btn-lg btn-lg-square rounded me-2" href="https://web.facebook.com/people/Super-Double-T-General-Trading/100063671937085/" target="_blank" style="background-color: #3b5998; color: white;" title="Facebook">
                                 <i class="fab fa-facebook-f fw-normal"></i>
                             </a>
                             <!-- WhatsApp -->
@@ -807,20 +692,15 @@
                             <i class="fab fa-whatsapp fw-normal"></i>
                         </a> -->
                             <!-- Instagram -->
-                            <a class="btn btn-lg btn-lg-square rounded me-2"
-                                href="https://www.instagram.com/rodaspaints" target="_blank"
-                                style="background-color: #E1306C; color: white;" title="Instagram">
+                            <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.instagram.com/rodaspaints" target="_blank" style="background-color: #E1306C; color: white;" title="Instagram">
                                 <i class="fab fa-instagram fw-normal"></i>
                             </a>
                             <!-- YouTube -->
-                            <a class="btn btn-lg btn-lg-square rounded me-2"
-                                href="https://www.youtube.com/channel/UCn_dlFbii_2djSTidu2uOXw" target="_blank"
-                                style="background-color: #FF0000; color: white;" title="YouTube">
+                            <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.youtube.com/channel/UCn_dlFbii_2djSTidu2uOXw" target="_blank" style="background-color: #FF0000; color: white;" title="YouTube">
                                 <i class="fab fa-youtube fw-normal"></i>
                             </a>
                             <!-- Twitter -->
-                            <a class="btn btn-lg btn-lg-square rounded me-2" href="https://twitter.com/PaintsRodas"
-                                target="_blank" style="background-color: #1DA1F2; color: white;" title="Twitter">
+                            <a class="btn btn-lg btn-lg-square rounded me-2" href="https://twitter.com/PaintsRodas" target="_blank" style="background-color: #1DA1F2; color: white;" title="Twitter">
                                 <i class="fab fa-twitter fw-normal"></i>
                             </a>
                         </div>
@@ -866,9 +746,9 @@
         </script>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('DOMContentLoaded', function() {
                 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
-                tooltipTriggerList.map(function (el) {
+                tooltipTriggerList.map(function(el) {
                     return new bootstrap.Tooltip(el)
                 })
             });

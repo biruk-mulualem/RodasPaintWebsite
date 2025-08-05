@@ -17,6 +17,7 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -35,7 +36,6 @@
 </head>
 
 <body>
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
 
@@ -44,8 +44,8 @@
                 <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
             </h5>
             <h6 class="m-0 text-center" style="font-weight: bolder;">
-                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2">We Trust In God | እግዚአብሔር
-                    ይባረክ!!</span>
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: green;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                </span>
             </h6>
         </a>
 
@@ -56,14 +56,24 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.html" class="nav-item nav-link ">Home</a>
-                <a href="about.html" class="nav-item nav-link active">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints Industry</a>
+                        <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i> Magazine
+                        </a>
+                    </div>
+                </div>
 
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu m-0">
-                        <!-- Super Fiber Product -->
+                        <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Super Fiber Product</a>
+                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Fiber Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
@@ -74,9 +84,9 @@
                                 <a class="dropdown-item" href="otherfiber.html">Others Products</a>
                             </div>
                         </div>
-                        <!-- Rodas Paint Product -->
+                        <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Rodas Paint Product</a>
+                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Paint Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
@@ -84,8 +94,8 @@
                                 <a class="dropdown-item" href="special-paint.html">Special Paint</a>
                                 <a class="dropdown-item" href="industrial-paint.html">Industrial Paint</a>
                                 <a class="dropdown-item" href="varnish.html">Varnish</a>
-                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti Rust</a>
-                                <a class="dropdown-item" href="glue.html"> Rodas Glue</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Anti Rust</a>
+                                <a class="dropdown-item" href="glue.html"> Glue</a>
                                 <a class="dropdown-item" href="decorative.html"> Decorative Paints </a>
                                 <a class="dropdown-item" href="stoneGranite.html">Granite & Stone Paints </a>
 
@@ -95,23 +105,23 @@
                         <div class="dropdown-submenu">
                             <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="marble.html">POMY MARBLE FACTORY</a>
-                                <a class="dropdown-item" href="waterprofing.html">Super Waterproofing</a>
-                                <a class="dropdown-item" href="solar.html">Super Solar Energy</a>
+                                <a class="dropdown-item" href="marble.html">Marble Products</a>
+                                <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
+                                <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
 
                 <!-- Language Selector Dropdown -->
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <!-- <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;">  -->
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    
                         Language
-                    </a>
+                    </a> -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!-- English -->
                         <li>
@@ -164,10 +174,10 @@
             <div class="row gx-6 bg-light">
                 <div class="col-lg-6 py-5 ">
                     <button id="showEnglish" class="btn btn-primary btn-custom">
-                            <i class="fas fa-comment-dots"></i> MESSAGE
+                            <i class="fas fa-comment-dots"></i> A Word From The CEO
                         </button>
                     <button id="showAmharic" class="btn btn-secondary btn-custom">
-                            <i class="fas fa-building"></i> COMPANY BACKGROUND
+                            <i class="fas fa-building"></i> Background of Super Double "T"
                         </button>
                     <div class="py-5 ">
                         <div id="english" class="language-text">
@@ -235,7 +245,7 @@
                                 import, contracting wholesales and retail sales.
                             </p>
                             <p style="color: #051225; font-size: 18px;">
-                                Super Fiber Glass Products manufacturing, Rodas Paint Industry, Super waterproofing works, Super solar energy technology, Super Rubber Seal Factory and POMY MARBLE FACTORY are the main sectors under Super Double “T” General Trading plc.
+                                Super Fiber Glass Products manufacturing, Rodas Paint Industry, Waterproofing Products works, Solar Energy Products technology, Super Rubber Seal Factory and Marble Products are the main sectors under Super Double “T” General Trading plc.
                             </p>
                             <p style="color: #051225; font-size: 18px;">
                                 The diversification of our products, manufacturing of marketable products, wholesales and distribution of imported items is based on the detail market research and experience on the business. The company increases its performance from time to time by
@@ -260,7 +270,7 @@
                                     import, contracting wholesales and retail sales.
                                 </p>
                                 <p style="color: #051225; font-size: 18px;">
-                                    Super Fiber Glass Products manufacturing, Rodas Paint Industry, Super waterproofing works, Super solar energy technology, Super Rubber Seal Factory and POMY MARBLE FACTORY are the main sectors under Super Double “T” General Trading plc.
+                                    Super Fiber Glass Products manufacturing, Rodas Paint Industry, Waterproofing Products works, Solar Energy Products technology, Super Rubber Seal Factory and Marble Products are the main sectors under Super Double “T” General Trading plc.
                                 </p>
                                 <p style="color: #051225; font-size: 18px;">
                                     The diversification of our products, manufacturing of marketable products, wholesales and distribution of imported items is based on the detail market research and experience on the business. The company increases its performance from time to time by
@@ -284,8 +294,8 @@
                             </h5>
                         </div>
                         <div class="owner-inf">
-                            <h7 class="role" style="color: gb(0, 0, 0);">CEO and Founder</h7> <br>
-                            <h7 class="role" style="color: gb(0, 0, 0);">tsegayedebebe@rodaspaints.com</h7>
+                            <h7 class="role" style="color: gb(0, 0, 0); font-weight: bolder;">CEO and Founder</h7> <br>
+                            <h7 class="role" style="color: gb(0, 0, 0); font-weight: bolder;">tsegayedebebe@rodaspaints.com</h7>
                     </form>
                     </div>
                 </div>
@@ -362,8 +372,7 @@
         <div class="container-fluid bg-white bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s" id="slide-div">
             <div class="container">
                 <div class="row gx-5">
-
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
                             <h3 class="text-black mb-4">The Difference</h3>
                             <form>
@@ -377,16 +386,38 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 py-5">
+                    <div class="col-lg-4 py-5">
                         <div class="py-5">
-                            <h3 class=" text-black mb-4">Values</h3>
+                            <h3 class=" text-black mb-4 align-items-center" style="text-align: center;">Values</h3>
                             <p class="text-black mb-0">
                                 Our company is guided by core values that shape every client engagement. We put clients first by prioritizing their needs and focus on adding value that makes a real difference. We respect our clients and their ideas while maintaining our independence
                                 and objectivity. Integrity is at the heart of what we do. Transparency means you know exactly where you stand with us. We believe teamwork delivers the best results, and we approach every challenge with optimism, confident
-                                that we can make a positive impact. With a global perspective reflected in our practices and networks, we are committed to achieving tangible results that truly benefit our clients’ businesses.
+                                that we can make a positive impact.
                             </p>
                         </div>
                     </div>
+
+
+                    <!-- Section HTML -->
+                    <div class="col-lg-4 py-5">
+                        <div class="appointment-form justify-content-center text-center wow zoomIn" data-wow-delay="0.6s">
+                            <div class="py-5">
+                                <h3 class="text-black mb-4">Products and Services</h3>
+                                <p class="text-black mb-3" style="color: #051225;">
+                                    These are the different sectors under Super Double T General Trading Plc:
+                                </p>
+                                <ul class="service-list text-black">
+                                    <li><span style="visibility: hidden;">--------------</span> <i class="fas fa-check-circle"></i><span style="color: black;">Fiber Glass Products</span></li>
+                                    <li> <span style="visibility: hidden;">--------------</span><i class="fas fa-check-circle"></i><span style="color: black;">Rodas Paint Industry</span></li>
+                                    <li> <span style="visibility: hidden;">--------------</span><i class="fas fa-check-circle"></i><span style="color: black;">Marble Products</span></li>
+                                    <li> <span style="visibility: hidden;">--------------</span><i class="fas fa-check-circle"></i><span style="color: black;">Water Proofing Products</span></li>
+                                    <li> <span style="visibility: hidden;">--------------</span><i class="fas fa-check-circle"></i><span style="color: black;">Solar Energy Products</span></li>
+                                    <li><span style="visibility: hidden;">--------------</span> <i class="fas fa-check-circle"></i><span style="color: black;">Rubber Seal Products</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -482,6 +513,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div class="map-container">
+            <iframe style="margin-left: 2%; height: 400px;" width="95%" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3966.7161767979896!2d38.7320483!3d8.9667806!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTgnMDAuMyJOIDM4wrA0Myc1NS40IkU!5e1!3m2!1sen!2set!4v1754375674458!5m2!1sen!2set"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
         </div>
 
         <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
