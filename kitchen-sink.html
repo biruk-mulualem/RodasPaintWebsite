@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/fiberproducts.css" rel="stylesheet">
-    <link href="css/flowerpot.css" rel="stylesheet">
+    <link href="css/kitchensink.css" rel="stylesheet">
 
 </head>
 
@@ -45,7 +45,7 @@
                 <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
             </h5>
             <h6 class="m-0 text-center" style="font-weight: bolder;">
-                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: #63852f;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: green;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
                 </span>
             </h6>
         </a>
@@ -74,7 +74,7 @@
                     <div class="dropdown-menu m-0">
                         <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Fiber Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Fiber Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
@@ -87,7 +87,7 @@
                         </div>
                         <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Paint Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Paint Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
@@ -104,7 +104,7 @@
                         </div>
                         <!-- Other Sectors -->
                         <div class="dropdown-submenu">
-                            <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Other Sectors</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="marble.html">Marble Products</a>
                                 <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
@@ -176,63 +176,99 @@
         </a>
     </div>
     <!-- Popup Overlay -->
+
     <div id="popupOverlay" class="popup-overlay" onclick="closePopup()">
-
         <div class="popup-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closePopup()">X</button>
-            <img id="popupImage" src="" alt="">
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="container">
+            <button class="close-btn" onclick="closePopup()">×</button>
 
-            <!-- Image Galleries -->
-
-            <div class="image-gallery">
-
-
-                <div class="gallery" id="gallery1">
-
-
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K1.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K1.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K2.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K2.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K3.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K3.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K4.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K4.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K5.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K5.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
-
-                    <figure onclick="openPopup('img/super/fiber/kitchen-sinks/K6.png')" id="slide-div"><img src="img/super/fiber/kitchen-sinks/K6.png" alt="Shower Tray 1">
-                        <figcaption>
-                            <h6>kichen sink</h6>
-                        </figcaption>
-                    </figure>
+            <div class="modal-body">
+                <!-- LEFT: IMAGE -->
+                <div class="modal-image">
+                    <img id="popupImage" src="" alt="Product Image" class="popup-img" />
                 </div>
 
+                <!-- RIGHT: STATIC TEXT INFO -->
+                <div class="modal-info">
 
 
+                    <div class="product-title" style="font-weight: 20px; text-align: center;">Kitchen Sink</div>
+                    <div id="display_text" style="text-align: center; font-size: 14px; margin: 10px 0;">
+                        <!-- JS will insert color-specific text here -->
+                    </div>
+
+                    <div class="description">
+                        Kitchen Sink used for dishwashing, and other purposes. Sinks have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water; this drain may itself include
+                        a strainer and/or shut-off device and an overflow-prevention device. Sinks may also have an integrated soap dispenser. It is available with different size.
+                    </div>
+
+                    <div class="selector-title">Select Color</div>
+                    <div class="color-selector" id="colorSelector">
+                        <!-- JS will inject color swatches here -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="image-gallery">
+                <div class="gallery" id="gallery1">
+                    <figure data-id="K1" onclick="openPopup('K1')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K1.png" alt="Kitchen Sink 1" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure data-id="K2" onclick="openPopup('K2')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K2.png" alt="Kitchen Sink 2" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure data-id="K3" onclick="openPopup('K3')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K3.png" alt="Kitchen Sink 3" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure data-id="K4" onclick="openPopup('K4')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K4.png" alt="Kitchen Sink 4" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure data-id="K5" onclick="openPopup('K5')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K5.png" alt="Kitchen Sink 5" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+
+                    <figure data-id="K6" onclick="openPopup('K6')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K6.png" alt="Kitchen Sink 6" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+                    <figure data-id="K7" onclick="openPopup('K7')" id="slide-div">
+                        <img src="img/super/fiber/kitchen-sinks/K7.png" alt="Kitchen Sink 7" />
+                        <figcaption>
+                            <h6>kitchen sink</h6>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
         <div class="container">
             <div class=" p-5" id="footer-div">
@@ -249,7 +285,7 @@
             </div>
         </div>
     </div>
-    <!-- Newsletter End -->
+
     <!-- Footer Start -->
     <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
         <div class="container pt-5">
@@ -354,45 +390,263 @@
     </div>
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"
             id="up-button"></i></a>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
 
 
-    <script>
-        // Function to open the popup with the clicked image
-        function openPopup(imageSrc) {
-            document.getElementById('popupImage').src = imageSrc;
-            document.getElementById('popupOverlay').style.display = 'flex';
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('popupOverlay').style.display = 'none';
-        }
-    </script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
-            tooltipTriggerList.map(function(el) {
-                return new bootstrap.Tooltip(el)
-            })
-        });
-    </script>
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="lib/twentytwenty/jquery.event.move.js"></script>
+<script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
+        tooltipTriggerList.map(function(el) {
+            return new bootstrap.Tooltip(el)
+        })
+    });
+</script>
+<script>
+    const imageMap = {
+        K1: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K1-default.png",
+                text: " Dimension(L*W) ↔️ 100CM*50CM"
+            },
+
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K1-purple.png",
+                text: " Dimension(L*W) ↔️ 100CM*50CM"
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K1-orange.png",
+                text: " Dimension(L*W) ↔️ 100CM*50CM"
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K1-green.png",
+                text: " Dimension(L*W) ↔️ 100CM*50CM"
+            },
+            goldenrod: {
+                image: "img/super/fiber/kitchen-sinks/K1-mustard.png", // update to actual mustard image path
+                text: " Dimension(L*W) ↔️ 100CM*50CM"
+            }
+
+
+        },
+        K2: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K2-default.png",
+                text: " Dimension(L*W) ↔️ 120CM*50CM"
+            },
+
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K2-purple.png",
+                text: " Dimension(L*W) ↔️ 120CM*50CM"
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K2-orange.png",
+                text: " Dimension(L*W) ↔️ 120CM*50CM"
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K2-green.png",
+                text: " Dimension(L*W) ↔️ 120CM*50CM"
+            },
+            teal: {
+                image: "img/super/fiber/kitchen-sinks/K2-teal.png",
+                text: " Dimension(L*W) ↔️ 120CM*50CM"
+            }
+        },
+        K3: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K3-white.png",
+                text: " Dimension(L*W*H) ↔️ 100CM*50CM*92CM"
+            },
+
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K3-purple.png",
+                text: " Dimension(L*W*H) ↔️ 100CM*50CM*92CM"
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K3-orange.png",
+                text: " Dimension(L*W*H) ↔️ 100CM*50CM*92CM"
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K3-green.png",
+                text: " Dimension(L*W*H) ↔️ 100CM*50CM*92CM"
+            },
+            teal: {
+                image: "img/super/fiber/kitchen-sinks/K3-teal.png",
+                text: " Dimension(L*W*H) ↔️ 100CM*50CM*92CM"
+            }
+        },
+        K4: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K4-white.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*50CM*92CM"
+            },
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K4-purple.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*50CM*92CM"
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K4-orange.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*50CM*92CM"
+            },
+            goldenrod: {
+                image: "img/super/fiber/kitchen-sinks/K4-mustard.png", // update to actual mustard image path
+                text: " Dimension(L*W*H) ↔️ 120CM*50CM*92CM"
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K4-green.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*50CM*92CM"
+            }
+
+        },
+        K5: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K5-white.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            },
+
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K5-purple.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K5-orange.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K5-green.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            },
+            teal: {
+                image: "img/super/fiber/kitchen-sinks/K5-teal.png",
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            },
+            goldenrod: {
+                image: "img/super/fiber/kitchen-sinks/K5-mustard.png", // update to actual mustard image path
+                text: " Dimension(L*W*H) ↔️ 120CM*60CM*92CM"
+            }
+        },
+        K6: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K6.png",
+                text: ""
+
+            },
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K6-purple.png",
+                text: ""
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K6-orange.png",
+                text: ""
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K6-green.png",
+                text: ""
+            },
+            teal: {
+                image: "img/super/fiber/kitchen-sinks/K6-teal.png",
+                text: ""
+            }
+        },
+        K7: {
+            default: {
+                image: "img/super/fiber/kitchen-sinks/K7-white.png",
+                text: ""
+            },
+            purple: {
+                image: "img/super/fiber/kitchen-sinks/K7-purple.png",
+                text: ""
+            },
+            orange: {
+                image: "img/super/fiber/kitchen-sinks/K7-orange.png",
+                text: ""
+            },
+            green: {
+                image: "img/super/fiber/kitchen-sinks/K7-green.png",
+                text: ""
+            },
+            teal: {
+                image: "img/super/fiber/kitchen-sinks/K7-teal.png",
+                text: ""
+            }
+        }
+    };
+
+    let currentProduct = "";
+    let currentColor = "default";
+
+    function openPopup(productId) {
+        currentProduct = productId;
+        currentColor = "default";
+
+        const overlay = document.getElementById("popupOverlay");
+        const popupImage = document.getElementById("popupImage");
+        const selector = document.getElementById("colorSelector");
+        const displayText = document.getElementById("display_text");
+
+        const defaultData = imageMap[productId].default;
+        popupImage.src = defaultData.image;
+        displayText.innerText = defaultData.text;
+
+        selector.innerHTML = "";
+
+        // ✅ Include ALL colors including "default"
+        Object.keys(imageMap[productId]).forEach((colorKey) => {
+            const swatch = document.createElement("span");
+            swatch.className = "color-swatch";
+            swatch.style.backgroundColor = colorKey === "default" ? "#ccc" : colorKey;
+            swatch.setAttribute("data-color", colorKey);
+            swatch.title = colorKey === "default" ? "Default" : colorKey;
+            swatch.onclick = () => changeColor(colorKey);
+            selector.appendChild(swatch);
+        });
+
+        highlightSelectedSwatch(currentColor);
+        overlay.style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+        currentProduct = "";
+    }
+
+    function changeColor(color) {
+        const popupImage = document.getElementById("popupImage");
+        const displayText = document.getElementById("display_text");
+
+        if (currentProduct && imageMap[currentProduct][color]) {
+            const selected = imageMap[currentProduct][color];
+            popupImage.src = selected.image;
+            displayText.innerText = selected.text;
+            currentColor = color;
+            highlightSelectedSwatch(color);
+        } else {
+            console.warn(`No image for ${color} in ${currentProduct}`);
+        }
+    }
+
+    function highlightSelectedSwatch(selectedColor) {
+        const swatches = document.querySelectorAll(".color-swatch");
+        swatches.forEach((swatch) => {
+            const color = swatch.getAttribute("data-color");
+            swatch.classList.toggle("selected", color === selectedColor);
+        });
+    }
+</script>
 
 </html>

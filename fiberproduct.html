@@ -75,7 +75,7 @@
                     <div class="dropdown-menu m-0">
                         <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="fiberproduct.html" class="dropdown-item dropdown-toggle">Fiber Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Fiber Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
@@ -88,7 +88,7 @@
                         </div>
                         <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="paintproduct.html" class="dropdown-item dropdown-toggle">Paint Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Paint Products</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
@@ -105,7 +105,7 @@
                         </div>
                         <!-- Other Sectors -->
                         <div class="dropdown-submenu">
-                            <a href="otherSector.html" class="dropdown-item dropdown-toggle">Other Sectors</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Other Sectors</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="marble.html">Marble Products</a>
                                 <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
@@ -153,13 +153,12 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid  py-5 hero-header mb-5" style="background-image: url(img/super/background/2q.png);" id="slide-div">
+    <div class="container-fluid  py-5 hero-header mb-5" style="background-image: url(img/super/background/fiberbg.jpg);" id="slide-div">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <h2 class="display-3 text-white animated zoomIn">Super Fiber</h2>
-                <a href="index.html" class="h4" style="visibility: hidden;">Home</a>
-
-                <a href="fiberproduct.html" class="h4" style="visibility: hidden;">Fiber Prduct</a>
+                <h2 class="display-3 text-white animated zoomIn" style="visibility: hidden;">Super Fiber</h2>
+                   <h2 class="display-3 text-white animated zoomIn" style="visibility: hidden;">Super Fiber</h2>
+               
             </div>
         </div>
     </div>
@@ -544,5 +543,38 @@
         });
     </script>
 </body>
+<style>
+    @media (max-width: 576px) {
+    /* Hero section adjustments */
+    .hero-header {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-size: cover;
+        background-position: center;
+        min-height: 200px; /* Adjusting height for smaller screens */
+    }
 
+    /* Adjust font size for h2 */
+    h2.display-3 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    /* Adjust padding and margins in the hero section */
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* Animation for small screens - Optional */
+    .animated.zoomIn {
+        animation-duration: 1s;
+        animation-delay: 0.3s;
+    }
+}
+
+</style>
 </html>
