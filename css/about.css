@@ -100,6 +100,47 @@ p {
         height: 30px;
         /* Adjust logo size for small screens */
     }
+/* Default styles for buttons */
+#showEnglish, #showAmharic {
+    font-size: 14px; /* Adjust the font size for a smaller look */
+    padding: 8px 12px; /* Adjust padding to make buttons smaller */
+    display: inline-flex; /* Ensure buttons appear side-by-side */
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Space between buttons */
+}
+
+/* Add icons and button text inline */
+#showEnglish i, #showAmharic i {
+    margin-right: 5px; /* Add some space between icon and text */
+}
+
+/* Styles for small devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    #showEnglish, #showAmharic {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        padding: 6px 10px; /* Reduce padding */
+        width: auto; /* Ensure buttons do not stretch */
+        margin-right: 5px; /* Reduce margin for tighter layout */
+     
+    }
+
+    /* Display buttons side by side with flexbox on small screens */
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/* Styles for even smaller devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    #showEnglish, #showAmharic {
+        font-size: 10px; /* Further reduce font size for very small screens */
+        padding: 4px 8px; /* Smaller padding */
+    }
+}
+
 }
 
 

@@ -30,7 +30,14 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/public-service.css" rel="stylesheet">
-
+    <style>
+        @media (max-width: 576px) {
+            .proverb-container h4 {
+                font-size: 5px;
+                /* or whatever size you want */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -560,7 +567,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
     <!-- JavaScript Libraries -->
@@ -575,10 +581,8 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="lib/twentytwenty/jquery.event.move.js"></script>
     <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
     <script>
         document.getElementById('showEnglish').addEventListener('click', function() {
             document.getElementById('english').style.display = 'block';
@@ -598,6 +602,7 @@
             })
         });
     </script>
+
 </body>
 
 </html>

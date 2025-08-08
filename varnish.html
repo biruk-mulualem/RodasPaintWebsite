@@ -153,7 +153,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid bg-primary py-5 hero-header mb-5" id="slide-div">
+    <div class="container-fluid  py-5 hero-header mb-5" id="slide-div-img">
         <div class="row py-3">
             <div class="col-12 text-center">
 
@@ -178,12 +178,12 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 g-0">
         <div class="container">
 
-            <div class="row g-2">
+            <div class="row g-0">
 
-                <div class="container-fluid  bg-appointment my-2 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container-fluid  bg-appointment my-2 wow fadeInUp">
                     <div class="container">
                         <!-- rodas alkyd varnish -->
                         <div class="row gx-6 bg-light" id="slide-div" style="margin: 1% 1%;">
@@ -362,6 +362,20 @@
         </div>
     </div>
     </div>
+
+    <!-- Image Popup Modal -->
+    <!-- Image Popup Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <img id="modalImage" class="img-fluid w-100 rounded" src="" alt="Popup Image" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row mb-4">
@@ -370,24 +384,24 @@
                     <hr class="text-primary w-50 mx-auto mt-0" id="slide-div">
                 </div>
             </div>
-            <div class="row g-3" id="productContainer">
+            <div class="row g-6" id="productContainer">
 
-                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/varnish/Alkyed varnish.jpg" alt="">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.01s">
+                    <img class="img-fluid rounded-top w-100 " src="img/super/paint/varnish/Alkyed varnish.jpg" alt="">
                 </div>
-                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/varnish/Glue.jpg" alt="">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.01s">
+                    <img class="img-fluid rounded-top w-100 " src="img/super/paint/varnish/Glue.jpg" alt="">
                 </div>
 
 
-                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/varnish/Nc Clear.jpg" alt="">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.01s">
+                    <img class="img-fluid rounded-top w-100 " src="img/super/paint/varnish/Nc Clear.jpg" alt="">
                 </div>
-                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/varnish/Poly Varnish.jpg" alt="">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.01s">
+                    <img class="img-fluid rounded-top w-100 " src="img/super/paint/varnish/Poly Varnish.jpg" alt="">
                 </div>
-                <div class="col-lg-3 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/varnish/sanding.jpg" alt="">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.01s">
+                    <img class="img-fluid rounded-top w-100 " src="img/super/paint/varnish/sanding.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -410,7 +424,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp"="0.01s" style="margin-top: -75px;" id="slide-div">
         <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-12">
@@ -534,6 +548,24 @@
             })
         });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll("#productContainer img");
+            const modalImage = document.getElementById("modalImage");
+
+            images.forEach(img => {
+                img.style.cursor = "pointer";
+                img.addEventListener("click", () => {
+                    modalImage.src = img.src;
+                    const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    imageModal.show();
+                });
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

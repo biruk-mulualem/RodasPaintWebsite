@@ -1352,3 +1352,19 @@ p {
         padding: 0.6rem 1rem;
     }
 }
+
+
+/* other page cover image  */
+
+@media (max-width: 576px) {
+    #slide-div-img {
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        height: 129px;
+        margin-left: 2px;
+        background-size: cover;
+        background-position: center;
+        /* Adjust padding for small screens */
+        font-size: 1.75rem;
+    }
+}
