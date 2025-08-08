@@ -16,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -25,28 +27,189 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/enamel.css" rel="stylesheet">
+    <style>
+        .display-3 {
+            font-family: 'Arial', sans-serif;
+            font-size: 4.7rem;
+            /* Adjust size as needed */
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            /* Adding a subtle shadow for depth */
+            margin: 0;
+        }
+        
+        .hero-header {
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        @media (max-width: 576px) {
+            .hero-header h1 {
+                font-size: 2.5rem;
+                /* Smaller font size for smaller screens */
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hero-header h1 {
+                font-size: 4rem;
+                /* Larger font size for medium to large screens */
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .hero-header h1 {
+                font-size: 5rem;
+                /* Even larger font size for large screens */
+            }
+        }
+        
+        .card-container {
+            gap: 8px;
+            max-width: 180px;
+            padding: 0;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 2px 6px rgba(22, 58, 125, 0.1);
+        }
+        
+        .card-border {
+            border-left: 1.5px solid #d1d9e6;
+            border-right: 1.5px solid #d1d9e6;
+            border-bottom: 1.5px solid #d1d9e6;
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            padding: 8px 12px;
+        }
+        
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            max-width: 150px;
+        }
+        
+        .card-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-top: -12px;
+            display: block;
+        }
+        
+        .card-title {
+            margin: 0;
+            font-weight: 600;
+            color: #666;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+        
+        .card-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .btn-icon {
+            background-color: #163A7D;
+            border: none;
+            border-radius: 20px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .tooltip-icon {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .tooltip-icon .tooltip-text {
+            visibility: hidden;
+            width: auto;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 6px 10px;
+            position: absolute;
+            z-index: 1;
+            right: 110%;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 14px;
+        }
+        
+        .tooltip-icon:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        .tooltip-icon {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .tooltip-icon .tooltip-text {
+            visibility: hidden;
+            width: auto;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 6px 10px;
+            position: absolute;
+            z-index: 1;
+            right: 110%;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 14px;
+        }
+        
+        .tooltip-icon:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 
-    <link href="css/fiberproducts.css" rel="stylesheet">
-    <link href="css/flowerpot.css" rel="stylesheet">
-    <link href="css/kitchensink.css" rel="stylesheet">
+
+
+
 
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-
         <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
             <h5 class="m-0 text-secondary d-flex flex-wrap">
                 <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
             </h5>
             <h6 class="m-0 text-center" style="font-weight: bolder;">
-                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span style="color: #63852f;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span
+                        style="color: #63852f;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
                 </span>
             </h6>
         </a>
@@ -63,7 +226,8 @@
                     <div class="dropdown-menu m-0">
                         <!-- Fiber Products -->
                         <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
-                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints Industry</a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints
+                            Industry</a>
                         <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-alt"></i> Magazine
                         </a>
@@ -71,44 +235,61 @@
                 </div>
 
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Products</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
                     <div class="dropdown-menu m-0">
                         <!-- Fiber Products -->
                         <div class="dropdown-submenu">
-                            <a href="#" class="dropdown-item dropdown-toggle">Fiber Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Fiber Product</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="water-tanker.html">Water Tankers</a>
+                                <a class="dropdown-item" href="water-tanker.html">Water
+                                    Tankers</a>
                                 <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
-                                <a class="dropdown-item" href="bathroom-equipments.html">Bathroom Equipments</a>
-                                <a class="dropdown-item" href="kitchen-sink.html">Kitchen Sinks</a>
+                                <a class="dropdown-item" href="bathroom-equipments.html">Bathroom
+                                    Equipments</a>
+                                <a class="dropdown-item" href="kitchen-sink.html">Kitchen
+                                    Sinks</a>
 
-                                <a class="dropdown-item" href="laundary-bath.html">Laundry Bath</a>
-                                <a class="dropdown-item" href="otherfiber.html">Others Products</a>
+                                <a class="dropdown-item" href="laundary-bath.html">Laundry
+                                    Bath</a>
+                                <a class="dropdown-item" href="otherfiber.html">Others
+                                    Products</a>
                             </div>
                         </div>
+
                         <!-- Paint Products -->
                         <div class="dropdown-submenu">
-                            <a href="#" class="dropdown-item dropdown-toggle">Paint Products</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Paint Product</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
                                 <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
                                 <a class="dropdown-item" href="enamel.html">Enamel Paint</a>
-                                <a class="dropdown-item" href="special-paint.html">Special Paint</a>
-                                <a class="dropdown-item" href="industrial-paint.html">Industrial Paint</a>
+                                <a class="dropdown-item" href="special-paint.html">Special
+                                    Paint</a>
+                                <a class="dropdown-item" href="industrial-paint.html">Industrial
+                                    Paint</a>
                                 <a class="dropdown-item" href="varnish.html">Varnish</a>
-                                <a class="dropdown-item" href="anti-rust.html"> Anti Rust</a>
-                                <a class="dropdown-item" href="glue.html"> Glue</a>
-                                <a class="dropdown-item" href="decorative.html"> Decorative Paints </a>
-                                <a class="dropdown-item" href="stoneGranite.html">Granite & Stone Paints </a>
-
+                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti
+                                    Rust</a>
+                                <a class="dropdown-item" href="glue.html">
+                                    Glue</a>
+                                <a class="dropdown-item" href="decorative.html"> Decorative
+                                    Paints </a>
+                                <a class="dropdown-item" href="stoneGranite.html">Granite & Stone
+                                    Paints </a>
                             </div>
                         </div>
+
                         <!-- Other Sectors -->
                         <div class="dropdown-submenu">
-                            <a href="#" class="dropdown-item dropdown-toggle">Other Sectors</a>
+                            <a href="#" class="dropdown-item dropdown-toggle">Other
+                                Sectors</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="marble.html">Marble Products</a>
-                                <a class="dropdown-item" href="waterprofing.html"> Waterproofing Products</a>
+                                <a class="dropdown-item" href="marble.html">POMY MARBLE
+                                    FACTORY</a>
+                                <a class="dropdown-item" href="waterprofing.html">
+                                    Waterproofing</a>
                                 <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
 
                             </div>
@@ -120,8 +301,9 @@
 
                 <!-- Language Selector Dropdown -->
                 <div class="nav-item dropdown">
-                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                       
                         Language
                     </a> -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -133,18 +315,18 @@
                         </li>
                         <!-- Amharic -->
                         <li>
-                            <a class="dropdown-item" href="amharic/laundary-bath.html">
+                            <a class="dropdown-item" href="amharic/decorative.html">
                                 <img src="img/ethiopia.png" alt="Amharic " style="width: 20px; height: 15px;"> አማርኛ
                             </a>
                         </li>
                         <!-- afaan oromo -->
                         <li>
-                            <a class="dropdown-item" href="afanoromo/laundary-bath.html">
+                            <a class="dropdown-item" href="afanoromo/decorative.html">
                                 <img src="img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan Oromoo
                             </a>
                         </li>
                         <!-- Chinese -->
-                        <!-- <li><a class="dropdown-item" href="chinese/index.html">
+                        <!-- <li><a class="dropdown-item" href="chinese/enamel.html">
                         <img src="img/china.png" alt="Chinese " style="width: 20px; height: 15px;"> 中文
                     </a></li> -->
 
@@ -153,15 +335,21 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid  py-5 hero-header mb-5" style="background-image: url(img/super/background/h.jpg); " id="slide-div">
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 hero-header mb-5" style="background-image: url(img/super/background/decorpbg.jpg); " id="slide-div-img">
         <div class="row py-3">
             <div class="col-12 text-center">
+                <div class="container">
+
+                    <h1 class="display-3 animated zoomIn solid-white-text" style="visibility: hidden;">Decorative Paints
+                    </h1>
+                    <h1 class="display-3 animated zoomIn solid-white-text " style="margin-top: -100px;">Decorative Paints</h1>
+                    <h1 class="display-3 animated zoomIn solid-white-text" style="visibility: hidden;">Decorative Paints
+                    </h1>
 
 
-                <h1 class="display-3 text-secondary animated zoomIn"> Laundry Bath </h1>
-                <a href="index.html" class="h4" style="visibility: hidden;">Home</a>
+                </div>
 
-                <a href="fiberproduct.html" class="h4" style="visibility: hidden;">Fiber Prduct</a>
             </div>
         </div>
     </div>
@@ -177,103 +365,1235 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-    <!-- Popup Overlay -->
-    <div id="popupOverlay" class="popup-overlay" onclick="closePopup()">
-        <div class="popup-content" onclick="event.stopPropagation()">
-            <button class="close-btn" onclick="closePopup()">×</button>
 
-            <div class="modal-body">
-                <!-- LEFT: IMAGE -->
-                <div class="modal-image">
-                    <img id="popupImage" src alt="Product Image" class="popup-img" />
-                </div>
 
-                <!-- RIGHT: STATIC TEXT INFO -->
-                <div class="modal-info">
 
-                    <div class="product-title" style="font-weight: 20px; text-align: center;">Laundry Bath
-                    </div>
-                    <div id="display_text" style="text-align: center; font-size: 18px; margin: 10px 0; color: rgb(7, 7, 7);font-weight: bolder;">
-                        <!-- JS will insert color-specific text here -->
-                    </div>
 
-                    <div id="display_text2" style="text-align: center; font-size: 15px; margin: 5px 0; color: rgb(0, 0, 0); font-weight: bolder;">
-                        <!-- JS will insert color-specific second text here -->
-                    </div>
-
-                    <div class="selector-title">Select Color</div>
-                    <div class="color-selector" id="colorSelector">
-                        <!-- JS will inject color swatches here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div class="container-fluid py-12">
+        <!-- ...here is the main body......................... -->
         <div class="container">
-            <div class="image-gallery">
-                <div class="gallery" id="gallery1">
+            <div class="row mb-12">
+                <div class="col-12">
+                    <!-- Back button container -->
+                    <div id="backNavigation" style="display:none; text-align:left; margin-top: 10px;">
+                        <button id="backButton" class="btn btn-secondary">← Back to Products</button>
+                    </div>
+                </div>
+            </div>
 
-                    <!-- Laundery Bath -->
+            <!-- Detail view container -->
+            <div id="detailView" style="display:none; padding: 20px;">
+                <div id="detailContent"></div>
+            </div>
 
+            <div class="row g-3 justify-content-center" id="productContainer">
+                <div class="row justify-content-center gap-3 w-100">
 
-                    <figure data-id="L2" onclick="openPopup('L2')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L2.png" alt="Laundery Bath 2">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (100×70CM)</p>
-                        </figcaption>
-                    </figure>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <figure data-id="L3" onclick="openPopup('L3')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L3.png" alt="Laundery Bath 3">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (140×60CM)</p>
-                        </figcaption>
-                    </figure>
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <figure data-id="L4" onclick="openPopup('L4')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L4.png" alt="Laundery Bath 4">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (170×70CM)</p>
-                        </figcaption>
-                    </figure>
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <figure data-id="L5" onclick="openPopup('L5')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L5.png" alt="Laundery Bath 5">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (140×60×92CM)</p>
-                        </figcaption>
-                    </figure>
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <figure data-id="L6" onclick="openPopup('L6')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L6.png" alt="Laundery Bath 6">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (160×70×92CM)</p>
-                        </figcaption>
-                    </figure>
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <figure data-id="L7" onclick="openPopup('L7')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L7.png" alt="Laundery Bath 7">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (170×70×92CM)</p>
-                        </figcaption>
-                    </figure>
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <figure data-id="L8" onclick="openPopup('L8')" id="slide-div">
-                        <img src="img/super/fiber/laundary-bath/L8white.png" alt="Laundery Bath 1">
-                        <figcaption>
-                            <p style="color: black;">Laundery Bath (60X80CM)</p>
-                        </figcaption>
-                    </figure>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Group 1: Rodas ALBA + Rodas AQUA METALIC -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/alba/AL 02.PNG" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas ALBA</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Almunium" class="card-image">
+                                            <h6 class="card-title">Rodas AQUA METALIC</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 2: Rodas CRYSTAL + Rodas DECOR -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/crystal/g 1001.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas CRYSTAL</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/DECOR/MS 04.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas Decor</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Group 3: Rodas VELO -->
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex gap-3">
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Empty slot for matching 2 cards per group -->
+                            <div class="col-6 d-flex justify-content-center p-0">
+                                <div class="card-container">
+                                    <div class="card-border">
+                                        <div class="card-content">
+                                            <img src="img/super/paint/VELO/V 8340.png" alt="BRICK RED 424" class="card-image">
+                                            <h6 class="card-title">Rodas VELO</h6>
+                                            <div class="card-buttons">
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-catalogue" title="Catalogue" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-book-open"></i>
+                                            </button>
+                                                <button type="button" class="btn btn-primary btn-sm btn-icon btn-description" title="Description" data-bs-toggle="tooltip" data-bs-placement="top">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                            </div>
+                                            <div class="hidden-content catalogue-content" style="display:none;"></div>
+                                            <div class="hidden-content description-content" style="display:none;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-                <!-- end .gallery -->
             </div>
-            <!-- end .image-gallery -->
+
+            <!-- ...here is the main body......................... -->
+
+            <!-- to show the detail and catalouge -->
+            <div id="detailView" style="display:none; padding: 20px;">
+                <h2 id="detailTitle"></h2>
+                <div id="detailContent"></div>
+            </div>
         </div>
-        <!-- end .container -->
     </div>
-    <!-- end .container-fluid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.01s" style="z-index: 1;">
@@ -284,11 +1604,10 @@
 
                         <div class="container">
 
-                            <p>
-                                "Feel free to reach out to us if you have any customization requirements for our products."
-                            </p>
+                            <p>Custom Colors to Match Your Style—Get in Touch Now!</p>
 
                         </div>
+
                     </div>
                 </form>
             </div>
@@ -310,33 +1629,27 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-dark mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-dark mb-2" href="index.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>Home</a>
-                        <a class="text-dark mb-2" href="about.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>About Us</a>
-                        <a class="text-dark mb-2" href="paintproduct.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>Paint
-                                Products
-                            </a>
-                        <a class="text-dark mb-2" href="fiberproduct.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>Fiber
-                                Products</a>
-                        <a class="text-dark mb-2" href="otherSector.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>Other Sectors</a>
-                        <a class="text-dark" href="contact.html"><i
-                                    class="bi bi-arrow-right  me-2"
-                                    id="check"></i>Contact Us</a>
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Home</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>About Us</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Paint
+                            Products
+                        </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Fiber
+                            Products</a>
+                        <a class="text-dark mb-2" href="otherSector.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Other Sectors</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Contact Us</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-dark mb-4">Get In Touch</h3>
                     <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">Addis
-                                Ababa,Ethiopia</span></p>
+                            Ababa,Ethiopia</span></p>
 
                     <p class="mb-2">
                         <i class="bi bi-envelope-open me-2" id="check"></i>
@@ -347,7 +1660,7 @@
 
 
                     <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
-                                +251911212053</a>
+                            +251911212053</a>
                     </p>
 
 
@@ -389,405 +1702,93 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">2025 Super Double "T" General
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">2025 Super Double "T"
+                            General
                             Trading
                             plc</a>. All Rights Reserved.</p>
                 </div>
-
             </div>
         </div>
     </div>
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"
-            id="up-button"></i></a>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
 
-
-    <script>
-        // Function to open the popup with the clicked image
-        function openPopup(imageSrc) {
-            document.getElementById('popupImage').src = imageSrc;
-            document.getElementById('popupOverlay').style.display = 'flex';
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('popupOverlay').style.display = 'none';
-        }
-    </script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
-            tooltipTriggerList.map(function(el) {
-                return new bootstrap.Tooltip(el)
-            })
-        });
-    </script>
-    <script>
-        const imageMap = {
-
-            L2: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L2-white.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L2-purple.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L2-orange.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L2-goldenrod.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L2-green.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L2-teal.png",
-                    text1: "Laundery Bath 100×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-
-            },
-            L3: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L3-white.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L3-purple.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L3-orange.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L3-goldenrod.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L3-green.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L3-teal.png",
-                    text1: "Laundery Bath 140×60CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-            L4: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L4-white.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L4-purple.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L4-orange.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L4-goldenrod.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L4-green.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L4-teal.png",
-                    text1: "Laundery Bath 170×70CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-            L5: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L5-white.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L5-purple.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L5-orange.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L5-goldenrod.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L5-green.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L5-teal.png",
-                    text1: "Laundery Bath 140×60×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-            L6: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L6-white.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L6-purple.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L6-orange.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L6-goldenrod.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L6-green.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L6-teal.png",
-                    text1: "Laundery Bath 160×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-            L7: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L7-white.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L7-purple.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L7-orange.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L7-goldenrod.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L7-green.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L7-teal.png",
-                    text1: "Laundery Bath 170×70×92CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-            L8: {
-                default: {
-                    image: "img/super/fiber/laundary-bath/L8-white.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                purple: {
-                    image: "img/super/fiber/laundary-bath/L8-purple.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                orange: {
-                    image: "img/super/fiber/laundary-bath/L8-orange.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-                },
-                goldenrod: {
-                    image: "img/super/fiber/laundary-bath/L8-goldenrod.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                green: {
-                    image: "img/super/fiber/laundary-bath/L8-green.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-
-
-                },
-                teal: {
-                    image: "img/super/fiber/laundary-bath/L8-teal.png",
-                    text1: "Laundery Bath 60X80 CM",
-                    text2: "Laundry Bath for hand-washing delicate articles of clothing such as sweaters, and an ironing board. have taps (faucets) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water. It is available with different sizes."
-                }
-            },
-
-        };
-
-
-        let currentProduct = "";
-        let currentColor = "default";
-
-        function openPopup(productId) {
-            currentProduct = productId;
-            currentColor = "default";
-
-            const overlay = document.getElementById("popupOverlay");
-            const popupImage = document.getElementById("popupImage");
-            const selector = document.getElementById("colorSelector");
-            const displayText = document.getElementById("display_text");
-            const displayText2 = document.getElementById("display_text2");
-
-            const defaultData = imageMap[productId].default;
-            popupImage.src = defaultData.image;
-            displayText.innerText = defaultData.text1;
-            displayText2.innerText = defaultData.text2 || "";
-
-            selector.innerHTML = "";
-
-            Object.keys(imageMap[productId]).forEach((colorKey) => {
-                const swatch = document.createElement("span");
-                swatch.className = "color-swatch";
-                swatch.style.backgroundColor = colorKey === "default" ? "#ccc" : colorKey;
-                swatch.setAttribute("data-color", colorKey);
-                swatch.title = colorKey;
-                swatch.onclick = () => changeColor(colorKey);
-                selector.appendChild(swatch);
-            });
-
-            highlightSelectedSwatch(currentColor);
-            overlay.style.display = "flex";
-        }
-
-        function changeColor(color) {
-            const popupImage = document.getElementById("popupImage");
-            const displayText = document.getElementById("display_text");
-            const displayText2 = document.getElementById("display_text2");
-
-            if (currentProduct && imageMap[currentProduct][color]) {
-                const selected = imageMap[currentProduct][color];
-                popupImage.src = selected.image;
-                displayText.innerText = selected.text1;
-                displayText2.innerText = selected.text2 || "";
-                currentColor = color;
-                highlightSelectedSwatch(color);
-            } else {
-                console.warn(`No image/text for ${color} in ${currentProduct}`);
-            }
-        }
-
-        function highlightSelectedSwatch(selectedColor) {
-            const swatches = document.querySelectorAll(".color-swatch");
-            swatches.forEach((swatch) => {
-                const color = swatch.getAttribute("data-color");
-                swatch.classList.toggle("selected", color === selectedColor);
-            });
-        }
-
-        function closePopup() {
-            document.getElementById("popupOverlay").style.display = "none";
-            currentProduct = "";
-        }
-    </script>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 </body>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="lib/twentytwenty/jquery.event.move.js"></script>
+<script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+        new bootstrap.Tooltip(el);
+    });
+</script>
+
+<script>
+    const productContainer = document.getElementById('productContainer');
+    const detailView = document.getElementById('detailView');
+    const detailContent = document.getElementById('detailContent');
+    const backNavigation = document.getElementById('backNavigation');
+    const backButton = document.getElementById('backButton');
+
+    document.querySelectorAll('.btn-catalogue, .btn-description').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.card-content');
+            let contentToShow;
+            if (btn.classList.contains('btn-catalogue')) {
+                contentToShow = card.querySelector('.catalogue-content');
+            } else {
+                contentToShow = card.querySelector('.description-content');
+            }
+            // Clone content so original stays hidden
+            const clone = contentToShow.cloneNode(true);
+            clone.style.display = 'block';
+
+            // Show detail view, hide product grid
+            productContainer.style.display = 'none';
+            backNavigation.style.display = 'block';
+            detailContent.innerHTML = '';
+            detailContent.appendChild(clone);
+            detailView.style.display = 'block';
+            window.scrollTo(0, 0); // scroll to top for better UX
+        });
+    });
+
+    backButton.addEventListener('click', () => {
+        detailView.style.display = 'none';
+        backNavigation.style.display = 'none';
+        productContainer.style.display = 'flex'; // or 'block' depending on your layout
+        window.scrollTo(0, 0);
+    });
+</script>
+
+<script>
+    // Function to open modal and set the image source dynamically
+    function openModal(largeImageURL) {
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = largeImageURL; // Set the modal image source to the clicked image's larger version
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'))
+        tooltipTriggerList.map(function(el) {
+            return new bootstrap.Tooltip(el)
+        })
+    });
+</script>
+
 
 </html>

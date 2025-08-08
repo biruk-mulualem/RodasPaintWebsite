@@ -1368,3 +1368,67 @@ p {
         font-size: 1.75rem;
     }
 }
+
+
+/* water tanker */
+
+@media (max-width: 576px) {
+    .slideInUp,
+    .team-item {
+        width: 800px;
+        /* smaller width on small devices */
+        height: auto;
+        /* or specify a height like 150px */
+    }
+    #tanker {
+        width: 300px;
+    }
+    .team-item img {
+        width: 300px;
+        /* make image take full width of the container */
+        /* keep aspect ratio */
+    }
+}
+
+
+/* Modal container */
+
+#imageModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+/* Close button (×) */
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #0a0a0a;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* Modal image */
+
+#modalImg {
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+
+/* Cursor pointer for clickable images */
+
+.team-item img.img-fluid.rounded-top {
+    cursor: pointer;
+}

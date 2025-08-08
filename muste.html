@@ -231,7 +231,7 @@
         <div class="product-item">
             <img src="img/super/paint/alba/AL 02.PNG" alt="Rodas Alba">
             <h3>Rodas ALBA</h3>
-            <button onclick="openSecondPage()">Catalog</button>
+            <button  onclick="window.open('decortivecatalog.html?section=1', '_blank')">Catalog</button>
             <button>Description</button>
         </div>
         <div class="product-item">
@@ -289,16 +289,15 @@
             <button>Description</button>
         </div>
     </div>
-    <style>
-   
-
-
-.grid-container {
+<style>
+    .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns instead of two */
-    gap: 20px;
-    max-width: 1200px;
+    gap: 10px;
+    max-width: 100%;
     padding: 20px;
+
+    /* Default: 5 columns on large screens */
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .product-item {
@@ -335,19 +334,33 @@
 .product-item button:hover {
     background-color: #003d7a;
 }
+
+/* Responsive breakpoints for grid columns */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 900px) {
-    .product-item {
-        flex-basis: calc(50% - 20px); /* For medium screens, 2 items per row */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .product-item {
-        flex-basis: calc(50% - 20px); /* For small screens, 2 items per row */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-    </style>
+@media (max-width: 400px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
     <!-- Footer Start -->
     <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;"
         id="slide-div">
@@ -472,5 +485,10 @@
 <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
-
+<script>
+    function openSeries(seriesId) {
+      // Open second page in a new tab with query parameter
+      window.open(`muste2.html?id=${seriesId}`, '_blank');
+    }
+  </script>
 </html>

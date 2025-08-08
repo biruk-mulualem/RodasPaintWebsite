@@ -326,25 +326,35 @@
             </div>
         </div>
     </div>
+    <!-- Modal for displaying the clicked image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0">
+                    <img id="modalImage" src="" class="img-fluid rounded" alt="Popup Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content with images -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row mb-4">
                 <div class="col-12">
-                    <h1 class="display-5 mb-0" style="text-align: center;">COLOR RANGES </h1>
+                    <h1 class="display-5 mb-0" style="text-align: center;">COLOR RANGES</h1>
                     <hr class="text-primary w-50 mx-auto mt-0" id="slide-div">
                 </div>
             </div>
             <div class="row g-2" id="productContainer">
-
-
+                <!-- First image with popup-image class -->
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/anti-rust/3.jpg" alt="">
+                    <img class="img-fluid rounded-top w-100 popup-image" src="img/super/paint/anti-rust/3.jpg" alt="">
                 </div>
+                <!-- Second image with popup-image class -->
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.01s">
-                    <img class="img-fluid rounded-top w-100 img-hover-pop" src="img/super/paint/anti-rust/2.jpg" alt="">
+                    <img class="img-fluid rounded-top w-100 popup-image" src="img/super/paint/anti-rust/2.jpg" alt="">
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -489,6 +499,24 @@
             tooltipTriggerList.map(function(el) {
                 return new bootstrap.Tooltip(el)
             })
+        });
+    </script>
+
+
+
+    <script>
+        // Add event listener to each image with the 'popup-image' class
+        document.querySelectorAll('.popup-image').forEach(img => {
+            img.addEventListener('click', function() {
+                // Get the modal image element
+                const modalImage = document.getElementById('modalImage');
+                // Set the modal image's source to the clicked image's source
+                modalImage.src = this.src;
+                // Create a new Bootstrap modal instance
+                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                // Show the modal
+                modal.show();
+            });
         });
     </script>
 </body>
