@@ -1,5 +1,3 @@
-/********** Template CSS **********/
-
 :root {
     --primary: #06A3DA;
     --secondary: #F57E57;
@@ -9,6 +7,7 @@
 
 h1,
 h2,
+h3,
 .font-weight-bold {
     font-weight: 700 !important;
 }
@@ -333,124 +332,6 @@ h6,
 .testimonial-carousel .owl-item img {
     width: 120px;
     height: 120px;
-}
-
-
-/*===========================
-	Start Hero Area CSS
-=============================*/
-
-.slider .single-slider {
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slider .single-slider .text {
-    margin-top: 120px;
-}
-
-.slider.index2 .single-slider .text {
-    margin-top: 150px;
-}
-
-.slider .single-slider h1 {
-    color: #2C2D3F;
-    font-size: 38px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    line-height: 42px;
-}
-
-.slider .single-slider h1 span {
-    color: #1a76d1;
-}
-
-.slider .single-slider p {
-    color: #2C2D3F;
-    margin-top: 27px;
-    font-weight: 400;
-}
-
-.slider .single-slider .button {
-    margin-top: 30px;
-}
-
-.slider .single-slider .btn {
-    color: #fff;
-    background: #1a76d1;
-    font-weight: 500;
-    display: inline-block;
-    margin: 0;
-    margin-right: 10px;
-}
-
-.slider .single-slider .btn:last-child {
-    margin: 0;
-}
-
-.slider .single-slider .btn.primary {
-    background: #2C2D3F;
-    color: #fff;
-}
-
-.slider .single-slider .btn.primary:before {
-    background: #b6d11a;
-}
-
-.slider .owl-carousel .owl-nav {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    margin-top: -25px;
-}
-
-.slider .owl-carousel .owl-nav div {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #45d11a;
-    color: #fff;
-    font-size: 26px;
-    position: absolute;
-    margin: 0;
-    -webkit-transition: all 1.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    padding: 0;
-    border-radius: 50%;
-}
-
-.slider .owl-carousel .owl-nav div:hover {
-    background: #2C2D3F;
-    color: #fff;
-}
-
-.slider .owl-carousel .owl-controls .owl-nav .owl-prev {
-    left: 20px;
-}
-
-.slider .owl-carousel .owl-controls .owl-nav .owl-next {
-    right: 20px;
-}
-
-
-/* Slider Animation */
-
-.owl-item.active .single-slider h1 {
-    animation: fadeInUp 1s both 0.6s;
-}
-
-.owl-item.active .single-slider p {
-    animation: fadeInUp 1s both 1s;
-}
-
-.owl-item.active .single-slider .button {
-    animation: fadeInDown 1s both 1.5s;
 }
 
 
@@ -822,30 +703,10 @@ h6,
     background-image: linear-gradient(to right, #699ce9e8, #699ce9e8);
 }
 
-.slide-div {
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-    transform-style: preserve-3d;
-    will-change: transform;
-    z-index: 1;
-    position: relative;
-    background-color: #4275c2e8;
-    /* Solid background color (e.g., Bootstrap primary) */
-    color: white;
-    /* Optional: ensure text stands out */
-    border-radius: 7px;
-    /* Optional visual polish */
-}
-
 #mission-div {
     background: linear-gradient(to right, #fafbfce8, #fcfcfce8);
     color: rgb(3, 3, 3);
     border: #06A3DA;
-}
-
-#footer-div {
-    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
-    color: rgb(255, 255, 255);
-    border: none;
 }
 
 
@@ -854,18 +715,6 @@ h6,
     color: rgb(255, 255, 255);
     border: none;
 } */
-
-#button-style {
-    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
-    color: rgb(255, 255, 255);
-    border: none;
-    transition: background-image 0.3s ease;
-    border-radius: 50px;
-}
-
-#button-style:hover {
-    background-image: linear-gradient(to right, red, red);
-}
 
 #check {
     color: #1c6ee7e8;
@@ -888,6 +737,531 @@ h6,
     border-radius: 8px;
 }
 
+.img-hover-pop {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 80%;
+    height: 50%;
+}
+
+.img-hover-pop:hover {
+    transform: scale(1.45);
+}
+
+#brd {
+    border: 1px double #888;
+    border-radius: 12px;
+    /* Rounded corners on all four sides */
+    padding: 4px;
+}
+
+
+/* Base size */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* Responsive font scaling */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+.section-title h3,
+.section-title h4 {
+    font-size: 2rem;
+    /* Base size for desktops */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section-title h3,
+    .section-title h4 {
+        font-size: 1.5rem;
+        /* Smaller for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h3,
+    .section-title h4 {
+        font-size: 1.2rem;
+        /* Even smaller for phones */
+    }
+}
+
+
+/* Base styles for your container */
+
+
+/* Section title */
+
+.section-title h4,
+.section-title h3 {
+    font-size: 2.5rem;
+    /* desktop */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/* Paragraphs */
+
+.col-lg-7 p {
+    color: #051225;
+    font-size: 1.125rem;
+    /* 18px base */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+/* Highlighted span */
+
+.col-lg-7 p span {
+    color: #d32f2f;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    /* 20px */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Medium devices (tablets) */
+
+@media (max-width: 992px) {
+    .section-title h4,
+    .section-title h3 {
+        font-size: 2rem;
+    }
+    .col-lg-7 p {
+        font-size: 1rem;
+        /* 16px */
+    }
+    .col-lg-7 p span {
+        font-size: 1.1rem;
+        /* smaller */
+    }
+    .col-lg-7 a.btn {
+        margin-left: 40px;
+    }
+}
+
+
+/* Small devices (phones) */
+
+@media (max-width: 576px) {
+    .section-title h4,
+    .section-title h3 {
+        font-size: 1.5rem;
+    }
+    .col-lg-7 p {
+        font-size: 0.9rem;
+        /* ~14.4px */
+    }
+    .col-lg-7 p span {
+        font-size: 1rem;
+        /* 16px */
+    }
+    .col-lg-7 a.btn {
+        margin-left: 0;
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+
+/* Medium devices (tablets) */
+
+
+/* ---------------------------------------------final style -------------------------------------------------*/
+
+.blessing-text {
+    font-size: clamp(32px, 8vw, 100px);
+    font-weight: bold;
+    color: orange;
+}
+
+.trust-text {
+    font-size: clamp(24px, 5vw, 50px);
+    font-weight: bold;
+    color: #63852f;
+}
+
+
+/* Slider Section */
+
+.slider-section {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    /* base height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: height 0.3s ease-in-out;
+}
+
+
+/* Text Overlay */
+
+.slide-text {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: clamp(32px, 8vw, 80px);
+    line-height: 1.2;
+    padding: 0 10px;
+    /* Padding for small devices */
+    max-width: 80vw;
+}
+
+.slide-text #low {
+    display: block;
+    left: 58%;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    font-size: clamp(16px, 4vw, 30px);
+    font-weight: bolder;
+    color: white;
+}
+
+
+/* Slide content container */
+
+.slide-div {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(66, 117, 194, 0.91);
+    /* #4275c2e8 */
+    color: white;
+    border-radius: 7px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    padding: 1rem;
+}
+
+.slide-div h4,
+.slide-div p {
+    font-size: 1rem;
+}
+
+
+/* Responsive typography for slide-div */
+
+
+/* Hero Area */
+
+.slider .single-slider {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider .single-slider .text {
+    margin-top: 120px;
+    padding: 0 15px;
+}
+
+.slider.index2 .single-slider .text {
+    margin-top: 150px;
+}
+
+.slider .single-slider h1 {
+    color: #2C2D3F;
+    font-size: clamp(24px, 4vw, 38px);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.slider .single-slider h1 span {
+    color: #1a76d1;
+}
+
+.slider .single-slider p {
+    color: #2C2D3F;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.slider .single-slider .button {
+    margin-top: 30px;
+}
+
+.slider .single-slider .btn {
+    color: #fff;
+    background: #1a76d1;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0.6rem 1.2rem;
+    font-size: clamp(14px, 2vw, 16px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider .single-slider .btn:last-child {
+    margin-right: 0;
+}
+
+.slider .single-slider .btn.primary {
+    background: #2C2D3F;
+    color: #fff;
+}
+
+.slider .single-slider .btn.primary:before {
+    background: #b6d11a;
+}
+
+.slider .owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+    margin-top: -25px;
+    pointer-events: auto;
+}
+
+.slider .owl-carousel .owl-nav div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #45d11a;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 50%;
+    padding: 0;
+    transition: background 0.4s ease, color 0.4s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slider .owl-carousel .owl-nav div:hover {
+    background: #2C2D3F;
+    color: #fff;
+}
+
+.slider .owl-carousel .owl-nav .owl-prev {
+    left: 20px;
+}
+
+.slider .owl-carousel .owl-nav .owl-next {
+    right: 20px;
+}
+
+
+/* Slider Animation */
+
+.owl-item.active .single-slider h1 {
+    animation: fadeInUp 1s both 0.6s;
+}
+
+.owl-item.active .single-slider p {
+    animation: fadeInUp 1s both 1s;
+}
+
+.owl-item.active .single-slider .button {
+    animation: fadeInDown 1s both 1.5s;
+}
+
+
+/* Responsive scaling for slider-container and slide images */
+
+
+/* Avoid image distortion */
+
+.slide img {
+    width: 100%;
+    height: auto;
+    /* Let height adjust based on image aspect ratio */
+    object-fit: cover;
+    max-height: 100%;
+}
+
+
+/* Ensure slide height is relative and scales with screen */
+
+.slide {
+    min-width: 100%;
+    aspect-ratio: 16 / 9;
+    /* Responsive height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Keep container horizontal layout and avoid scaling */
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+    /* Slider JS will update this */
+    width: 100%;
+}
+
+
+/* Responsive overrides */
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Pagination Controls */
+
+.pagination-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.pagination-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn.active {
+    background-color: #FFD700;
+    /* Highlight active page */
+}
+
+.pagination-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+#button-style,
+#button-style-paint,
+#button-style-fiber,
+#button-style-other {
+    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: background-image 0.3s ease;
+    border-radius: 80px;
+}
+
+#button-style:hover,
+#button-style-paint:hover,
+#button-style-fiber:hover,
+#button-style-other:hover {
+    background-image: linear-gradient(to right, red, red);
+}
+
+.stat-box {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#footer-div {
+    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
 #footer-div .label {
     font-size: 1.2rem;
     font-weight: 600;
@@ -904,49 +1278,77 @@ h6,
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.img-hover-pop {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 80%;
-    height: 50%;
-}
-
-.img-hover-pop:hover {
-    transform: scale(1.45);
-}
-
-.slide-div h4,
-.slide-div p {
-    font-size: 1rem;
-    /* default for large screens */
-}
-
-
-/* Medium devices (tablets, 768px and up) */
-
-@media (max-width: 992px) {
-    .slide-div h4 {
-        font-size: 0.95rem;
-    }
-    .slide-div p {
-        font-size: 0.9rem;
+@media (max-width: 991px) {
+    .slide {
+        aspect-ratio: 16 / 9;
+        /* Keeps image ratio consistent */
+        margin-top: -150px;
     }
 }
-
-
-/* Small devices (phones, 576px and below) */
 
 @media (max-width: 576px) {
-    .slide-div h4 {
-        font-size: 0.85rem;
+    .slide {
+        aspect-ratio: 4 / 3;
+        margin-top: -150px;
     }
-    .slide-div p {
-        font-size: 0.8rem;
+    .pagination-btn {
+        width: 10px;
+        height: 10px;
+    }
+    .pagination-container {
+        bottom: 150px;
+    }
+    .prev-btn,
+    .next-btn {
+        font-size: 20px;
+        top: 50px;
+    }
+    #we_trust_in_god {
+        margin-top: -150px;
+    }
+    .social-media {
+        margin-top: 90px;
+    }
+    #button-style {
+        margin-left: 0;
+        display: block;
+        width: 90%;
+        text-align: center;
+        padding: 0.8rem 0;
+        margin-top: -20px;
+    }
+    /* 🔥 Updated styles to keep counters horizontal */
+    #counters {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        gap: 1rem !important;
+        padding: 1rem 0 !important;
+    }
+    .stat-box {
+        min-width: 180px !important;
+        flex: 0 0 auto !important;
+    }
+    /* Override Bootstrap .col styles inside #counters */
+    #counters>.col {
+        flex: 0 0 auto !important;
+        max-width: none !important;
+        width: auto !important;
     }
 }
 
-#brd {
-    border: 1px double #888;
-    border-radius: 12px;
-    /* Rounded corners on all four sides */
-    padding: 4px;
+
+/* Remove transform: scale from earlier version */
+
+@media (max-width: 767px) {
+    .slider-container {
+        /* Removed: transform: scale(0.6); */
+        flex-direction: row;
+        /* Keep it horizontal for proper sliding */
+    }
+    #button-style {
+        margin-left: 10px;
+        /* reduce margin */
+        padding: 0.6rem 1rem;
+    }
 }

@@ -479,83 +479,6 @@ p {
 }
 
 
-/* Slider Section */
-
-.slider-section {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    /* margin-top: 20px; */
-}
-
-
-/* Slider Container */
-
-.slider-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-
-/* Each Slide */
-
-.slide {
-    min-width: 100%;
-    height: 400px;
-    /* Adjust to your desired height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-/* Make images cover the slide area */
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-/* Text Overlay */
-
-.slide-text {
-    position: absolute;
-    top: 50%;
-    /* center vertically */
-    left: 58%;
-    /* center horizontally */
-    transform: translate(-50%, -50%);
-    color: white;
-    /* white text */
-    text-align: center;
-    z-index: 10;
-    /* above the image */
-    border-radius: 10px;
-    font-weight: bolder;
-    font-size: 80px;
-    /* big font for the first span */
-    line-height: 1.2;
-    /* tighter line spacing */
-}
-
-.slide-text #low {
-    left: 58%;
-    margin-bottom: 200px;
-    display: block;
-    /* block for below line */
-    font-size: 30px;
-    /* smaller than the first span */
-    margin-top: 10px;
-    /* spacing below first line */
-    font-weight: bolder;
-    color: white;
-    /* white text */
-}
-
-
 /* Application List Styling */
 
 .application-list {
@@ -592,59 +515,6 @@ p {
 
 
 /* Navigation Buttons */
-
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.prev-btn {
-    left: 10px;
-}
-
-.next-btn {
-    right: 10px;
-}
-
-
-/* Pagination Controls */
-
-.pagination-container {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.pagination-btn {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.pagination-btn.active {
-    background-color: #FFD700;
-    /* Highlight active page */
-}
-
-.pagination-btn:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
 
 
 /* Product Section */
@@ -699,12 +569,6 @@ p {
 
 
 /* Pagination Controls for Products */
-
-.pagination-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
 
 .page-button {
     padding: 10px 15px;
@@ -778,10 +642,6 @@ p {
         flex-basis: 100%;
         /* Make the items take full width */
     }
-    .pagination-container {
-        bottom: 5px;
-        /* Adjust pagination position */
-    }
 }
 
 @media (max-width: 480px) {
@@ -804,14 +664,6 @@ p {
     }
     .slide-text p {
         font-size: 0.9em;
-    }
-    .prev-btn,
-    .next-btn {
-        font-size: 20px;
-    }
-    .pagination-btn {
-        width: 10px;
-        height: 10px;
     }
     .application-list div {
         font-size: 0.9em;

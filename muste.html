@@ -220,10 +220,11 @@
             <i class="fab fa-instagram"></i>
         </a>
     </div>
-    <script>
+   <script>
     function openSecondPage() {
-      // Open muste2.html in a new tab with a query parameter
-      window.open('muste2.html?show=catalogue', '_blank');
+      // Open muste2.html in a new tab with an ID query parameter
+      const idToShow = encodeURIComponent('catalogue-content'); // We are passing the ID here
+      window.open('muste2.html?show=' + idToShow, '_blank');
     }
   </script>
 <div class="grid-container">
