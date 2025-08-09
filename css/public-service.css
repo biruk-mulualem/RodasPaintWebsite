@@ -288,5 +288,27 @@ h6 {
     }
 }
 
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+.blockquote p {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #0a0a0a;
+}
+
+.blockquote-footer {
+    font-style: normal;
+    color: #e7b025;
+}
+
 
 /* Ensure the parent has overflow hidden to clip the image when zoomed */

@@ -23,6 +23,7 @@
     <!-- Bootstrap CSS (You can also use a CDN link) -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
     <!-- Bootstrap JS (You can also use a CDN link) -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
@@ -47,7 +48,58 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/enamel.css" rel="stylesheet">
+<style>
+      .icon-button {
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #333;
+    position: relative;
+    padding: 8px;
+  }
 
+  .icon-button:hover {
+    color: #dfe3e7; /* Change icon color on hover */
+  }
+
+  /* Tooltip container */
+  .icon-button .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+  }
+
+  /* Tooltip arrow */
+  .icon-button .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  /* Show the tooltip text when hover */
+  .icon-button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
 </head>
 
 <body>
@@ -231,147 +283,315 @@
         <div class="product-item">
             <img src="img/super/paint/alba/AL 02.PNG" alt="Rodas Alba">
             <h3>Rodas ALBA</h3>
-            <button onclick="window.location.href='decortivecatalog.html?section=1'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=1'">Description</button>
+           <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=1'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=1'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
 
         </div>
         <div class="product-item">
             <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Rodas Alba">
             <h3>Rodas AQUA METALIC</h3>
-           <button onclick="window.location.href='decortivecatalog.html?section=2'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=2'">Description</button>
+              <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=2'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=2'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/crystal/G 1001.png" alt="Rodas Alba">
             <h3>Rodas CRYSTAL</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=3'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=3'">Description</button>
+            <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=3'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=3'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/damasco/D 0130.png" alt="Rodas Alba">
             <h3>Rodas DAMASCO</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=4'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=4'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=4'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=4'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/DECOR/MS 04.png" alt="Rodas Alba">
             <h3>Rodas Decor</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=5'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=5'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=5'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=5'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/FLUO/FLUO.png" alt="Rodas Alba">
             <h3>Rodas FLUO</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=6'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=6'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=6'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=6'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/GALAXY/G 204.png" alt="Rodas Alba">
             <h3>Rodas GALAXY</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=7'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=7'">Description</button>
+              <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=7'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=7'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/HAMMERTONE/Almunium.png" alt="Rodas Alba">
             <h3>Rodas HAMMERTONE</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=8'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=8'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=8'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=8'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/LINOL/L 10.png" alt="Rodas Alba">
             <h3>Rodas LINOL</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=9'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=9'">Description</button>
+               <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=9'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=9'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/LINOL ART/LAG 15.png" alt="Rodas Alba">
             <h3>Rodas LINOL ART</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=10'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=10'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=10'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=10'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/LINOL METALLIC/Linol Metallic Blue.png" alt="Rodas Alba">
             <h3>Rodas LINOL METALLIC</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=11'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=11'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=11'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=11'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/LINOL MULTI/WB 2.png" alt="Rodas Alba">
             <h3>Rodas LINOL MULTI</h3>
-            <button onclick="window.location.href='decortivecatalog.html?section=12'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=12'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=12'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=12'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/LINOLISA/Lina-212 on Rose Base.png" alt="Rodas Alba">
             <h3>Rodas LINOLISA</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=13'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=13'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=13'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=13'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/MAGIC/MG 100.png" alt="Rodas Alba">
             <h3>Rodas MAGIC</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=14'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=14'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=14'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=14'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/MARMORINO/Base Medium.png" alt="Rodas Alba">
             <h3>Rodas MARMORINO</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=15'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=15'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=15'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=15'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/MAYA/MY 02.png" alt="Rodas Alba">
             <h3>Rodas MAYA</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=16'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=16'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=16'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=16'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/PALMYRA/F 509.png" alt="Rodas Alba">
             <h3>Rodas PALMYRA</h3>
-            <button onclick="window.location.href='decortivecatalog.html?section=17'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=17'">Description</button>
+               <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=17'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=17'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/TILAL/DU-117.png" alt="Rodas Alba">
             <h3>Rodas TILAL</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=18'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=18'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=18'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=18'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/MICROCEM/MC 101.png" alt="Rodas Alba">
             <h3>Rodas MICROCEM</h3>
-            <button onclick="window.location.href='decortivecatalog.html?section=19'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=19'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=19'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=19'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/SAND/S110-B.png" alt="Rodas Alba">
             <h3>Rodas SAND</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=20'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=20'">Description</button>
+               <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=20'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=20'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/SETA/817.png" alt="Rodas Alba">
             <h3>Rodas SETA</h3>
-              <button onclick="window.location.href='decortivecatalog.html?section=21'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=21'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=21'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=21'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/STUCCO ANTICO/ST 1001.png" alt="Rodas Alba">
             <h3>Rodas STUCCO ANTICO</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=22'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=22'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=22'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=22'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/STUCCO GRASSELLO/MG 117.png" alt="Rodas Alba">
             <h3>Rodas STUCCO GRASSELLO</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=23'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=23'">Description</button>
+                 <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=23'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=23'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
         <div class="product-item">
             <img src="img/super/paint/VELO/V 8340.png" alt="Rodas Alba">
             <h3>Rodas VELO</h3>
-             <button onclick="window.location.href='decortivecatalog.html?section=24'">Catalog</button>
-            <button onclick="window.location.href='decorativediscripion.html?section=24'">Description</button>
+                <button class="icon-button" onclick="window.location.href='decortivecatalog.html?section=24'">
+  <i class="fas fa-book"></i>
+  <span class="tooltip-text">Catalog</span>
+</button>
+
+<button class="icon-button" onclick="window.location.href='decorativediscripion.html?section=24'">
+  <i class="fas fa-info-circle"></i>
+  <span class="tooltip-text">Description</span>
+</button>
         </div>
     </div>
     <style>
