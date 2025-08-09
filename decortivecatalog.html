@@ -1,116 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Responsive Zoom Modal 70% Viewport with Grid</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: #f9f9f9;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rodas Paint Industry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
 
-  /* Grid container for thumbnails */
-  .thumb-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 16px;
-    justify-items: center;
-    padding: 10px 0;
-    max-width: 70%;
-    margin: 0 auto;
-  }
+    /* Grid container for thumbnails */
+    .thumb-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 16px;
+      justify-items: center;
+      padding: 10px 0;
+      max-width: 70%;
+      margin: 0 auto;
+    }
 
-  /* Each thumbnail container fills its grid cell */
-  .thumb-container {
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-  }
+    /* Each thumbnail container fills its grid cell */
+    .thumb-container {
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
 
-  .thumbnail {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-    transition: transform 0.3s ease;
-  }
-  .thumbnail:hover {
-    transform: scale(1);
-  }
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease;
+    }
 
-  .caption {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    user-select: none;
-  }
+    .thumbnail:hover {
+      transform: scale(1);
+    }
 
-  /* Modal overlay with transparent background */
-  #modalOverlay {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: transparent;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
+    .caption {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      user-select: none;
+    }
 
-  /* Clone image for animation */
-  .clone-img {
-    position: fixed;
-    z-index: 1001;
-    transition: all 0.5s ease;
-    will-change: transform, width, height, top, left;
-    object-fit: fill;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  }
+    /* Modal overlay with transparent background */
+    #modalOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
 
-  /* Wrapper around modal image & close button */
-  #modalWrapper {
-    position: relative;
-    display: inline-block;
-    width: 70vw;
-    height: 70vh;
-    max-width: 90vw;
-    max-height: 90vh;
-  }
+    /* Clone image for animation */
+    .clone-img {
+      position: fixed;
+      z-index: 1001;
+      transition: all 0.5s ease;
+      will-change: transform, width, height, top, left;
+      object-fit: fill;
+      border-radius: 4px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
 
-  /* Modal image */
-  #modalImage {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 4px;
-    box-shadow: 0 0 30px rgba(255,255,255,0.8);
-    display: none;
-  }
+    /* Wrapper around modal image & close button */
+    #modalWrapper {
+      position: relative;
+      display: inline-block;
+      width: 70vw;
+      height: 70vh;
+      max-width: 90vw;
+      max-height: 90vh;
+    }
 
-  /* Close button on top-right of modal image */
-  #closeBtn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    font-size: 28px;
-    color: white;
-    background: rgba(0,0,0,0.6);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    z-index: 10;
-    display: none;
-  }
-        .button-container {
+    /* Modal image */
+    #modalImage {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+      display: none;
+    }
+
+    /* Close button on top-right of modal image */
+    #closeBtn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 28px;
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      z-index: 10;
+      display: none;
+    }
+
+    .button-container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -155,238 +161,397 @@
       letter-spacing: 0.5px;
     }
 
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-    body {
-      margin: 12px;
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      body {
+        margin: 12px;
+      }
+
+      #modalWrapper {
+        width: 80vw;
+        height: 80vh;
+      }
     }
-    #modalWrapper {
-      width: 80vw;
-      height: 80vh;
-    }
-  }
-</style>
+  </style>
 </head>
+
 <body>
 
 
+ <!-- Section 1: Alpha Paint -->
+  <div id="section1" style="display:none;">
+    <div class="button-container">
+      <a href="decorative.html" class="btn btn-left">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+        </svg>
+        Decorative Paints
+      </a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Section 1: Alpha Paint -->
-<div id="section1" style="display:none;">
-  <div class="button-container">
-    <a href="decorative.html" class="btn btn-left">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
-      </svg>
-      Decorative Paints
-    </a>
-
-    <a href="#" class="btn btn-right">
-      Description
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
-      </svg>
-    </a>
-  </div>
-
-  <h1>Rodas ALBA Catalogue</h1>
-
-  <div class="thumb-row">
-    <!-- Example thumbnails -->
-    <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
-      <img src="img/super/paint/alba/AL 02.PNG" alt="Alpha Paint" class="thumbnail" data-large="img/super/paint/alba/AL 02.jpg" />
-      <div class="caption">AL 02</div>
+      <a href="#" class="btn btn-right">
+        Description
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
+        </svg>
+      </a>
     </div>
-    <!-- Add other thumbnails similarly -->
-  </div>
-</div>
 
-<!-- Section 2: Rodas AQUA METALIC -->
-<div id="section2" style="display:none;">
-  <div class="button-container">
-    <a href="decorative.html" class="btn btn-left">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
-      </svg>
-      Decorative Paints
-    </a>
+    <h1>Rodas ALBA Catalogue</h1>
 
-    <a href="#" class="btn btn-right">
-      Description
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
-      </svg>
-    </a>
-  </div>
+    <div class="thumb-row">
+      
+      <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 02.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/al 02.jpg" />
+        <div class="caption">al 02</div>
+      </div>
 
-  <h1>Rodas AQUA METALIC Catalogue</h1>
 
-  <div class="thumb-row">
-    <!-- Example thumbnails -->
-    <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
-      <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail" data-large="img/super/paint/aqua metalic/Almunium.jpg" />
-      <div class="caption">Almunium</div>
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 03.png" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 03.jpg" />
+        <div class="caption">AL 03</div>
+      </div>
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 06.png" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 06.jpg" />
+        <div class="caption">AL 06</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 09.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 09.jpg" />
+        <div class="caption">AL 09</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 15.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 15.jpg" />
+        <div class="caption">AL 15</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 16.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 16.jpg" />
+        <div class="caption">AL 16</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 18.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 18.jpg" />
+        <div class="caption">AL 18</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 19.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 19.jpg" />
+        <div class="caption">AL 19</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 20.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 20.jpg" />
+        <div class="caption">AL 20</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 21.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 21.jpg" />
+        <div class="caption">AL 21</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 22.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 22.jpg" />
+        <div class="caption">AL 22</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 23.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 23.jpg" />
+        <div class="caption">AL 23</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 24.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 24.jpg" />
+        <div class="caption">AL 24</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 25.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 25.jpg" />
+        <div class="caption">AL 25</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 27.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 27.jpg" />
+        <div class="caption">AL 27</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 28.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 28.jpg" />
+        <div class="caption">AL 28</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/AL 29 Silver.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/AL 29 Silver.jpg" />
+        <div class="caption">AL 29 Silver</div>
+      </div>
+
+
+ <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/alba/al 29gold.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/alba/al 29gold.jpg" />
+        <div class="caption">AL 29 Gold</div>
+      </div>
+
+
+
+
+
+
+
+  
+      <!-- copy above div paste -->
     </div>
-    <!-- Add other thumbnails similarly -->
   </div>
-</div>
+  <!-- Section 1: Alpha Paint -->
 
-<!-- Modal Overlay (one modal for all sections) -->
-<div id="modalOverlay" role="dialog" aria-modal="true" aria-label="Image modal" 
-     style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; 
-     background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 10000;">
-  <div id="modalWrapper" 
-       style="position: relative; max-width: 80vw; max-height: 80vh; display: flex; justify-content: center; align-items: center;">
-    <img id="modalImage" alt="Large View" 
-         style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: none; border-radius: 6px;" />
-    <div id="closeBtn" aria-label="Close modal" role="button" tabindex="0" 
-         style="position: absolute; top: -30px; right: 0; font-size: 40px; color: white; cursor: pointer; user-select: none;">&times;</div>
+  <!-- Section 2: Rodas AQUA METALIC -->
+  <div id="section2" style="display:none;">
+    <div class="button-container">
+      <a href="decorative.html" class="btn btn-left">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+        </svg>
+        Decorative Paints
+      </a>
+
+      <a href="#" class="btn btn-right">
+        Description
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
+        </svg>
+      </a>
+    </div>
+
+    <h1>Rodas AQUA METALIC Catalogue</h1>
+
+    <div class="thumb-row">
+      <!-- Example thumbnails -->
+      <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>
+        <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>  <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>  <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>
+      <!-- Add other thumbnails similarly -->
+    </div>
   </div>
-</div>
+  <!-- Section 3: Rodas AQUA METALIC -->
+  <div id="section3" style="display:none;">
+    <div class="button-container">
+      <a href="decorative.html" class="btn btn-left">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+        </svg>
+        Decorative Paints
+      </a>
 
-<style>
-  /* Just in case, you want to move inline styles to CSS */
-  /* You can also keep inline if you prefer */
-</style>
+      <a href="#" class="btn btn-right">
+        Description
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"></path>
+        </svg>
+      </a>
+    </div>
 
-<script>
-  const thumbnails = document.querySelectorAll('.thumbnail');
-  const modalOverlay = document.getElementById('modalOverlay');
-  const modalWrapper = document.getElementById('modalWrapper');
-  const modalImage = document.getElementById('modalImage');
-  const closeBtn = document.getElementById('closeBtn');
+    <h1>Rodas AQUA METALIC Catalogue</h1>
 
-  let clone = null;
-  let currentThumb = null;
+    <div class="thumb-row">
+      <!-- Example thumbnails -->
+      <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>
+        <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>  <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>  <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
+        <img src="img/super/paint/aqua metalic/Almunium.PNG" alt="Alpha Paint" class="thumbnail"
+          data-large="img/super/paint/aqua metalic/Almunium.jpg" />
+        <div class="caption">Almunium</div>
+      </div>
+      <!-- Add other thumbnails similarly -->
+    </div>
+  </div>
 
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', () => openModal(thumb));
-    thumb.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        openModal(thumb);
-      }
+
+
+ 
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalWrapper = document.getElementById('modalWrapper');
+    const modalImage = document.getElementById('modalImage');
+    const closeBtn = document.getElementById('closeBtn');
+
+    let clone = null;
+    let currentThumb = null;
+
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', () => openModal(thumb));
+      thumb.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(thumb);
+        }
+      });
     });
-  });
 
-  function openModal(thumb) {
-    currentThumb = thumb;
-    const rect = thumb.getBoundingClientRect();
+    function openModal(thumb) {
+      currentThumb = thumb;
+      const rect = thumb.getBoundingClientRect();
 
-    clone = thumb.cloneNode(true);
-    clone.classList.add('clone-img');
-    clone.style.position = 'fixed';
-    clone.style.top = rect.top + 'px';
-    clone.style.left = rect.left + 'px';
-    clone.style.width = rect.width + 'px';
-    clone.style.height = rect.height + 'px';
-    clone.style.transition = 'all 300ms ease';
-    clone.style.zIndex = '10001';
-
-    document.body.appendChild(clone);
-    modalOverlay.style.display = 'flex';
-
-    // Force reflow for transition
-    clone.getBoundingClientRect();
-
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-
-    const maxWidth = vw * 0.8;
-    const maxHeight = vh * 0.8;
-
-    // Animate clone to center & bigger size (max 80vw/vh)
-    requestAnimationFrame(() => {
-      clone.style.top = (vh - maxHeight) / 2 + 'px';
-      clone.style.left = (vw - maxWidth) / 2 + 'px';
-      clone.style.width = maxWidth + 'px';
-      clone.style.height = maxHeight + 'px';
-    });
-
-    clone.addEventListener('transitionend', () => {
-      modalImage.src = thumb.dataset.large || thumb.src;
-      modalImage.style.display = 'block';
-      closeBtn.style.display = 'block';
-      clone.style.display = 'none';
-      closeBtn.focus();
-    }, { once: true });
-  }
-
-  function closeModal() {
-    modalImage.style.display = 'none';
-    closeBtn.style.display = 'none';
-
-    if (!clone || !currentThumb) return;
-
-    clone.style.display = 'block';
-
-    const rect = currentThumb.getBoundingClientRect();
-
-    requestAnimationFrame(() => {
+      clone = thumb.cloneNode(true);
+      clone.classList.add('clone-img');
+      clone.style.position = 'fixed';
       clone.style.top = rect.top + 'px';
       clone.style.left = rect.left + 'px';
       clone.style.width = rect.width + 'px';
       clone.style.height = rect.height + 'px';
+      clone.style.transition = 'all 300ms ease';
+      clone.style.zIndex = '10001';
+
+      document.body.appendChild(clone);
+      modalOverlay.style.display = 'flex';
+
+      // Force reflow for transition
+      clone.getBoundingClientRect();
+
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+
+      const maxWidth = vw * 0.5;
+      const maxHeight = vh * 0.5;
+
+      // Animate clone to center & bigger size (max 80vw/vh)
+      requestAnimationFrame(() => {
+        clone.style.top = (vh - maxHeight) / 2 + 'px';
+        clone.style.left = (vw - maxWidth) / 2 + 'px';
+        clone.style.width = maxWidth + 'px';
+        clone.style.height = maxHeight + 'px';
+      });
+
+      clone.addEventListener('transitionend', () => {
+        modalImage.src = thumb.dataset.large || thumb.src;
+        modalImage.style.display = 'block';
+        closeBtn.style.display = 'block';
+        clone.style.display = 'none';
+        closeBtn.focus();
+      }, { once: true });
+    }
+
+    function closeModal() {
+      modalImage.style.display = 'none';
+      closeBtn.style.display = 'none';
+
+      if (!clone || !currentThumb) return;
+
+      clone.style.display = 'block';
+
+      const rect = currentThumb.getBoundingClientRect();
+
+      requestAnimationFrame(() => {
+        clone.style.top = rect.top + 'px';
+        clone.style.left = rect.left + 'px';
+        clone.style.width = rect.width + 'px';
+        clone.style.height = rect.height + 'px';
+      });
+
+      clone.addEventListener('transitionend', () => {
+        modalOverlay.style.display = 'none';
+        clone.remove();
+        clone = null;
+        currentThumb = null;
+      }, { once: true });
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    closeBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        closeModal();
+      }
     });
 
-    clone.addEventListener('transitionend', () => {
-      modalOverlay.style.display = 'none';
-      clone.remove();
-      clone = null;
-      currentThumb = null;
-    }, { once: true });
-  }
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+    });
 
-  closeBtn.addEventListener('click', closeModal);
-  closeBtn.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      closeModal();
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
+        closeModal();
+      }
+    });
+  </script>
+
+
+  <script>
+    // Get URL query parameters
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get('section');
+
+    // Hide all sections
+    document.querySelectorAll('div[id^="section"]').forEach(div => {
+      div.style.display = 'none';
+    });
+
+    // Show the selected section if it exists
+    if (section) {
+      const el = document.getElementById('section' + section);
+      if (el) {
+        el.style.display = 'block';
+      }
     }
-  });
-
-  modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) closeModal();
-  });
-
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
-      closeModal();
-    }
-  });
-</script>
-
-
-<script>
-  // Get URL query parameters
-  const params = new URLSearchParams(window.location.search);
-  const section = params.get('section');
-
-  // Hide all sections
-  document.querySelectorAll('div[id^="section"]').forEach(div => {
-    div.style.display = 'none';
-  });
-
-  // Show the selected section if it exists
-  if (section) {
-    const el = document.getElementById('section' + section);
-    if (el) {
-      el.style.display = 'block';
-    }
-  }
-</script>
+  </script>
 
 </body>
+
 </html>

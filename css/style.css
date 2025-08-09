@@ -66,6 +66,12 @@ h6,
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    background: #005e9e;
+    border: none;
+}
+
+.btn-lg-square:hover {
+    background: #b18d35;
 }
 
 #spinner {
@@ -274,7 +280,7 @@ h6,
     justify-content: center;
     /* color: #FFFFFF;
     background: var(--secondary); */
-    background-image: linear-gradient(to right, #1c6ee7e8, #1c6ee7e8);
+    background-image: linear-gradient(to right, #005e9e, #005e9e);
     color: rgb(7, 7, 7);
     border-radius: 2px;
     font-size: 22px;
@@ -283,7 +289,8 @@ h6,
 
 .price-carousel .owl-nav .owl-prev:hover,
 .price-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
+    /* background: var(--secondary); */
+    background: #b18d35;
 }
 
 
@@ -318,7 +325,7 @@ h6,
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    background: var(--primary);
+    background: var(--primsecary);
     border-radius: 2px;
     font-size: 22px;
     transition: 0.01s;
@@ -903,7 +910,7 @@ p {
 .blessing-text {
     font-size: clamp(32px, 8vw, 100px);
     font-weight: bold;
-    color: orange;
+    color: #b18d35;
 }
 
 .trust-text {
@@ -1227,7 +1234,7 @@ p {
 #button-style-paint,
 #button-style-fiber,
 #button-style-other {
-    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
+    background-image: linear-gradient(to right, #005e9e, #005e9e);
     color: rgb(255, 255, 255);
     border: none;
     transition: background-image 0.3s ease;
@@ -1238,7 +1245,7 @@ p {
 #button-style-paint:hover,
 #button-style-fiber:hover,
 #button-style-other:hover {
-    background-image: linear-gradient(to right, red, red);
+    background-image: linear-gradient(to right, #b18d35, #b18d35);
 }
 
 .stat-box {
@@ -1257,7 +1264,7 @@ p {
 }
 
 #footer-div {
-    background-image: linear-gradient(to right, #4275c2e8, #4275c2e8);
+    background-image: linear-gradient(to right, #005e9e, #005e9e);
     color: rgb(255, 255, 255);
     border: none;
 }

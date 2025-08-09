@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rodas Paint Industry</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: #154a8f;
+      margin-bottom: 12px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #154a8f;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #103a6c;
+    }
+
+    .btn svg {
+      width: 16px;
+      height: 16px;
+      fill: white;
+    }
+
+    .btn-left svg {
+      margin-right: 8px;
+    }
+
+    .btn-right svg {
+      margin-left: 8px;
+    }
+
+    .section-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+    }
+
+    .highlight-box {
+      background-color: #e3f2f1;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 14px;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    table th {
+      background: #f5f6fa;
+      text-align: left;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    /* Hide all sections by default */
+    div[id^="section"] {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+        width: 100%;
+      }
+
+      table tr {
+        margin-bottom: 10px;
+      }
+
+      table td,
+      table th {
+        border: none;
+        padding: 8px;
+      }
+
+      table th {
+        background: none;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Section 1 -->
+  <div id="section1">
+    <div class="container">
+      <!-- Buttons -->
+      <div class="button-container">
+        <a href="decorative.html" class="btn btn-left">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+          Decorative Paints
+        </a>
+        <a href="decortivecatalog.html?section=1" target="_blank" class="btn btn-right">
+          Description
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="section-content">
+        <h1>Rodas ALBA Description</h1>
+        <div class="highlight-box">
+          <h3>General Description</h3>
+          <p><strong>ALBA</strong> is a water-based wall decorative paint with special pearlescent pigment
+            intended for internal application. It creates metallic finishes with deep elegance, is odorless,
+            non–toxic, and washable.</p>
+        </div>
+
+        <h3>Advantages</h3>
+        <ul>
+          <li>Easy application</li>
+          <li>Low odor and low VOC level</li>
+          <li>Ready to use</li>
+          <li>Can be tinted with various colors</li>
+        </ul>
+
+        <h3>Characteristics & Physical Properties</h3>
+        <table>
+          <tr>
+            <th>Appearance</th>
+            <td>Metallic</td>
+          </tr>
+          <tr>
+            <th>Grades</th>
+            <td>Smooth, Fine, Medium, Coarse</td>
+          </tr>
+          <tr>
+            <th>Specific Weight</th>
+            <td>1.0 Kg/Ltr</td>
+          </tr>
+          <tr>
+            <th>Method of Application</th>
+            <td>Brush, Roller, Spatula, Leather cloth, Trowel</td>
+          </tr>
+          <tr>
+            <th>Coverage</th>
+            <td>8–12 m²/Kg depending on surface and application</td>
+          </tr>
+          <tr>
+            <th>Drying Time</th>
+            <td>3–4 Hours</td>
+          </tr>
+          <tr>
+            <th>Dilution</th>
+            <td>5–10% with fresh water</td>
+          </tr>
+          <tr>
+            <th>VOC</th>
+            <td>52 g/Ltr</td>
+          </tr>
+        </table>
+
+        <h3>Surface Preparation</h3>
+        <h4>New Concrete:</h4>
+        <ul>
+          <li>Fully cured (28 days minimum), clean, and contaminant-free</li>
+          <li>Prime with Masonry AR Primer, Masonry Primer, PVA Wall filler, sanding, and intermediate coat</li>
+        </ul>
+
+        <h4>Old Concrete:</h4>
+        <ul>
+          <li>Remove blisters, cracks, and loose paint</li>
+          <li>Wash with fungicidal solution if necessary</li>
+          <li>Sand glossy finish coats</li>
+        </ul>
+
+        <h3>Method of Application</h3>
+        <ul>
+          <li>Prepare surface for painting</li>
+          <li>Apply ALBA with trowel in vertical/horizontal strokes</li>
+          <li>Finish with desired texture using brush, roller, trowel, or leather cloth</li>
+        </ul>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px;">
+          <div class="info-box" style="background-color: #b1cfcb; flex: 1;">
+            <h3>Storage & Packing</h3>
+            <p>Shelf life: 12 months (below 25°C, frost-free)</p>
+            <p>Keep sealed, away from heat & sunlight</p>
+            <p>Available in 1 L, 4 Kg, 10 Kg</p>
+          </div>
+          <div class="info-box" style="background-color: #93cccf; flex: 1;">
+            <h3>Physiological Hazards</h3>
+            <p>Non-toxic, but ensure good ventilation</p>
+            <p>Harmful if swallowed or in contact with eyes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="section2" style="display:none;">
+  <div class="container">
+    <!-- Buttons -->
+    <div class="button-container">
+      <a href="decorative.html" class="btn btn-left">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+        </svg>
+        Decorative Paints
+      </a>
+      <a href="decortivecatalog.html?section=2" target="_blank" class="btn btn-right">
+        Description
+        <svg viewBox="0 0 24 24">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="section-content">
+      <h1>Rodas AQUA METALIC Description</h1>
+
+      <div class="highlight-box" style="background-color: rgb(200, 228, 226); color: black;">
+        <h3>General Description</h3>
+        <p><strong>Rodas Aqua Metallic</strong> is a water-based paint based on vinyl versatate copolymer with luster pigment that gives a brilliant metallic decorative finish. It is odorless, non-toxic, and washable, ideal to use on gypsum, cornices, frames for antique finishes, and a top coat for steel decoration.</p>
+      </div>
+
+      <h3>Advantages</h3>
+      <ul>
+        <li>Easy application</li>
+        <li>Low odor and low VOC level</li>
+        <li>Ready to use</li>
+        <li>It can be tinted with a variety of desired colors</li>
+      </ul>
+
+      <h3>Characteristics and Physical Properties</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>Appearance</th>
+            <td>Metallic</td>
+          </tr>
+          <tr>
+            <th>Sp. Weight</th>
+            <td>1.00 Kg/Ltr.</td>
+          </tr>
+          <tr style="background-color: #f5f6fa;">
+            <th>Method of Application</th>
+            <td>Brush, Roller, Spatula, Leather cloth, Trowel</td>
+          </tr>
+          <tr>
+            <th>Coverage</th>
+            <td>6-8 m²/Kg depending on the type of application.</td>
+          </tr>
+          <tr style="background-color: #f5f6fa;">
+            <th>Flash point</th>
+            <td>Non-flammable</td>
+          </tr>
+          <tr>
+            <th>Dilution</th>
+            <td>Fresh water if required</td>
+          </tr>
+          <tr style="background-color: #f5f6fa;">
+            <th>VOC</th>
+            <td>75 g/Ltr.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Surface Preparation</h3>
+      <h4>New Concrete:</h4>
+      <ul>
+        <li>The substrate must be primed by Rodas Masonry primer, putty filler sanding, and intermediate coat with mascryl (any color) steel.</li>
+        <li>Surface to be coated must be degreased and de-rusted. It must be clean and dry prior to the application of an appropriate primer.</li>
+      </ul>
+
+      <h4>Steel:</h4>
+      <ul>
+        <li>Apply Rodas Aqua Metallic by brush, roller or spray.</li>
+      </ul>
+
+      <h4>Storage:</h4>
+      <ul>
+        <li>Shelf life 12 months minimum if stored below 25°C.</li>
+      </ul>
+
+      <h4>Cleaning of Tools:</h4>
+      <ul>
+        <li>All tools should be cleaned with water as soon as possible.</li>
+      </ul>
+
+      <h4>Packaging:</h4>
+      <ul>
+        <li>Available in 1/2kg, 1kg, and 5kg.</li>
+      </ul>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px;">
+        <div class="info-box" style="background-color: rgb(177, 207, 203); flex: 1; color: black;">
+          <h3>Method of Application</h3>
+          <p>There are so many ways of applying Rodas Aqua Metallic by normal brush, roller sponge, spatula, leather cloth, and spray gun.</p>
+          <p>Rodas Aqua Metallic can be overcoated with a contrast color of the same material to give a unique design.</p>
+        </div>
+
+        <div class="info-box" style="background-color: rgb(147, 204, 207); flex: 1; color: black;">
+          <h3>Physiological Hazards</h3>
+          <p>Rodas Aqua Metallic does not contain solvents, nevertheless, good ventilation in working rooms is recommended as well as the use of safety tools and equipment. Rodas Aqua Metallic is harmful if swallowed. If contact with eyes or skin occurs, wash well with freshwater and seek immediate medical advice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Section 3 -->
+  <div id="section3">
+    <div class="container">
+      <!-- Buttons -->
+      <div class="button-container">
+        <a href="decorative.html" class="btn btn-left">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+          Decorative Paints
+        </a>
+        <a href="decortivecatalog.html?section=3" target="_blank" class="btn btn-right">
+          Description
+          <svg viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="section-content">
+        <h1>Section 3 Title</h1>
+        <div class="highlight-box">
+          <h3>General Description</h3>
+          <p>This is placeholder content for Section 3. Replace it with your actual content.</p>
+        </div>
+
+        <h3>Advantages</h3>
+        <ul>
+          <li>Advantage 1 for Section 3</li>
+          <li>Advantage 2 for Section 3</li>
+          <li>Advantage 3 for Section 3</li>
+        </ul>
+
+        <h3>Characteristics & Physical Properties</h3>
+        <table>
+          <tr>
+            <th>Appearance</th>
+            <td>Example</td>
+          </tr>
+          <tr>
+            <th>Grades</th>
+            <td>Example</td>
+          </tr>
+          <tr>
+            <th>Specific Weight</th>
+            <td>Example</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+ <div id="section3" style="display:none;">
+  <div class="container section-content">
+    <h1>Rodas CRYSTAL Description</h1>
+    <div class="highlight-box" style="background-color: rgb(200, 228, 226); color: black; padding: 1rem;">
+      <h3>General Description</h3>
+      <p><strong>Rodas CRYSTAL</strong> is a super shining water-based Decorative paint, with a high concentration of glitter. It is very stylish and perfect for gypsum boards and ceiling decorations.</p>
+    </div>
+
+    <div class="my-6 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="row gx-6 bg-light">
+          <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+              <a href="specifications/Rodas CRYSTAL.pdf" download>
+                <i class="fas fa-file-download fa-2x text-primary"></i>
+              </a>
+              <span class="tooltip-text">Download the specification in PDF</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 py-5">
+            <div class="py-5">
+              <div id="english" class="language-text" style="color: #051225;">
+                <h3 class="text-center" id="pro-id">Application:</h3>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle text-success me-2"></i>It can be applied by brush or spray. One or two coats are suggested. It is possible to apply RODAS CRYSTAL on a primer of the same color.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 py-5">
+            <form>
+              <div class="row g-4">
+                <div class="col-12">
+                  <h4 class="fw-bold text-dark"><i class="fas fa-tools me-2"></i>Technical details Coverage:</h4>
+                  <h5><i class="fas fa-plus-circle me-2 text-secondary"></i>New Concrete:</h5>
+                  <ul style="list-style-type: none; padding-left: 0;">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>4 Kg is covering 15-20sqm (depending on the application).</li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid banner mb-5" style="margin-top: -10px;">
+      <div class="container">
+        <div class="row gx-12">
+          <div class="col-lg-12 wow zoomIn" data-wow-delay="0.1s">
+            <div class="d-flex flex-column p-5 slide-div" style="height: 300px; background-color: rgb(177, 207, 203);">
+              <h3 class="mb-6 text-center text-black">Tools:</h3>
+
+              <div class="d-flex flex-column mb-2" style="line-height: 1.4;">
+                <div class="mb-3">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="fas fa-paint-brush text-primary me-2"></i>
+                    <span style="color: black; font-weight: 600;">Brush</span>
+                  </div>
+                  <p style="color: black; margin-left: 30px; margin-top: 0;">
+                    Use the brush for precise edges and small surface areas.
+                  </p>
+                </div>
+
+                <div class="mb-3">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="fas fa-spray-can text-secondary me-2"></i>
+                    <span style="color: black; font-weight: 600;">Spray gun</span>
+                  </div>
+                  <p style="color: black; margin-left: 30px; margin-top: 0;">
+                    Use the spray gun for faster, even coverage on large surfaces.
+                  </p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-file-alt text-dark me-2"></i>
+                  <span style="color: black;">For further information, please check the proper technical datasheet.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section4" style="display:none;">
+  <div class="container">
+    <div class="section-content">
+      <h1>Rodas DAMASCO Description</h1>
+      <div class="highlight-box" style="background-color: rgb(200, 228, 226); color: black; padding: 1rem;">
+        <h3>General Description</h3>
+        <p><strong>Rodas DAMASCO</strong> is decorative covering for interior walls based on special natural raw materials giving an antique look, achieving this original RODAS DAMASCO effect, which is especially suitable for classical as well as for modern style decoration. The product is given a high level of breathability, prevents mildew and fungi growth, and environment friendly.</p>
+      </div>
+
+      <h3>Characteristics and Physical Properties</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>Viscosity</th>
+            <td>Pasty</td>
+          </tr>
+          <tr>
+            <th>Gloss</th>
+            <td>Eggshell</td>
+          </tr>
+          <tr style="background-color: #f5f6fa;">
+            <th>Theo. yield</th>
+            <td>150 ~ 200 g/m2</td>
+          </tr>
+          <tr>
+            <th>Shelf life</th>
+            <td>12 months</td>
+          </tr>
+          <tr style="background-color: #f5f6fa;">
+            <th>VOC</th>
+            <td>75 g/Ltr.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Storage</h3>
+      <ul>
+        <li>The product must be stored in accordance with national requisitions. The product should be kept in a cool and well-ventilated place, protected from heat direct sunlight, containers must be kept tightly closed.</li>
+      </ul>
+
+      <h3>Packing</h3>
+      <ul>
+        <li>Rodas DAMASCO is available in 1kg, 4kg, and 20 kg PAIL.</li>
+      </ul>
+
+      <h3>Surface Preparation</h3>
+      <ul>
+        <li>For the new concrete, it should be fully cured at least 28 days and the substrate must be free from any contaminants.</li>
+        <li>If old concrete, all blistered, cracks, and peeled off paint should be removed.</li>
+      </ul>
+
+      <h4>Typical Recommended System:</h4>
+      <ul>
+        <li>Typical Recommended System.</li>
+        <li>Level the surface with PVA Wall Filler if necessary and sand until smooth</li>
+        <li>Apply 1 – 2 coats of Masonry Primer tinted with the desired color.</li>
+        <li>Apply 1 – 2 coats of RODAS DAMASCO tinted and diluted with 30% water as a base coat.</li>
+        <li>Apply the effect coat using the explained tools and technique.</li>
+      </ul>
+
+      <div style="background-color: rgb(147, 204, 207); padding: 20px; border-radius: 8px; margin-top: 20px;">
+        <h3 class="text-center">Safety Measures</h3>
+        <ul style="list-style-type:none; padding-left:0;">
+          <li>Use in a well-ventilated area.</li>
+          <li>Wear gloves to avoid skin contact.</li>
+          <li>Avoid contact with eyes; rinse with water if needed.</li>
+          <li>Keep out of reach of children.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section4" style="display:none;">
+  <div class="container">
+    <div class="section-content">
+      <h2 style="text-align: center;">Rodas DECOR Description</h2>
+      <br />
+      <div class="highlight-box" style="background-color: rgb(200, 228, 226); color: rgb(0, 0, 0); padding: 1rem;">
+        <h3>General Description</h3>
+        <p>
+          <span style="color: black; font-weight: bolder;">Rodas DECOR</span> is a water-based decorative,
+          based on an acrylic resin filled with selected pearl pigments.
+        </p>
+      </div>
+      <br />
+      <div class="my-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+          <div class="row gx-6 bg-light">
+            <div style="text-align: right; margin-bottom: 1rem;">
+              <div class="tooltip-icon">
+                <a href="specifications/Rodas DECOR.pdf" download>
+                  <i class="fas fa-file-download fa-2x text-primary"></i>
+                </a>
+                <span class="tooltip-text">Download the specification in PDF</span>
+              </div>
+            </div>
+            <div class="col-lg-6 py-5">
+              <div class="py-5">
+                <div id="english" class="language-text" style="color: #051225;">
+                  <h3 class="text text-center" id="pro-id">Application:</h3>
+                  <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i>Rodas DECORE can be applied by the roll, brush, and a sponge or leather cloth One or Two hands can be applied on 1-2 coats of Masonry</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 py-5">
+              <form>
+                <div class="row g-4">
+                  <div class="col-12">
+                    <h4 class="fw-bold text-dark"><i class="fas fa-tools me-2"></i>Primer Technical details:</h4>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                      <li><i class="fas fa-check-circle text-success me-2"></i>Typical Recommended System.</li>
+                      <li><i class="fas fa-check-circle text-success me-2"></i>Coverage: 7-11sqm per liter depending on the application</li>
+                      <li><i class="fas fa-check-circle text-success me-2"></i>Tools: brush, roll, sponge, leather cloths For further information please check the proper technical datasheet.</li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section6" class="hidden-content description-content-6" style="display:none;">
+    <h2 style="text-align: center;">Rodas FLUO Description</h2>
+    <br>
+    <div style="background-color: rgb(200, 228, 226); padding: 1rem; color: rgb(0, 0, 0);">
+        <h3>General Description</h3>
+        <p>
+            <span style="color: black; font-weight: bolder;">Rodas FLUO</span> is a
+            water-based and transpiring decorative paint with giving you an amazing
+            fluorescent effect that will last four hours as it is activated
+            by black light (very low UV lightings) Perfect to enhance the ambient of
+            clubs, restaurants, and fashion shops.
+        </p>
+    </div>
+    <br>
+    <div class="my-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-6 bg-light">
+                <!--Download the specification in PDF -->
+                <div style="text-align: right; margin-bottom: 1rem;">
+                    <div class="tooltip-icon-6">
+                        <a href="specifications/Rodas FLUO.pdf" download>
+                            <i class="fas fa-file-download fa-2x text-primary"></i>
+                        </a>
+                        <span class="tooltip-text-6">Download the specification in PDF</span>
+                    </div>
+                </div>
+                <div class="col-lg-12 py-5 description-col-6">
+                    <div class="py-5">
+                        <div id="english" class="language-text-6">
+                            <div style="color: #051225;">
+                                <h3 class="text text-center pro-id-6">Application:</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>The
+                                        fluorescent effect is being activated by
+                                        black light (low UV light). Apply the paint
+                                        using the special brush in an oblique
+                                        direction from top to bottom, alternating
+                                        the strokes from right to left. In the same
+                                        direction wait 10-15 min until the smooth
+                                        part is dried, rough is still wet. Smooth
+                                        the surface
+                                        with the special spatula following the used
+                                        direction after 4-5 hours apply another coat
+                                        with the same technique following the same
+                                        direction, with another direction, you can
+                                        obtain another.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-5">
+                        <div id="english" class="language-text align-items-center">
+                            <div class="col-12 align-items-center">
+                                <h4 class="fw-bold text-dark"><i class="fas fa-tools me-2"></i> Technical details:</h4>
+                                <ul style="list-style-type: none; padding-left: 0;">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Coverage: 8-10 m/Ltr.</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Tools: brush, sponge, spatula.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+  <script>
+    // Get URL query parameters
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get('section');
+
+    // Hide all sections
+    document.querySelectorAll('div[id^="section"]').forEach(div => {
+      div.style.display = 'none';
+    });
+
+    // Show the selected section if it exists
+    if (section) {
+      const el = document.getElementById('section' + section);
+      if (el) {
+        el.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+
+</html>
