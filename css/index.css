@@ -919,3 +919,7 @@ p {
         /* Move to the left by 50% of the content */
     }
 }
+
+#icon {
+    border-radius: 50%;
+}
