@@ -1,5 +1,5 @@
 :root {
-    --primary: #06A3DA;
+    --primary: #005e9e;
     --secondary: #F57E57;
     --light: #EEF9FF;
     --dark: #091E3E;
@@ -207,7 +207,7 @@ h6,
 } */
 
 .appointment-form {
-    background: rgba(6, 163, 218, .7);
+    background: rgb(147, 204, 207);
 }
 
 .service-item img,
@@ -1233,7 +1233,11 @@ p {
 #button-style,
 #button-style-paint,
 #button-style-fiber,
-#button-style-other {
+#button-style-other,
+#showAmharic,
+#showEnglish,
+#readMoreBtn,
+#readMoreAmharicBtn {
     background-image: linear-gradient(to right, #005e9e, #005e9e);
     color: rgb(255, 255, 255);
     border: none;
@@ -1244,7 +1248,11 @@ p {
 #button-style:hover,
 #button-style-paint:hover,
 #button-style-fiber:hover,
-#button-style-other:hover {
+#button-style-other:hover,
+#showAmharic:hover,
+#showEnglish:hover,
+#readMoreBtn:hover,
+#readMoreAmharicBtn:hover {
     background-image: linear-gradient(to right, #b18d35, #b18d35);
 }
 
