@@ -1471,3 +1471,36 @@ p {
         height: 200px;
     }
 }
+
+@media (max-width: 576px) {
+    .col-lg-2 {
+        flex: 0 0 50%;
+        /* Two images per row on extra small devices */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-lg-2 {
+        flex: 0 0 100% !important;
+        /* Full width on small screens */
+        max-width: 100% !important;
+    }
+    .image-container img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+    .productContainer,
+    .image-container {
+        width: 40%;
+    }
+    #color_name {
+        width: 40%;
+    }
+    body,
+    html {
+        overflow-x: hidden;
+    }
+}
