@@ -1,10 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rodas Paint Industry</title>
+    <meta charset="utf-8">
+    <title>Decorative Paint - Rodas Paint Industry</title>
+    <link rel="icon" href="img/super/background/sliderlogo.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS (You can also use a CDN link) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Bootstrap JS (You can also use a CDN link) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS + Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/enamel.css" rel="stylesheet">
+    <style>
+        .icon-button {
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #fffcfccc;
+            position: relative;
+            padding: 8px;
+        }
+        
+        .icon-button:hover {
+            color: #dfe3e7;
+            /* Change icon color on hover */
+        }
+        /* Tooltip container */
+        
+        .icon-button .tooltip-text {
+            visibility: hidden;
+            width: max-content;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 5px 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            /* Position above the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+        /* Tooltip arrow */
+        
+        .icon-button .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            /* At the bottom of tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(221, 219, 219) transparent transparent transparent;
+        }
+        /* Show the tooltip text when hover */
+        
+        .icon-button:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -197,6 +295,139 @@
 </head>
 
 <body>
+     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
+            <h5 class="m-0 text-secondary d-flex flex-wrap">
+                <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
+            </h5>
+            <h6 class="m-0 text-center" style="font-weight: bolder;">
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span
+                        style="color: #63852f;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                </span>
+            </h6>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints
+                            Industry</a>
+                        <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i> Magazine
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Fiber Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="water-tanker.html">Water
+                                    Tankers</a>
+                                <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
+                                <a class="dropdown-item" href="bathroom-equipments.html">Bathroom
+                                    Equipments</a>
+                                <a class="dropdown-item" href="kitchen-sink.html">Kitchen
+                                    Sinks</a>
+
+                                <a class="dropdown-item" href="laundary-bath.html">Laundry
+                                    Bath</a>
+                                <a class="dropdown-item" href="otherfiber.html">Others
+                                    Products</a>
+                            </div>
+                        </div>
+
+                        <!-- Paint Products -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Paint Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
+                                <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
+                                <a class="dropdown-item" href="enamel.html">Enamel Paint</a>
+                                <a class="dropdown-item" href="special-paint.html">Special
+                                    Paint</a>
+                                <a class="dropdown-item" href="industrial-paint.html">Industrial
+                                    Paint</a>
+                                <a class="dropdown-item" href="varnish.html">Varnish</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti
+                                    Rust</a>
+                                <a class="dropdown-item" href="glue.html">
+                                    Glue</a>
+                                <a class="dropdown-item" href="decorative.html"> Decorative
+                                    Paints </a>
+                                <a class="dropdown-item" href="stoneGranite.html">Granite & Stone
+                                    Paints </a>
+                            </div>
+                        </div>
+
+                        <!-- Other Sectors -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">Other
+                                Sectors</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="marble.html">POMY MARBLE
+                                    FACTORY</a>
+                                <a class="dropdown-item" href="waterprofing.html">
+                                    Waterproofing</a>
+                                <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
+                <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
+
+                <!-- Language Selector Dropdown -->
+                <div class="nav-item dropdown">
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                       
+                        Language
+                    </a> -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- English -->
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;"> English
+                            </a>
+                        </li>
+                        <!-- Amharic -->
+                        <li>
+                            <a class="dropdown-item" href="amharic/decorative.html">
+                                <img src="img/ethiopia.png" alt="Amharic " style="width: 20px; height: 15px;"> አማርኛ
+                            </a>
+                        </li>
+                        <!-- afaan oromo -->
+                        <li>
+                            <a class="dropdown-item" href="afanoromo/decorative.html">
+                                <img src="img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan Oromoo
+                            </a>
+                        </li>
+                        <!-- Chinese -->
+                        <!-- <li><a class="dropdown-item" href="chinese/enamel.html">
+                        <img src="img/china.png" alt="Chinese " style="width: 20px; height: 15px;"> 中文
+                    </a></li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Section 1 -->
     <div id="section1">
@@ -224,84 +455,95 @@
                         intended for internal application. It creates metallic finishes with deep elegance, is odorless,
                         non–toxic, and washable.</p>
                 </div>
+                <div class="d-block d-md-flex mt-1">
+  
+
+  
+    <div style="flex: 1; padding-left: 1rem;">
+        <h3>Characteristics & Physical Properties</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+            <tbody>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Appearance</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Metallic</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Grades</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Smooth, Fine, Medium, Coarse</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Specific Weight</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">1.0 Kg/Ltr</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Method of Application</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Brush, Roller, Spatula, Leather cloth, Trowel</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Coverage</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">8–12 m²/Kg depending on surface and application</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Drying Time</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">3–4 Hours</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Dilution</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">5–10% with fresh water</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">VOC</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">52 g/Ltr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+    <div class="mb-3 mb-md-0" style="flex: 1;">
+        <h3>Advantages</h3>
+        <ul>
+            <li>Easy application</li>
+            <li>Low odor and low VOC level</li>
+            <li>Ready to use</li>
+            <li>Can be tinted with various colors</li>
+        </ul>
+    </div>
+</div>
+<div class="d-block d-md-flex mt-1">
+    <!-- Left: Surface Preparation Section -->
+    <div class="mb-3 mb-md-0" style="flex: 1;">
+        <h3>Surface Preparation</h3>
+        
+        <h4>New Concrete:</h4>
+        <ul>
+            <li>Fully cured (28 days minimum), clean, and contaminant-free</li>
+            <li>Prime with Masonry AR Primer, Masonry Primer, PVA Wall filler, sanding, and intermediate coat</li>
+        </ul>
+        
+        <h4>Old Concrete:</h4>
+        <ul>
+            <li>Remove blisters, cracks, and loose paint</li>
+            <li>Wash with fungicidal solution if necessary</li>
+            <li>Sand glossy finish coats</li>
+        </ul>
+    </div>
+
+    <!-- Right: Method of Application Section -->
+    <div style="flex: 1; padding-left: 1rem;">
+        <h3>Method of Application</h3>
+        <ul>
+            <li>Prepare surface for painting</li>
+            <li>Apply ALBA with trowel in vertical/horizontal strokes</li>
+            <li>Finish with desired texture using brush, roller, trowel, or leather cloth</li>
+        </ul>
+    </div>
+</div>
 
 
 
 
 
 
-                <h3>Advantages</h3>
-                <ul>
-                    <li>Easy application</li>
-                    <li>Low odor and low VOC level</li>
-                    <li>Ready to use</li>
-                    <li>Can be tinted with various colors</li>
-                </ul>
-                <a href="specifications/Rodas ALBA.pdf" download class="download-btn" aria-label="Download PDF">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-                    </svg>
-                    Download PDF
-                </a>
-                <h3>Characteristics & Physical Properties</h3>
-                <table>
-                    <tr>
-                        <th>Appearance</th>
-                        <td>Metallic</td>
-                    </tr>
-                    <tr>
-                        <th>Grades</th>
-                        <td>Smooth, Fine, Medium, Coarse</td>
-                    </tr>
-                    <tr>
-                        <th>Specific Weight</th>
-                        <td>1.0 Kg/Ltr</td>
-                    </tr>
-                    <tr>
-                        <th>Method of Application</th>
-                        <td>Brush, Roller, Spatula, Leather cloth, Trowel</td>
-                    </tr>
-                    <tr>
-                        <th>Coverage</th>
-                        <td>8–12 m²/Kg depending on surface and application</td>
-                    </tr>
-                    <tr>
-                        <th>Drying Time</th>
-                        <td>3–4 Hours</td>
-                    </tr>
-                    <tr>
-                        <th>Dilution</th>
-                        <td>5–10% with fresh water</td>
-                    </tr>
-                    <tr>
-                        <th>VOC</th>
-                        <td>52 g/Ltr</td>
-                    </tr>
-                </table>
-
-                <h3>Surface Preparation</h3>
-                <h4>New Concrete:</h4>
-                <ul>
-                    <li>Fully cured (28 days minimum), clean, and contaminant-free</li>
-                    <li>Prime with Masonry AR Primer, Masonry Primer, PVA Wall filler, sanding, and intermediate coat
-                    </li>
-                </ul>
-
-                <h4>Old Concrete:</h4>
-                <ul>
-                    <li>Remove blisters, cracks, and loose paint</li>
-                    <li>Wash with fungicidal solution if necessary</li>
-                    <li>Sand glossy finish coats</li>
-                </ul>
-
-                <h3>Method of Application</h3>
-                <ul>
-                    <li>Prepare surface for painting</li>
-                    <li>Apply ALBA with trowel in vertical/horizontal strokes</li>
-                    <li>Finish with desired texture using brush, roller, trowel, or leather cloth</li>
-                </ul>
 
                 <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px;">
                     <div class="info-box" style="background-color: #b1cfcb; flex: 1;">
@@ -317,6 +559,20 @@
                     </div>
                 </div>
             </div>
+                           <!-- Download the specification in PDF -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+                <a href="specifications/Rodas ALBA.pdf" download class="download-btn"
+                    aria-label="Download PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -349,54 +605,52 @@
                         top coat for steel decoration.</p>
                 </div>
 
-                <h3>Advantages</h3>
-                <ul>
-                    <li>Easy application</li>
-                    <li>Low odor and low VOC level</li>
-                    <li>Ready to use</li>
-                    <li>It can be tinted with a variety of desired colors</li>
-                </ul>
-                <a href="specifications/Rodas AQUA METALIC.pdf" download class="download-btn" aria-label="Download PDF">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-                    </svg>
-                    Download PDF
-                </a>
-                <h3>Characteristics and Physical Properties</h3>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Appearance</th>
-                            <td>Metallic</td>
-                        </tr>
-                        <tr>
-                            <th>Sp. Weight</th>
-                            <td>1.00 Kg/Ltr.</td>
-                        </tr>
-                        <tr style="background-color: #f5f6fa;">
-                            <th>Method of Application</th>
-                            <td>Brush, Roller, Spatula, Leather cloth, Trowel</td>
-                        </tr>
-                        <tr>
-                            <th>Coverage</th>
-                            <td>6-8 m²/Kg depending on the type of application.</td>
-                        </tr>
-                        <tr style="background-color: #f5f6fa;">
-                            <th>Flash point</th>
-                            <td>Non-flammable</td>
-                        </tr>
-                        <tr>
-                            <th>Dilution</th>
-                            <td>Fresh water if required</td>
-                        </tr>
-                        <tr style="background-color: #f5f6fa;">
-                            <th>VOC</th>
-                            <td>75 g/Ltr.</td>
-                        </tr>
-                    </tbody>
-                </table>
+               <div class="container">
+    <!-- Advantages Section -->
+    <h3>Advantages</h3>
+    <ul>
+        <li>Easy application</li>
+        <li>Low odor and low VOC level</li>
+        <li>Ready to use</li>
+        <li>It can be tinted with a variety of desired colors</li>
+    </ul>
+
+    <!-- Characteristics and Physical Properties Section -->
+    <h3>Characteristics and Physical Properties</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+        <tbody>
+            <tr style="background-color: #f5f6fa;">
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Appearance</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">Metallic</td>
+            </tr>
+            <tr>
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Sp. Weight</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">1.00 Kg/Ltr.</td>
+            </tr>
+            <tr style="background-color: #f5f6fa;">
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Method of Application</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">Brush, Roller, Spatula, Leather cloth, Trowel</td>
+            </tr>
+            <tr>
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Coverage</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">6-8 m²/Kg depending on the type of application.</td>
+            </tr>
+            <tr style="background-color: #f5f6fa;">
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Flash point</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">Non-flammable</td>
+            </tr>
+            <tr>
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Dilution</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">Fresh water if required</td>
+            </tr>
+            <tr style="background-color: #f5f6fa;">
+                <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">VOC</th>
+                <td style="padding: 8px; border: 1px solid #ccc;">75 g/Ltr.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
                 <h3>Surface Preparation</h3>
                 <h4>New Concrete:</h4>
@@ -445,6 +699,20 @@
                     </div>
                 </div>
             </div>
+                        <!-- Download the specification in PDF -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+                <a href="specifications/Rodas AQUA METALIC.pdf" download class="download-btn"
+                    aria-label="Download PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
         </div>
     </div>
     <!-- Section 2 -->
@@ -699,12 +967,18 @@
                     <div class="container">
                         <div class="row gx-6 bg-light">
                             <div style="text-align: right; margin-bottom: 1rem;">
-                                <div class="tooltip-icon">
-                                    <a href="specifications/Rodas DECOR.pdf" download>
-                                        <i class="fas fa-file-download fa-2x text-primary"></i>
-                                    </a>
-
-                                </div>
+                              <div class="tooltip-icon">
+                         
+                            <a href="specifications/Rodas DECOR.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
                             </div>
                             <div class="col-lg-6 py-5">
                                 <div class="py-5">
@@ -718,15 +992,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="specifications/Rodas DECOR.pdf" download class="download-btn"
-                                aria-label="Download PDF">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-                                </svg>
-                                Download PDF
-                            </a>
+                        
                             <div class="col-lg-6 py-5">
                                 <form>
                                     <div class="row g-4">
@@ -755,6 +1021,7 @@
     <!-- end of section 5 -->
 
     <div id="section6" class="hidden-contentcatalog-content-6" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -788,9 +1055,7 @@
                     <!--Download the specification in PDF -->
                     <div style="text-align: right; margin-bottom: 1rem;">
                         <div class="tooltip-icon-6">
-                            <a href="specifications/Rodas FLUO.pdf" download>
-                                <i class="fas fa-file-download fa-2x text-primary"></i>
-                            </a>
+                          
                             <a href="specifications/Rodas FLUO.pdf" download class="download-btn"
                                 aria-label="Download PDF">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
@@ -845,10 +1110,14 @@
                 </div>
             </div>
         </div>
+        </div>
+
+
     </div>
     <!-- end of section 6 -->
 
     <div id="section7" class="hidden-contentcatalog-content-7" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -868,7 +1137,7 @@
         <div style="background-color: rgb(200, 228, 226); padding: 1rem; color: rgb(0, 0, 0);">
             <h3>General Description</h3>
             <p>
-                <span style="color: black; font-weight: bolder;">Rodas GALAXY</span>is a water-based decorative paint
+                <span style="color: black; font-weight: bolder;">Rodas GALAXY </span>is a water-based decorative paint
                 reminding the spectacular effect of outer space galaxies. It is easy to apply and available in a wide
                 range of colors. This paint is very resistant and washable.
         </div>
@@ -895,15 +1164,7 @@
                             <div id="english" class="language-text">
 
 
-                                <!-- <div style="color: #051225;">
-                                                                    <h3 class="text text-center" id="pro-id">Advantages</h3>
-                                                                    <ul class="list-unstyled">
-                                                                        <li><i class="fas fa-check-circle text-success me-2"></i>Easy application</li>
-                                                                        <li><i class="fas fa-check-circle text-success me-2"></i>Low odor and low VOC level</li>
-                                                                        <li><i class="fas fa-check-circle text-success me-2"></i>Ready to use</li>
-                                                                        <li><i class="fas fa-check-circle text-success me-2"></i>It can be tinted with a variety of desired colors</li>
-                                                                    </ul>
-                                                                </div> -->
+                                
 
 
                                 <div style="color: #051225;">
@@ -1097,13 +1358,13 @@
 
             </div>
         </div>
-        <div class="container-fluid banner mb-5" style="margin-top: -10px;">
-            <div class="container">
+    
+        
                 <div class="row gx-12">
 
                     <div class=" col-lg-12 wow zoomIn " data-wow-delay="0.1s ">
                         <div class=" d-flex flex-column p-5 slide-div "
-                            style="height: 300px;background-color: rgb(177, 207, 203); ">
+                            style="background-color: rgb(177, 207, 203); ">
                             <h3 class="mb-6 text-center text-black ">Technical Features
                             </h3>
 
@@ -1140,7 +1401,7 @@
 
                         </div>
                     </div>
-                    <div>
+                    <div class=" col-lg-12 wow zoomIn " data-wow-delay="0.1s ">
                         <h3>NOTE</h3>
                         <p>
                             <i class="fas fa-check-circle text-success me-2"></i> To obtain obvious
@@ -1157,13 +1418,17 @@
 
 
                 </div>
-            </div>
+                <br><br>
+                <br>
+           
+     
         </div>
     </div>
     <!-- end of section 7 -->
 
 
     <div id="section8" class="hidden-content catalog-content-8" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -1195,10 +1460,7 @@
                     <!-- Download the specification in PDF -->
                     <div style="text-align: right; margin-bottom: 1rem;">
                         <div class="tooltip-icon">
-                            <a href="specifications/Rodas HAMMERTONE.pdf" download
-                                aria-label="Download Rodas HAMMERTONE specification PDF">
-                                <i class="fas fa-file-download fa-2x text-primary"></i>
-                            </a>
+                         
                             <a href="specifications/Rodas HAMMERTONE.pdf" download class="download-btn"
                                 aria-label="Download PDF">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
@@ -1266,10 +1528,12 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- end of section 8 -->
 
     <div id="section9" class="hidden-content catalog-content-9" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -1302,25 +1566,8 @@
         </div>
         <br>
         <div class="my-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
+           
                 <div class="row gx-6 bg-light">
-                    <!-- Download the specification in PDF -->
-                    <div style="text-align: right; margin-bottom: 1rem;">
-                        <div class="tooltip-icon">
-                            <a href="specifications/Rodas LINOL.pdf" download class="download-btn"
-                                aria-label="Download PDF">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-                                </svg>
-                                Download PDF
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 py-5">
-                        <div class="py-5 language-text" style="color: #051225;">
                             <h4 class="text-center">Characteristics and Physical Properties</h4>
                             <table
                                 style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
@@ -1372,10 +1619,10 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
+                      
+                   
 
-                    <div class="col-lg-6 py-5">
+                 
                         <div class="row g-4">
                             <div class="col-12">
                                 <h4 class="fw-bold text-dark"><i class="fas fa-tools me-2"></i>Old Wood, Old Iron:</h4>
@@ -1428,15 +1675,31 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                   
 
                 </div>
-            </div>
+         
+        </div>
+           <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas LINOL.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
         </div>
     </div>
     <!-- end of section 9 -->
 
     <div id="section10" class="hidden-content catalog-content-10" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -1670,10 +1933,12 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- end of section 10 -->
 
     <div id="section11" class="hidden-content catalog-content-11" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -1681,7 +1946,7 @@
                 </svg>
                 Decorative Paints
             </a>
-            <a href="decortivecatalog.html?section11" class="btn btn-right">
+            <a href="decortivecatalog.html?section=11" class="btn btn-right">
                 catalog
                 <svg viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
@@ -1749,9 +2014,14 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- end of section 11 -->
+
+
+
     <div id="section12" class="hidden-content catalog-content-12" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -1759,7 +2029,7 @@
                 </svg>
                 Decorative Paints
             </a>
-            <a href="decortivecatalog.html?section12" class="btn btn-right">
+            <a href="decortivecatalog.html?section=12" class="btn btn-right">
                 catalog
                 <svg viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
@@ -2043,12 +2313,14 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </div>
 
 
     </div>
     <!-- end of section 12 -->
 
    <div id="section13" class="hidden-content catalog-content-13" style="display:none;">
+     <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -2056,7 +2328,7 @@
                 </svg>
                 Decorative Paints
             </a>
-            <a href="decortivecatalog.html?section13" class="btn btn-right">
+            <a href="decortivecatalog.html?section=13" class="btn btn-right">
                 catalog
                 <svg viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
@@ -2182,6 +2454,21 @@
 
                                                                         </tbody>
                                                                     </table>
+                                                                    <br>
+                                                                      <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas LINOLISA.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
                                                                 </div>
                                                                  <div class=" col-12 ">
                                                                     <h4 class=" fw-bold text-dark "><i
@@ -2345,14 +2632,14 @@
                                                                     </ul>
 
 
-
-
+                                                                </div>
                                                                 </div>
 
     </div>
  <!-- end of section 13 -->
 
  <div id="section14" class="hidden-content catalog-content-14" style="display:none;">
+     <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -2360,7 +2647,7 @@
                 </svg>
                 Decorative Paints
             </a>
-            <a href="decortivecatalog.html?section14" class="btn btn-right">
+            <a href="decortivecatalog.html?section=14" class="btn btn-right">
                 catalog
                 <svg viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
@@ -2516,6 +2803,22 @@
 
                                                                         </tbody>
                                                                     </table>
+                                                                    <br>
+
+                                                                      <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas MAGIC.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
                                                                 </div>
                                                                     <div class=" col-12 ">
                                                                     <h4 class=" fw-bold text-dark "><i
@@ -2567,6 +2870,7 @@
                                                                     </ul>
 
                                                                 </div>
+                                                            </div>
            
                                                             
                                                             
@@ -2575,6 +2879,7 @@
     </div>
  <!-- end of section 14 -->
  <div id="section15" class="hidden-content catalog-content-15" style="display:none;">
+     <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -2582,7 +2887,7 @@
                 </svg>
                 Decorative Paints
             </a>
-            <a href="decortivecatalog.html?section15" class="btn btn-right">
+            <a href="decortivecatalog.html?section=15" class="btn btn-right">
                 catalog
                 <svg viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
@@ -2612,189 +2917,85 @@
                                                                         from natural stone to a marble-like antique
                                                                         design.
                                                                     </p>
-                                                                    <ul>
-                                                                        <span
-                                                                            style=" color: black; font-weight: bolder; ">Product
-                                                                            Range:</span>
-                                                                        <li>
-                                                                            Marmorino Smooth
-                                                                        </li>
+                                                                    <div class="container-fluid">
+    <div class="d-flex flex-column flex-md-row">
+       
 
+        <!-- Characteristics and Table Section -->
+        <div class="flex-fill">
+            <h4 class="text-center" id="pro-id">Characteristics and Physical Properties</h4>
 
-                                                                        <li> Marmorino Paste Medium </li>
-                                                                        <li> Marmorino Rough</li>
-                                                                        <li> Marmorino Classic</li>
-                                                                        <li>
-                                                                            Marmorino Natural
-                                                                        </li>
-                                                                        <li> Marmorino Shells</li>
-                                                                        <li>
-                                                                            Marmosilk
-                                                                        </li>
+            <div class="table-responsive">
+                <table class="table" style="border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+                    <tbody>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Contains</th>
+                            <td class="p-2 border">Natural mineral lime</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">Viscosity</th>
+                            <td class="p-2 border">2000-3500 cps at 25°C</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Appearance</th>
+                            <td class="p-2 border">Paste</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">Fire Rating</th>
+                            <td class="p-2 border">0 (Non-flammable / Non-combustible)</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Sp. Weight</th>
+                            <td class="p-2 border">1.5-1.7 Kg/Ltr.</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">VOC</th>
+                            <td class="p-2 border">48 g/Ltr.</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Plaster</th>
+                            <td class="p-2 border">0.9–1.0 Kg/m²</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">Gypsum</th>
+                            <td class="p-2 border">0.5–0.8 Kg/m²</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Touch Dry</th>
+                            <td class="p-2 border">1-2 Hrs.</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">Recoat Ability</th>
+                            <td class="p-2 border">6-12 Hrs.</td>
+                        </tr>
+                        <tr class="bg-light">
+                            <th class="text-left p-2 font-weight-bold border">Pencil Hardness</th>
+                            <td class="p-2 border">5 Hrs.</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left p-2 font-weight-bold border">Dilution</th>
+                            <td class="p-2 border">Water</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+         <!-- Product Range Section -->
+        <div class="mb-3 mb-md-0 flex-fill">
+            <ul>
+                <span class="font-weight-bold">Product Range:</span>
+                <li>Marmorino Smooth</li>
+                <li>Marmorino Paste Medium</li>
+                <li>Marmorino Rough</li>
+                <li>Marmorino Classic</li>
+                <li>Marmorino Natural</li>
+                <li>Marmorino Shells</li>
+                <li>Marmosilk</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-                                                                    </ul>
-
-
-
-                                                                    <h4 class=" text-center " id=" pro-id ">Characteristics
-                                                                        and Physical Properties</h4>
-                                                                    <table
-                                                                        style=" width: 100%; border-collapse: collapse;
-                                                                        margin-top: 1rem; border: 1px solid #ccc; ">
-                                                                        <tbody>
-                                                                            <tr style=" background-color: #f5f6fa; ">
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Contains</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    Natural mineral lime
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Viscosity</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-
-                                                                                    2000-3500 cps at 25oC</td>
-                                                                            </tr>
-                                                                            <tr style=" background-color: #f5f6fa; ">
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Appearance</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    Paste</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Fire Rating
-
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    0 (Non flammable/ Non combustible)
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr style=" background-color: #f5f6fa; ">
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Sp. Weight
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    1.5-1.7 Kg/Ltr.
-
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    VOC</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    48 g/Ltr.
-
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr style=" background-color: #f5f6fa; ">
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Plaster</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    0.9–1.0 Kg/m2
-
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Gypsum</th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    0.5–0.8 Kg/m2
-
-
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr style=" background-color: #f5f6fa; ">
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Touch Dry
-
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-
-                                                                                    1-2 Hrs.
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Recoat Ability
-
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    6-12 Hrs.
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Pencil Hardness
-
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    5 Hrs.
-
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th
-                                                                                    style=" text-align: left; padding:
-                                                                        8px; font-weight: 600; border: 1px solid #ccc; ">
-                                                                                    Dilution
-
-                                                                                </th>
-                                                                                <td
-                                                                                    style=" padding: 8px; border: 1px
-                                                                        solid #ccc; ">
-                                                                                    Water
-                                                                                </td>
-                                                                            </tr>
-
-
-                                                                        </tbody>
-                                                                    </table>
                                                                     <P>Lightweight surface, maximum 3mm thick enable
                                                                         architects to make considerable cost savings on
                                                                         basic construction costs. Each finish is
@@ -2999,6 +3200,21 @@
                                                                     </p>
 
                                                                 </div>
+                                                                                              <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas MARMORINO.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                                                                </div>
        
            
                                                             
@@ -3008,9 +3224,487 @@
     </div>
  <!-- end of section 15 -->
 
-    <!-- 16 -->
-    <!-- 17 -->
+  <div id="section16" class="hidden-content catalog-content-16" style="display:none;">
+     <div class="container">
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=16" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+        <h2 style="text-align: center;">Rodas MAYA Description</h2>
+        <br>
+           <div
+                                            style=" background-color: rgb(200, 228, 226); padding: 1rem; color: rgb(0, 0, 0); ">
+                                            <h3>General Description</h3>
+
+                                            <p>
+
+                                                Rodas MAYA is a textured finish for interiors with a shining effect of
+                                                decorative glitter. It has been developed to provide durability,
+                                                washability, and environment-friendly paints. This product is created to
+                                                give new decorative solutions for interiors in order to make your
+                                                environment unique for them to refine elegance.
+                                            </p>
+                                            <h5>Surface Preparation</h5>
+
+                                            <p>
+                                                <span style=" color: black; font-weight: bolder; ">Rodas MAYA</span>
+                                                can be applied to the most solid surfaces. Make sure that the
+                                                surface is thoroughly dried and aged. Resurface with the specific
+                                                products if necessary. Cracks should be filled with suitable crack
+                                                filler or similar products. In case, the surface is flaky, apply RODAS
+                                                Masonry AR Primer to avoid efflorescence. Dry lined surfaces
+                                                (plasterboard) should be double boarded with staggered joints. Joints in
+                                                MDF surfaces should be taped. Raw substrates such as concrete blockwork,
+                                                brickwork, and similar backgrounds must be rendered with a base plaster
+                                                to achieve a true, flat surface that is straight both horizontally and
+                                                vertically. All supports should be sound, clean, dry, and free of dust
+                                                and greasy matter. In hot weather, the support should be moistened. All
+                                                substrates should be prepared as if for final decoration. It is not
+                                                recommended to apply over wallpaper or lining paper. Extra care should
+                                                be taken on surfaces that are previously decorated.
+                                            </p>
+                                            <span style=" color: black; font-weight: bolder; "> Method of
+                                                Application:</span>
+                                            <p>
+                                                To obtain the best effect, quality results, and excellent finish, it is
+                                                advisable to apply a primer coat prior to the application of RODAS MAYA.
+                                                It can be applied on various surfaces like concrete walls, plaster, wood
+                                                panels, gypsum board, etc. after previous preparation. RODAS MAYA can be
+                                                applied using stainless steel trowel with an approximate yield of 250
+                                                grams per square meter per coat. RODAS MAYA is ready to use the
+                                                material, dilute with water if required then applied in a number of thin
+                                                layers to build thickness of 0.5-1.0 mm.
+                                            </p>
+                                            <p>Scrape over the layered material to remove any small lumps or trowel
+                                                lines. Pay attention at the corners to avoid an uneven finish. Leave the
+                                                first layer until dry to touch for about an hour depending on the
+                                                temperature in the working place. Repeat the process progressively over
+                                                the wall, occasionally passed the areas already coated to achieve the
+                                                required effect. Keep on trowelling the surface with a cleaned stainless
+                                                steel trowel for about 15 minutes until the surface is smooth Tools
+                                                should be clean with water immediately after use. Indicative spreading
+                                                rate: 0.5 – 1.0 kg/m2 based on two (2) coats on plaster or gypsum. It is
+                                                advisable to determine the actual spreading rate by performing a
+                                                preliminary application test on the specific surface.</p>
+
+                                        </div>
+                                          
+                                                <div class=" row gx-6 bg-light ">
+                                                     <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas MAYA.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                                              
+
+                                                                 <h4 class=" text-center " id=" pro-id ">
+                                                                            Characteristics
+                                                                            and Physical Properties</h4>
+                                                                <div class="d-block d-md-flex py-4" style="color: #051225;">
+    <div class="table-responsive" style="flex: 1;">
+        <table class="table" style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+            <tbody>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Composition
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        Acrylic resins and special pigments
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Sp. Weight
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        1.50 +/- 0.10 Kg./ Ltr.
+                    </td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Theo. Yield
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        2-3 m²/ Ltr.
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Appearance
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        Texture
+                    </td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Dilution
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        5–10 Max. (If required)
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        VOC
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        12 g/Ltr.
+                    </td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        VOC
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        80 g/Ltr.
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                        Washing Resistance
+                    </th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        Washes well with water or common detergents
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="flex: 1; padding-left: 1rem;">
+        <ul>
+            <li>
+                <strong><em>NOTE:</em></strong>
+                <em>The color in the catalog serves only as guidelines and we cannot guarantee the perfect reproduction of the colors.</em>
+            </li>
+            <li>
+                <strong>Storage:</strong>
+                The product must be stored in accordance with national regulations. The product should be kept in a cold and ventilated area, protected from heat and direct sunlight. Containers must be kept tightly closed.
+            </li>
+            <li>
+                <strong>Cleaning of Tools:</strong>
+                All tools should be cleaned immediately with water.
+            </li>
+            <li>
+                <strong>Packaging:</strong>
+                5Kg bucket and 25Kg pail. Precautions: See Safety Indication Sheet.
+            </li>
+        </ul>
+    </div>
+</div>
+
+                                                                   
+
+                                                </div>
+                                          
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+      
+           
+
+    </div>
+<!-- end of section 16 -->
+
+ <div id="section17" class="hidden-content catalog-content-17" style="display:none;">
+     <div class="container">
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=17" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+        <h2 style="text-align: center;">Rodas PALMYRA Description</h2>
+        <br>
+           
+          
+                                                        <div style=" color: #051225; ">
+
+                                                                    <h3>General Description</h3>
+                                                                    <p>is a special coating for interiors with the
+                                                                        aesthetic effect of metal
+                                                                        texture. It is realized with new technologies
+                                                                        that create surfaces
+                                                                        characterized by a unique feel that gives a new
+                                                                        decorative solution to
+                                                                        make your environment an ambiance of
+                                                                        sophistication and elegance.
+                                                                    </p>
+                                                                    <h6> <span
+                                                                            style=" font-weight: bold; ">Advantages:</span>
+                                                                    </h6>
+
+                                                                    <ul>
+                                                                        <li> For interior use.</li>
+
+                                                                        <li> Good adhesion properties.</li>
+                                                                        <li> Ease of application.</li>
+                                                                        <li> Environment friendly.</li>
+                                                                    </ul>
+
+
+                                                                    <h4 class=" text-center " id=" pro-id "> Characteristics
+                                                                        and Physical Properties</h4>
+                                                                    <table
+                                                                        style=" width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc; ">
+                                                                        <tbody>
+                                                                            <tr style=" background-color: #f5f6fa; ">
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Sp. Weight </th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    1.0 +/- 0.1 Kg/Ltr.
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Viscosity</th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    20 Poise at 25oC</td>
+                                                                            </tr>
+                                                                            <tr style=" background-color: #f5f6fa; ">
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Coverage</th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    13 m2/Ltr.
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Shelf Life
+
+                                                                                </th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    12 Months
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr style=" background-color: #f5f6fa; ">
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Flash Point
+
+                                                                                </th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    65oC
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Application</th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    By brush or sponge
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr style=" background-color: #f5f6fa; ">
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    Dilution</th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    5% Water Max. (If required)
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th
+                                                                                    style=" text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc; ">
+                                                                                    VOC</th>
+                                                                                <td
+                                                                                    style=" padding: 8px; border: 1px solid #ccc; ">
+                                                                                    75 g/Ltr.
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <br>
+                                                                                                         <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas PALMYRA.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                                                                    <h4 class=" text-center " id=" pro-id ">Surface
+                                                                        Preparation</h4>
+                                                                    <span>
+                                                                        <h5>New Substrates:</h5>
+                                                                    </span>
+                                                                    <ul>
+                                                                        <li>
+                                                                            New concrete should be cured at least 28
+                                                                            days.
+                                                                        </li>
+                                                                        <li>The substrate must be free from any form of
+                                                                            contaminants.</li>
+                                                                        <li> Apply 1 coat of RODAS Masonry AR Primer as
+                                                                            an impregnating sealer.</li>
+                                                                        <li>
+                                                                            Level the surface with RODAS PVA Wall filler
+                                                                            and sand until smooth.
+                                                                        </li>
+                                                                        <p>Apply 1 – 2 coats of RODASCRYL as an
+                                                                            intermediate coat (optional). Apply 1 coat
+                                                                            of RODAS PALMYRA in a non-uniform manner and
+                                                                            rotational movements.</p>
+                                                                    </ul>
+                                                                </div>
+                                                                        <div class=" col-12 ">
+                                                                    <h5> Old Concrete (Previously painted)
+                                                                    </h5>
+
+                                                                    <ul>
+                                                                        <li>
+                                                                            Remove all blistered, cracked, and peeled
+                                                                            off paint from the surface.
+                                                                        </li>
+                                                                        <li>Penetrated paint must be cleared and treated
+                                                                            with 3% ammonia and water.</li>
+                                                                        <li>Glossy finish coat must be sanded.</li>
+                                                                        <li>Apply 1 coat of RODAS Masonry AR Primer as
+                                                                            impregnating sealer; apply 1 – 2 coats of
+                                                                            Rodas CRYL (Desired color)</li>
+                                                                        <li>
+                                                                            Apply 1 coat of RODAS PALMYRA in a specified
+                                                                            application technique.
+                                                                        </li>
+                                                                    </ul>
+
+
+                                                                </div>
+                                                                <div class="py-4 px-3" style="color: #051225;">
+    <h4 class="text-center" id="pro-id">Typical Recommended System</h4>
+
+    <div class="d-block d-md-flex mt-4">
+        <!-- Left: Table -->
+        <div class="table-responsive" style="flex: 1;">
+            <table class="table" style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+                <tbody>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Rodas Masonry AR Primer
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            - 1 Coat.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Rodas Masonry Primer (Optional)
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            - 1 Coat.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            PVA Wall Filler (Optional)
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            - 2 Coats.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Rodas CRYL (Intermediate Coat)
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            - 1 Coat.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Rodas PALMYRA
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            - 1 Coat.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right: Notes -->
+        <div style="flex: 1; padding-left: 1rem;">
+            <h6><strong>Storage:</strong></h6>
+            <p>
+                The product must be stored in accordance with national regulations. The product should be kept in a cool and well-ventilated place, protected from heat and direct sunlight. Containers must be kept tightly closed.
+            </p>
+            <ul>
+                <li><strong>Cleaning of Tools:</strong> All tools should be cleaned with water.</li>
+                <li><strong>Packing:</strong> Available in ½ Kg, 1 Kg, and 5 Kg.</li>
+                <li><strong>Precautions:</strong> See the safety indication sheet.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                                                                </div>
+                                                                <br>
+                                                                <br>
+           
+                                                            
+                                                            
+                                                                  
+
+    </div>
+ <!-- end of section 17 -->
+
+
     <div id="section18" class="hidden-content catalog-content-18" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -3183,11 +3877,13 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- end of section 18 -->
 
 
     <div id="section19" class="hidden-content catalog-content-19" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -3296,15 +3992,361 @@
                 </div>
             </div>
         </div>
+        </div>
     </div>
     <!-- end of section 19 -->
 
-    <!-- 20 -->
+     <div id="section20" class="hidden-content catalog-content-20" style="display:none;">
+         <div class="container">
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=20" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+
+        <h2 style="text-align: center;">Rodas sand Description</h2>
+           <div style="background-color: rgb(200, 228, 226); padding: 1rem; color: rgb(0, 0, 0);">
+                                                        <h3>General Description</h3>
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">Rodas
+                                                                SAND</span> is a satin finish for interiors with the aesthetic effect of velvet material. It has been developed with the most advanced
+                                                            technologies to provide durability, washability, and environment-friendly paints. This product is created to give new decorative solutions for interiors in order to make your environment unique
+                                                            for them to refine elegance.
+                                                        </p>
+                                                        <h3>Method of Application</h3>
+                                                        <p style="text-align:justify;">
+                                                            To obtain the best aesthetic effect and quality results, we suggest following our application recommendations. To provide an excellent finish, it is advisable to apply and primer coat of the same tone of SAND. It can be applied on various surfaces like
+                                                            concrete walls, plaster, wood panels, iron ad-light alloys, etc. after previous preparation.
+                                                        </p>
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">Rodas
+                                                                SAND</span> can be applied by spray keeping the pressure at 2–4 atm. At a distance from the substrate of about 30–40 cm. Use a
+                                                            spray gun with a superiors tank and with a nozzle of 1.7 – 1.8 mm. Spray the first coat of SAND horizontally in the quantity of 170 – 200 gms./sq.m. It can be applied using stainless steel trowel
+                                                            with an approximate yield of 200 grams per square meter per coat.
+                                                        </p>
+
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">NEW
+                                                                CONCRETE WALLS</span> – the wall should be fully dry without alkaline substance and it should be smooth. Otherwise, scrape with
+                                                            PVA Wallfiller, then sand with 180 grit sandpaper. Apply one (1) coat of MAS Masonry Primer or Mascryl # 1000 prior to the application of SAND as described in No.1
+                                                        </p>
+
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">NEW
+                                                                WOOD</span> – application of PVA Wallfiller (if necessary), then sand with 280 – grit sandpaper until a smooth surface is obtained.
+                                                            Apply one (1) coat of Undercoat Enamel and two (2) coats of SAND with an interval of 5 – 6 hours at room temperature as described in No.1
+                                                        </p>
+
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">OLD WOOD,
+                                                                OLD IRON</span> – (Previously painted with alkyds and P.U. paints). Smoothen with 280 – 300 grit sandpaper to facilitate the adhesion
+                                                            of Primary 300 and then the SAND as indicated in no.1.
+                                                        </p>
+
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">NEW
+                                                                IRON</span> – smoothen the surface with sandpaper. Remove traces of oil, grease, and other contaminants and apply one (1) coat
+                                                            of Deruster. Apply one (1) cot of Primary 300 prior to the application of two (2) coats of SAND as mentioned in No.1
+                                                        </p>
+
+                                                        <p style="text-align: justify;">
+                                                            <span style="color: black; font-weight: bolder;">LIGHT
+                                                                ALLOYS</span> – remove grease and smooth the surface and apply a coat of adequate primer. Apply one (1) coat of Primary 300 before
+                                                            the application of SAND as described in No.1
+                                                        </p>
 
 
-    <!-- 21 -->
+                                                    </div>
+                                                       <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas SAND.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <div style="color: #051225;" class="py-4 px-3">
+    <h4 class="text-center" id="pro-id">Characteristics and Physical Properties</h4>
+
+    <div class="d-block d-md-flex mt-4">
+        <!-- Left: Table -->
+        <div class="table-responsive" style="flex: 1;">
+            <table class="table" style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+                <tbody>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Composition
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            Acrylic resins and special pigments
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Sp. Weight
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            1.10 +/- 0.10 Kg/Ltr.
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Theo. Yield
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            5 - 7 m²/Ltr.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Appearance
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            Satin matt
+                        </td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            VOC
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            80 g/Ltr.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">
+                            Washability
+                        </th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">
+                            Washes well with water or common detergents
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right: Text Content -->
+        <div style="flex: 1; padding-left: 1rem;">
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">NOTE:</span> The color in the catalogue serves only as guidelines and we cannot guarantee the perfect reproduction of the colors.
+            </p>
+
+            <h2>Technical Features</h2>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Temperature for application:</span> Apply Rodas SAND at a temperature higher than 5°C but not more than 40°C.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Drying:</span> Dust dry after 1 hour at 20°C and dries in 3 hours. Hardens after 24 hours depending on the room temperature.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Resistance:</span> The elastic film obtained after a complete drying is shock and abrasion-resistant. Scrub resistance: As per ASTM D 2486 is > 1200 Cycles.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Washing resistance:</span> It resists alcohol, water, and common soaps.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Storage:</span> The product must be stored in accordance with national regulations. The product should be kept in a cool and ventilated area, protected from heat and direct sunlight. Containers must be kept tightly closed.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Cleaning of Tools:</span> All tools should be cleaned immediately with water.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Packaging:</span> Available in 5 Kg and 25 Kg.
+            </p>
+
+            <p style="text-align: justify;">
+                <span style="color: black; font-weight: bolder;">Precautions:</span> See Safety Indication Sheet.
+            </p>
+        </div>
+    </div>
+</div>
+ <br> <br>
+                                                                
+                                                                           
+                     </div>
+
+
+
+
+
+    </div>
+    <!-- end of section 20 -->
+
+   <div id="section21" class="hidden-content catalog-content-21" style="display:none;">
+     <div class="container">
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=21" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+
+        <h2 style="text-align: center;">Rodas SETA Description</h2>
+                  
+                                                                
+                                                                            <div style="color: #051225;">
+                                                                                <h3>General Description</h3>
+                                                                                <p style="text-align: justify;">
+                                                                                    <span style="color: black; font-weight: bolder;">Rodas
+                                                                                        SETA</span> is decorative trowelcoating with a dramatic metallic effect. It provides
+                                                                                    a silky polychromatic finish that enhances the beauty of indoor surfaces. The product is given a high level of breathability, prevents mildew and fungi growth, UV resistant,
+                                                                                    and environment friendly.
+                                                                                </p>
+                                                                            <div style="color: #051225;" class="py-4 px-3">
+    <h4 class="text-center" id="pro-id">Characteristics and Physical Properties</h4>
+
+    <!-- Responsive Table and Content Layout -->
+    <div class="d-block d-md-flex mt-4">
+        <!-- Left: Table -->
+        <div class="table-responsive" style="flex: 1;">
+            <table class="table" style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+                <tbody>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Viscosity</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Pasty</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Thinning/ Cleaning</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Water</td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Theo. Yield</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">100–125 g/m²</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Touch Dry</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">1–2 Hrs.</td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Appearance</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Silky</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Shelf Life</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">12 Months</td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Application</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Trowel</td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Dilution</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Not recommended.</td>
+                    </tr>
+                    <tr style="background-color: #f5f6fa;">
+                        <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">VOC</th>
+                        <td style="padding: 8px; border: 1px solid #ccc;">45 g/Ltr.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Right: Surface Preparation Content -->
+        <div style="flex: 1; padding-left: 1rem;">
+            <h4 class="fw-bold text-dark">Surface Preparation</h4>
+            <ul>
+                <li>For new concrete, it should be fully cured for at least 28 days, and the substrate must be free from any contaminants.</li>
+                <li>If it's old concrete, all blistered, cracked, or peeled paint should be removed.</li>
+                <li>Penetrated paint must be cleared and treated with 3% ammonia and water.</li>
+                <li>Glossy finish coats must be sanded.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+   <!-- Download the specification in PDF -->
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <div class="tooltip-icon">
+                            <a href="specifications/Rodas SAND.pdf" download class="download-btn"
+                                aria-label="Download PDF">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                                </svg>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+
+                                                                            </div>
+                                                                                <div class="col-12">
+                                                                              
+                                                                                <h4 class="fw-bold text-dark">Typical Recommended System
+                                                                                </h4>
+
+                                                                                <ul>
+                                                                                    <li>Apply 1 coat of MAS Masonry Primer.
+                                                                                    </li>
+                                                                                    <li>Level the surface with PVA Wall Filler if necessary and sand until smooth.</li>
+                                                                                    <li>
+                                                                                        Apply 1–2 coats of Masonry Primer tinted with the desired color.
+                                                                                    </li>
+                                                                                    <li>Apply 1–2 coats of RODAS SETA tinted and diluted with 30% with water as a base coat.</li>
+                                                                                    <li>
+                                                                                        Apply the effect coat using the explained tools and technique.
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <span style="font-weight: bold;">Storage:</span>
+                                                                                <p style="text-align: justify;">
+                                                                                    The product must be stored in accordance with national regulations. The product should be kept in a cool and well-ventilated place, protected from heat and direct sunlight, containers must be kept tightly closed.
+                                                                                </p>
+                                                                                <p> <span style="font-weight: bold;">Rodas
+                                                                                        SETA</span>  is available in 4Kg and 20Kg.</p>
+                                                                                <span style="font-weight: bold;">Physiological
+                                                                                    Hazards:</span>
+
+                                                                                <p style="text-align: justify;"> <span style="font-weight: bold;">Rodas
+                                                                                        SETA </span>is water-based paint and does not contain solvents, nevertheless, good ventilation in working rooms is recommended as well as the use of safety tools and
+                                                                                    equipment. RODAS SETA is harmful if swallowed. If contact with eyes or skin occurs, wash well with freshwater and seek immediate medical advice.
+                                                                                </p>
+
+
+
+                                                                            </div>
+                                                                            </div>
+                                                                            <br> <br> <br>
+        
+
+
+
+
+
+    </div>
+    <!-- end of section 21 -->
+
 
     <div id="section22" class="hidden-content catalog-content-22" style="display:none;">
+         <div class="container">
         <div class="button-container">
             <a href="decorative.html" class="btn btn-left">
                 <svg viewBox="0 0 24 24">
@@ -3323,21 +4365,7 @@
         <h2 style="text-align: center;">Rodas STUCCO ANTICO Description</h2>
         <br>
 
-        <!-- Download the specification in PDF -->
-        <div style="text-align: right; margin-bottom: 1rem;">
-            <div class="tooltip-icon">
-                <a href="specifications/Rodas STUCCO ANTICO.pdf" download class="download-btn"
-                    aria-label="Download PDF">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-                    </svg>
-                    Download PDF
-                </a>
-            </div>
-        </div>
-
+      
         <div style="background-color: rgb(200, 228, 226); padding: 1rem; color: rgb(0, 0, 0);">
             <h3>General Description</h3>
             <p>
@@ -3361,12 +4389,396 @@
             <p><strong>Tools:</strong> Stainless steel trowel, spatula, sponge. For further information, please check
                 the proper technical datasheet.</p>
         </div>
+          <!-- Download the specification in PDF -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+                <a href="specifications/Rodas STUCCO ANTICO.pdf" download class="download-btn"
+                    aria-label="Download PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+        </div>
     </div>
     <!-- end of section 22 -->
 
-    <!-- 23 -->
+   <div id="section23" class="hidden-content catalog-content-23" style="display:none;">
+     <div class="container">
 
-    <!-- 24 -->
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=23" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+
+        <h2 style="text-align: center;">Rodas STUCCO GRASSELLO Description</h2>
+        
+                                                                
+                                                                            <div style="color: #051225;">
+                                                                                <h3>General Description</h3>
+                                                                                <p>
+                                                                                    <span style="color: black; font-weight: bolder;">Rodas
+                                                                                        STUCCO GRASSELLO</span> is a masonry covering for interiors, based on pure acrylic
+                                                                                    resins and selected fillers to provide a marblelike finish effect. The glossy appearance and shade of differences obtain gives unique and great value for the interior.
+                                                                                    It resembles a classic decoration including those of particular historical and artistic interests and can create a fantastic design depending on the skills of the applicator.
+                                                                                </p>
+
+
+
+
+                                                                              <div style="color: #051225;" class="py-4 px-3">
+   
+
+    
+
+
+  <div class="d-block d-md-flex mt-1">
+   
+
+    <!-- Right: Characteristics and Physical Properties -->
+    <div class="table-responsive" style="flex: 1; padding-left: 1rem;">
+        <h4 class="text-center" id="pro-id">Characteristics and Physical Properties</h4>
+        <table class="table" style="border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+            <tbody>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Appearance</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Glossy with shade</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Viscosity</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">300 Poise</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Density</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">2.0 Kg/ltr.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">pH</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">9.5</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Coverage</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">
+                        1000 g/m² on plaster <br>
+                        500 g/m² on smooth
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Average/ Coat</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">2 or more</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Drying time</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">4-6 Hrs.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Recoating</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">After 6 Hrs.</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">VOC</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">42 g/Ltr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+     <!-- Left: Advantages and Uses -->
+    <div class="mb-3 mb-md-0" style="flex: 1;">
+        <span style="font-weight: bold;">Advantages and Uses:</span>
+        <ul>
+            <li>Wall decorative coating for interior plasters and gypsum.</li>
+            <li>Water soluble material and environmentally safe.</li>
+            <li>Smooth to touch, odorless, non–toxic, and extremely pleasing in appearance.</li>
+            <li>Once applied, it creates a thick layer with transportability.</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+                                                                                <h3>Surface Preparation</h3>
+                                                                                <span style="font-weight: bold;">New
+                                                                                    Concrete:</span>
+                                                                                <p style="text-align: justify;">The surface must be clean, structurally sound, and free from all contaminants including curing compounds, form release agents, dust, dirt, oil, old coatings, and paint. New
+                                                                                    concrete and masonry surfaces should be cured for at least 28 days. Provide an absorptive surface on all substrates including smooth precast or formed concrete. The moisture
+                                                                                    content of the concrete should be below 4% by weight. All laitance must be removed prior to the next step in surface preparation. Remove from marks and other protrusions.
+                                                                                </p>
+                                                                            </div>
+                                                                            
+                                                                            <div class="col-12">
+                                                                                <span style="font-weight: bold;">Old
+                                                                                    Concrete:</span>
+                                                                                <p style="text-align: justify;"> Old concrete should be clean and in good state of repair i.e., cracks, holes, and other irregularities should be filled in. All blistered, cracks and peeled-off paints should
+                                                                                    be removed either by grit blasting, mechanical sanding, or paint stripper. Penetrated paint must be cleaned and treated with an ammonia solution. Glossy finish coat must
+                                                                                    be sanded. Oils and greases are best removed by steam cleaning in conjunction with a detergent solution. Thorough scrubbing with hot caustic solutions will also remove
+                                                                                    mineral oils and greases.
+                                                                                </p>
+
+
+                                                                                <span style="font-weight: bold;">Application
+                                                                                    Procedure:</span>
+
+                                                                                <p style="text-align: justify;"> The product can be applied with the aid of a stainless steel trowel. Prime the substrate with Rodas Masonry Primer or Primary on very absorbent and chalky surfaces. In the
+                                                                                    case of a flaky surface, the application of Primkote is a must. If the surface does not require any fixative, it is nonetheless recommended to dampen it to prevent the
+                                                                                    wall from drawing an excessive amount of water from the binder. At least two (2) coats of the product must be applied to prepare the undercoat. Smooth the surface by stainless
+                                                                                    steel spatula using Rodas Stucco Grassello to get a uniform finish. After 6 hours from the last coat, sand with sandpaper in order to smooth the surface and take off surface
+                                                                                    defects. Apply the last coat of Rodas Stucco Grassello by stainless steel spatula thoroughly. To obtain a different effect, choose a different size of a spatula, and apply
+                                                                                    artistically. After 5 – 10 minutes press the spatula and move it on the surface to obtain more glossy effects. Since the drying and carbonation of Stucco Grassello are
+                                                                                    highly susceptible to the temperature and humidity levels, it is advisable to apply the product when temperatures are in the range of +100C to 350C and the relative humidity
+                                                                                    of the air must be less than 80%.
+                                                                                </p>
+                                                                                <span style="font-weight: bold;">Tinting:</span>
+
+                                                                                <p style="text-align: justify;">Coloring can be obtained either by our Tintomachine or manual tinting. It is advisable to use preferably oxide-based pastes. In the event of different brands of the colored
+                                                                                    products are used, or a piece of work completed with a product produced by the tinting machine, it is recommended that the various products are compatible to each other
+                                                                                    to avoid slight differences in color.
+                                                                                </p>
+
+                                                                                <span style="font-weight: bold;">Storage:</span>
+                                                                                <p style="text-align: justify;"> Shelf life 12 months minimum if stored below 30oC but not lower than 5oC. Cleaning of Tools: All tools should be cleaned with water as soon as possible. Packing: Available
+                                                                                    in 5 Kgs. and 25 Kgs. Physiological Hazards: Rodas STUCCO GRASSELLO does not contain solvents, nevertheless, good ventilation in working rooms is recommended as well as
+                                                                                    the use of safety tools and equipment.
+                                                                                    <span style="font-weight: bold;">Rodas
+                                                                                        STUCCO
+                                                                                        GRASSELLO</span> is harmful if swallowed. If contact with eyes or skin occurs,
+                                                                                    wash well with freshwater and seek immediate medical advice.
+                                                                                </p>
+
+                                                                                <p style="text-align: justify;"> <span style="font-weight: bold;">Precautions:</span> See Safety Indication Sheet.</p>
+
+                                                                            </div>
+                                                                              <!-- Download the specification in PDF -->
+        <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+                <a href="specifications/Rodas STUCCO GRASSELLO.pdf" download class="download-btn"
+                    aria-label="Download PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+                                                                            </div>
+           
+
+    </div>
+    <!-- end of section 23 -->
+
+   <div id="section24" class="hidden-content catalog-content-24" style="display:none;">
+    <div class="container">
+    
+        <div class="button-container">
+            <a href="decorative.html" class="btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+                Decorative Paints
+            </a>
+            <a href="decortivecatalog.html?section=24" class="btn btn-right">
+                catalog
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                </svg>
+            </a>
+        </div>
+
+        <h2 style="text-align: center;">Rodas VELO Description</h2>
+        
+                                                                       <div style="color: #051225;">
+
+                                                                                <h3>General Description</h3>
+                                                                                <p>
+                                                                                    <span style="color: black; font-weight: bolder; text-align: justify;">Rodas
+                                                                                        VELO</span> is based on special resin and fillers to provide interesting decorative
+                                                                                    paint for external and internal surfaces. It is formulated to protect the substrate from efflorescence and aggressive agents present in the environment.
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="d-block d-md-flex mt-1">
+  
+
+    <div class="table-responsive" style="flex: 1; padding-left: 1rem;">
+
+        <h4 class="text-center" id="pro-id">Characteristics and Physical Properties</h4>
+        <table class="table" style="border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+            <tbody>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Gloss</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Eggshell</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Sp. Weight</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">1.10-1.20 Kg/Ltr.</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Viscosity</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">14000 cps.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Coverage</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">14.5 m²/Ltr.</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Touch Dry</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">1–2 Hrs.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Dry to recoat</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">3-4 Hrs.</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Shelf Life</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">12 Months</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Flash Point</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">65°C</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Application</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">By brush or roller</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Thinning/ Cleaning</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">Water</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Water absorption Coeff.</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">0.10 Kg/m²</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ 
+    <div class="mb-3 mb-md-0" style="flex: 1;">
+        <span style="font-weight: bold;">Advantages and Uses:</span>
+        <ul>
+            <li>For interior and exterior use.</li>
+            <li>Good adhesion properties.</li>
+            <li>Repels water vapor and humidity.</li>
+            <li>It allows the release of any moisture coming up from the ground by capillary action.</li>
+            <li>Protect the formation of fungus and algae.</li>
+            <li>Inherent flexibility to accommodate hair cracks in the substrate.</li>
+            <li>Ease of application.</li>
+            <li>Environment friendly.</li>
+        </ul>
+    </div>
+</div>
+
+                                                                              <div class="col-12">
+                                                                                <h4 class="fw-bold text-dark">Surface Preparation
+                                                                                </h4>
+                                                                                <span style="font-weight: bold;">New
+                                                                                    Substrates:</span>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        New concrete should be cured at least 28 days. The substrate must be free from any form of contaminants.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Apply 1 coat of RODAS Masonry AR Primer as an impregnating sealer.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Level the surface with RODAS PVA Wall filler and sand until smooth.
+                                                                                    </li>
+
+                                                                                </ul>
+                                                                                <span style="font-weight: bold;">Old
+                                                                                    Concrete (Previously
+                                                                                    painted)</span>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        Remove all blistered, cracked, and peeled off paint from the surface.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Penetrated paint must be cleared and treated with 3% ammonia and water.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Glossy finish coat must be sanded.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Apply 1 coat of RODAS Masonry AR Primer as impregnating sealer; apply 1 – 2 coats of MASCRYL # 000.
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        Apply 2 coats of MAS VELO in any choice of application techniques.
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <div class="d-block d-md-flex mt-1">
+    <!-- Left: Typical Recommended System Table -->
+    <div class="mb-3 mb-md-0" style="flex: 1;">
+        <h4 class="fw-bold text-dark">Typical Recommended System</h4>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #ccc;">
+            <tbody>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Rodas Masonry AR Primer</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">1 Coat.</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">PVA Wall Filler (Optional)</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">2 Coats.</td>
+                </tr>
+                <tr style="background-color: #f5f6fa;">
+                    <th style="text-align: left; padding: 8px; font-weight: 600; border: 1px solid #ccc;">Rodas VELO</th>
+                    <td style="padding: 8px; border: 1px solid #ccc;">2 Coats.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Right: Additional Information (Storage, Cleaning, Packing, Precautions) -->
+    <div style="flex: 1; padding-left: 1rem;">
+        <p><span style="font-weight: bold;">Storage:</span> The product must be stored in accordance with national regulations. The product should be kept in a cool and well-ventilated place, protected from heat and direct sunlight. Containers must be kept tightly closed.</p>
+        
+        <p><span style="font-weight: bold;">Cleaning of Tools:</span> All tools should be cleaned with water.</p>
+
+        <p><span style="font-weight: bold;">Packing:</span> Available in 5Kg and 25Kg.</p>
+
+        <p><span style="font-weight: bold;">Precautions:</span> See the safety indication sheet.</p>
+    </div>
+</div>
+
+
+                                                                                
+
+                                                                            </div>
+                                                                               <div style="text-align: right; margin-bottom: 1rem;">
+            <div class="tooltip-icon">
+                <a href="specifications/Rodas VELO.pdf" download class="download-btn"
+                    aria-label="Download PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+                                                                            </div>
+         
+           
+
+
+
+
+
+    </div>
+    <!-- end of section 24 -->
 
 
     <script>
@@ -3387,6 +4799,125 @@
             }
         }
     </script>
+       <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-12">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h2 class="m-0 " style="text-align: center; color: rgb(7, 7, 7);">
+                            SUPER DOUBLE <span class="text-secondary">T</span> </h2><br>
+                        <h6 class=" " style="text-align: center; color: rgb(5, 5, 5); margin-top: -32PX;">
+                            GENERAL TRADING PLC </h6><br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Home</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>About Us</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Paint
+                            Products
+                        </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Fiber
+                            Products</a>
+                        <a class="text-dark mb-2" href="otherSector.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Other Sectors</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">Addis
+                            Ababa,Ethiopia</span></p>
+
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-open me-2" id="check"></i>
+                        <a href="mailto:supertt2012@gmail.com" style="color: rgb(5, 5, 5); text-decoration: none;">supertt2012@gmail.com </a>
+
+
+                    </p>
+
+
+                    <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
+                            +251911212053</a>
+                    </p>
+
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <!-- Telegram -->
+                        <!-- <a class="btn btn-lg btn-lg-square rounded me-2" href="https://t.me/yourchannel" target="_blank" style="background-color: #0088cc; color: white;" title="Telegram">
+                            <i class="fab fa-telegram fw-normal"></i>
+                        </a> -->
+                        <!-- Facebook -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://web.facebook.com/people/Super-Double-T-General-Trading/100063671937085/" target="_blank" style="background-color: #3b5998; color: white;" title="Facebook">
+                            <i class="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <!-- <a class="btn btn-lg btn-lg-square rounded me-2" href="https://wa.me/1234567890" target="_blank" style="background-color: #25D366; color: white;" title="WhatsApp">
+                            <i class="fab fa-whatsapp fw-normal"></i>
+                        </a> -->
+                        <!-- Instagram -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.instagram.com/rodaspaints" target="_blank" style="background-color: #E1306C; color: white;" title="Instagram">
+                            <i class="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.youtube.com/channel/UCn_dlFbii_2djSTidu2uOXw" target="_blank" style="background-color: #FF0000; color: white;" title="YouTube">
+                            <i class="fab fa-youtube fw-normal"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://twitter.com/PaintsRodas" target="_blank" style="background-color: #1DA1F2; color: white;" title="Twitter">
+                            <i class="fab fa-twitter fw-normal"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">2025 Super Double "T"
+                            General
+                            Trading
+                            plc</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
 </body>
 
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="lib/twentytwenty/jquery.event.move.js"></script>
+<script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    function openSeries(seriesId) {
+        // Open second page in a new tab with query parameter
+        window.open(`muste2.html?id=${seriesId}`, '_blank');
+    }
+</script>
 </html>

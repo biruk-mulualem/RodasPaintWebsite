@@ -2,15 +2,111 @@
 <html lang="en" translate="no">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodas Paint Industry</title>
+
+    <meta charset="utf-8">
+    <title>Decorative Paint - Rodas Paint Industry</title>
+    <link rel="icon" href="img/super/background/sliderlogo.png" type="image/png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS (You can also use a CDN link) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Bootstrap JS (You can also use a CDN link) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS + Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/enamel.css" rel="stylesheet">
+    <style>
+        .icon-button {
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #fffcfccc;
+            position: relative;
+            padding: 8px;
+        }
+        
+        .icon-button:hover {
+            color: #dfe3e7;
+            /* Change icon color on hover */
+        }
+        /* Tooltip container */
+        
+        .icon-button .tooltip-text {
+            visibility: hidden;
+            width: max-content;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            padding: 5px 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            /* Position above the icon */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+        /* Tooltip arrow */
+        
+        .icon-button .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            /* At the bottom of tooltip */
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgb(221, 219, 219) transparent transparent transparent;
+        }
+        /* Show the tooltip text when hover */
+        
+        .icon-button:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f9f9f9;
-    }
+   
 
     /* Grid container for thumbnails */
     .thumb-row {
@@ -153,13 +249,8 @@
       margin-left: 8px;
     }
 
-    h1 {
-      margin-top: 30px;
-      font-size: 28px;
-      color: #154a8f;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
+
+
 
     /* Responsive adjustments */
     @media (max-width: 600px) {
@@ -176,8 +267,152 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
+            <h5 class="m-0 text-secondary d-flex flex-wrap">
+                <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo" style="width: 220px; height: 100px;">
+            </h5>
+            <h6 class="m-0 text-center" style="font-weight: bolder;">
+                <span class="m-0 text-center" style="font-weight: bolder;" id="text-style2"><span
+                        style="color: #63852f;">We Trust In God!!!</span> <span style="color: aqua;">| </span><span style="color: orange;">እግዚአብሔር ይባረክ!!!</span>
+                </span>
+            </h6>
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <a href="about.html" class="dropdown-item ">Super Double "T" General Trading </a>
+                        <a href="paintproduct.html" class="dropdown-item " style=" margin-right: 50%;">Rodas Paints
+                            Industry</a>
+                        <a href="https://rodaspaints.com/rodas-paints-industry-magazine/mobile/index.html" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i> Magazine
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu m-0">
+                        <!-- Fiber Products -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Fiber Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="water-tanker.html">Water
+                                    Tankers</a>
+                                <a class="dropdown-item" href="flowerpot.html">Flowerpots</a>
+                                <a class="dropdown-item" href="bathroom-equipments.html">Bathroom
+                                    Equipments</a>
+                                <a class="dropdown-item" href="kitchen-sink.html">Kitchen
+                                    Sinks</a>
+
+                                <a class="dropdown-item" href="laundary-bath.html">Laundry
+                                    Bath</a>
+                                <a class="dropdown-item" href="otherfiber.html">Others
+                                    Products</a>
+                            </div>
+                        </div>
+
+                        <!-- Paint Products -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">
+                                Paint Product</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="quartz.html">Quartz Paint</a>
+                                <a class="dropdown-item" href="emulsion.html">Emulsion Paint</a>
+                                <a class="dropdown-item" href="enamel.html">Enamel Paint</a>
+                                <a class="dropdown-item" href="special-paint.html">Special
+                                    Paint</a>
+                                <a class="dropdown-item" href="industrial-paint.html">Industrial
+                                    Paint</a>
+                                <a class="dropdown-item" href="varnish.html">Varnish</a>
+                                <a class="dropdown-item" href="anti-rust.html"> Rodas Anti
+                                    Rust</a>
+                                <a class="dropdown-item" href="glue.html">
+                                    Glue</a>
+                                <a class="dropdown-item" href="decorative.html"> Decorative
+                                    Paints </a>
+                                <a class="dropdown-item" href="stoneGranite.html">Granite & Stone
+                                    Paints </a>
+                            </div>
+                        </div>
+
+                        <!-- Other Sectors -->
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropdown-item dropdown-toggle">Other
+                                Sectors</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="marble.html">POMY MARBLE
+                                    FACTORY</a>
+                                <a class="dropdown-item" href="waterprofing.html">
+                                    Waterproofing</a>
+                                <a class="dropdown-item" href="solar.html"> Solar Energy Products</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="public-sevice.html" class="nav-item nav-link">Public Service</a>
+                <a href="contact.html" class="nav-item nav-link ">Contact Us</a>
+
+                <!-- Language Selector Dropdown -->
+                <div class="nav-item dropdown">
+                    <!-- <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                       
+                        Language
+                    </a> -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- English -->
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;"> English
+                            </a>
+                        </li>
+                        <!-- Amharic -->
+                        <li>
+                            <a class="dropdown-item" href="amharic/decorative.html">
+                                <img src="img/ethiopia.png" alt="Amharic " style="width: 20px; height: 15px;"> አማርኛ
+                            </a>
+                        </li>
+                        <!-- afaan oromo -->
+                        <li>
+                            <a class="dropdown-item" href="afanoromo/decorative.html">
+                                <img src="img/oromiya.JPG" alt="oromic " style="width: 20px; height: 15px;"> Afaan Oromoo
+                            </a>
+                        </li>
+                        <!-- Chinese -->
+                        <!-- <li><a class="dropdown-item" href="chinese/enamel.html">
+                        <img src="img/china.png" alt="Chinese " style="width: 20px; height: 15px;"> 中文
+                    </a></li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Media Fixed Circular Container -->
+    <div class="social-media">
+        <a href="https://t.me/" target="_blank" class="social-icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="https://wa.me/yourwhatsapp" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/yourinstagram" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
  <!-- Section 1: Alpha Paint -->
   <div id="section1" style="display:none;">
     <div class="button-container">
@@ -195,8 +430,13 @@
         </svg>
       </a>
     </div>
+<div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas ALBA Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas ALBA Catalogue</h1>
+  
 
     <div class="thumb-row">
       
@@ -352,8 +592,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas AQUA METALIC Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas AQUA METALIC Catalogue</h1>
+
+  
 
     <div class="thumb-row">
       
@@ -502,8 +748,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas CRYSTAL Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas CRYSTAL Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -611,8 +863,11 @@
         </svg>
       </a>
     </div>
-
-    <h1>Rodas DAMASCO Catalogue</h1>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas DAMASCO Catalogue
+    </h1>
+</div>
 
     <div class="thumb-row">
       
@@ -757,8 +1012,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas DECOR Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas DECOR Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -777,7 +1038,7 @@
 
  <div class="thumb-container" tabindex="0" aria-label="Alpha Paint thumbnail">
         <img src="img/super/paint/DECOR/MS 07.png" alt="Alpha Paint" class="thumbnail"
-          data-large="img/super/paint/DECOR/S 07.jpg" />
+          data-large="img/super/paint/DECOR/MS 07.jpg" />
         <div class="caption">S 07</div>
       </div>
 
@@ -998,8 +1259,13 @@
         </svg>
       </a>
     </div>
+  <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas FLUO Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas FLUO Catalogue</h1>
+ 
 
     <div class="thumb-row">
       
@@ -1125,8 +1391,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas GALAXY Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas GALAXY Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -1268,8 +1540,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+  Rodas HAMMERTONE Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas HAMMERTONE Catalogue</h1>
+
+    
 
     <div class="thumb-row">
       
@@ -1351,8 +1629,13 @@
         </svg>
       </a>
     </div>
+<div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas LINOL Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas LINOL Catalogue</h1>
+    
 
     <div class="thumb-row">
       
@@ -1482,8 +1765,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas LINOL ART Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas LINOL ART Catalogue</h1>
+
+ 
 
     <div class="thumb-row">
       
@@ -1563,8 +1852,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+        Rodas LINOL METALLIC Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas LINOL METALLIC Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -1645,8 +1940,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+     Rodas LINOL MULTI Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas LINOL MULTI Catalogue</h1>
+
+ 
 
     <div class="thumb-row">
       
@@ -1763,8 +2064,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas LINOLISA Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas LINOLISA Catalogue</h1>
+
+    
 
     <div class="thumb-row">
       
@@ -1873,8 +2180,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+   Rodas MAGIC Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas MAGIC Catalogue</h1>
+
+ 
 
     <div class="thumb-row">
       
@@ -2057,8 +2370,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas MARMORINO Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas MARMORINO Catalogue</h1>
+
+   
 
     <div class="thumb-row">
       
@@ -2322,7 +2641,6 @@
   <!-- Section 15: Rodas MARMORINO Catalogue -->
 
 
-
 <!-- Section 16: Rodas MAYA Catalogue -->
   <div id="section16" style="display:none;">
     <div class="button-container">
@@ -2340,8 +2658,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas MAYA Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas MAYA Catalogue</h1>
+
+    
 
     <div class="thumb-row">
       
@@ -2451,8 +2775,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas PALMYRA Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas PALMYRA Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -2707,8 +3037,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas TILAL Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas TILAL Catalogue</h1>
+
+ 
 
     <div class="thumb-row">
       
@@ -2803,8 +3139,13 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+     Rodas MICROCEM Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas MICROCEM Catalogue</h1>
+
 
     <div class="thumb-row">
       
@@ -2945,8 +3286,12 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+       Rodas SAND Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas SAND Catalogue</h1>
 
     <div class="thumb-row">
       
@@ -3089,8 +3434,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+        Rodas SETA Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas SETA Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -3292,8 +3643,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas STUCCO ANTICO Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas STUCCO ANTICO Catalogue</h1>
+
+ 
 
     <div class="thumb-row">
       
@@ -3420,8 +3777,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+      Rodas STUCCO GRASSELLO Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas STUCCO GRASSELLO Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -3581,8 +3944,14 @@
         </svg>
       </a>
     </div>
+    <div class="d-flex justify-content-center align-items-center" style="flex-direction: column; margin-top: 30px;">
+    <h1 class="text-center" style="font-size: 28px; color: #154a8f; font-weight: 600; letter-spacing: 0.5px;">
+    Rodas VELO Catalogue
+    </h1>
+</div>
 
-    <h1>Rodas VELO Catalogue</h1>
+
+
 
     <div class="thumb-row">
       
@@ -3709,15 +4078,6 @@
 
 
   
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3866,7 +4226,128 @@
       }
     }
   </script>
+  <br>
+  <br>
+  <br>
+   <!-- Footer Start -->
+    <div class="container-fluid bg-light text-dark py-5 wow fadeInUp" data-wow-delay="0.01s" style="margin-top: -75px;" id="slide-div">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-3 col-md-12">
+                    <a href="index.html" class="navbar-brand p-0">
+                        <h2 class="m-0 " style="text-align: center; color: rgb(7, 7, 7);">
+                            SUPER DOUBLE <span class="text-secondary">T</span> </h2><br>
+                        <h6 class=" " style="text-align: center; color: rgb(5, 5, 5); margin-top: -32PX;">
+                            GENERAL TRADING PLC </h6><br>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-dark mb-2" href="index.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Home</a>
+                        <a class="text-dark mb-2" href="about.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>About Us</a>
+                        <a class="text-dark mb-2" href="paintproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Paint
+                            Products
+                        </a>
+                        <a class="text-dark mb-2" href="fiberproduct.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Fiber
+                            Products</a>
+                        <a class="text-dark mb-2" href="otherSector.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Other Sectors</a>
+                        <a class="text-dark" href="contact.html"><i class="bi bi-arrow-right  me-2"
+                                id="check"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt me-2" id="check"> </i><span style="color: rgb(5, 5, 5);">Addis
+                            Ababa,Ethiopia</span></p>
+
+                    <p class="mb-2">
+                        <i class="bi bi-envelope-open me-2" id="check"></i>
+                        <a href="mailto:supertt2012@gmail.com" style="color: rgb(5, 5, 5); text-decoration: none;">supertt2012@gmail.com </a>
+
+
+                    </p>
+
+
+                    <p> <i class="fa fa-phone " id="check"></i><a style="color: rgb(5, 5, 5);" href="tel:+1234567890">
+                            +251911212053</a>
+                    </p>
+
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-dark mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <!-- Telegram -->
+                        <!-- <a class="btn btn-lg btn-lg-square rounded me-2" href="https://t.me/yourchannel" target="_blank" style="background-color: #0088cc; color: white;" title="Telegram">
+                            <i class="fab fa-telegram fw-normal"></i>
+                        </a> -->
+                        <!-- Facebook -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://web.facebook.com/people/Super-Double-T-General-Trading/100063671937085/" target="_blank" style="background-color: #3b5998; color: white;" title="Facebook">
+                            <i class="fab fa-facebook-f fw-normal"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <!-- <a class="btn btn-lg btn-lg-square rounded me-2" href="https://wa.me/1234567890" target="_blank" style="background-color: #25D366; color: white;" title="WhatsApp">
+                            <i class="fab fa-whatsapp fw-normal"></i>
+                        </a> -->
+                        <!-- Instagram -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.instagram.com/rodaspaints" target="_blank" style="background-color: #E1306C; color: white;" title="Instagram">
+                            <i class="fab fa-instagram fw-normal"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://www.youtube.com/channel/UCn_dlFbii_2djSTidu2uOXw" target="_blank" style="background-color: #FF0000; color: white;" title="YouTube">
+                            <i class="fab fa-youtube fw-normal"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="btn btn-lg btn-lg-square rounded me-2" href="https://twitter.com/PaintsRodas" target="_blank" style="background-color: #1DA1F2; color: white;" title="Twitter">
+                            <i class="fab fa-twitter fw-normal"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">2025 Super Double "T"
+                            General
+                            Trading
+                            plc</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 </body>
 
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="lib/twentytwenty/jquery.event.move.js"></script>
+<script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script>
+    function openSeries(seriesId) {
+        // Open second page in a new tab with query parameter
+        window.open(`muste2.html?id=${seriesId}`, '_blank');
+    }
+</script>
 </html>
