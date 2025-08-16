@@ -50,20 +50,40 @@ function createPagination() {
   updatePagination();
 }
 
+let autoSlideInterval;
+const AUTO_SLIDE_DELAY = 10000; // 10 seconds
+
+// Function to start auto-slide
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    showSlide(currentSlideIndex + 1);
+  }, AUTO_SLIDE_DELAY);
+}
+
 // Event listeners for navigation buttons
-prevButton.addEventListener('click', () => showSlide(currentSlideIndex - 1));
-nextButton.addEventListener('click', () => showSlide(currentSlideIndex + 1));
+prevButton.addEventListener('click', () => {
+  clearInterval(autoSlideInterval); // Stop auto slide
+  showSlide(currentSlideIndex - 1); // Show previous slide
+});
+
+nextButton.addEventListener('click', () => {
+  clearInterval(autoSlideInterval); // Stop auto slide
+  showSlide(currentSlideIndex + 1); // Show next slide
+});
 
 // Initialize pagination
 createPagination();
 
-// Auto-slide every 5 seconds
-setInterval(() => {
-  showSlide(currentSlideIndex + 1);
-}, 5000);
-
 // Initialize the first slide
 showSlide(currentSlideIndex);
+
+// Start auto-slide after initialization
+startAutoSlide();
+
+
+
+
+
 
 // JavaScript for Product Pagination and Rendering
 const customProducts = [
