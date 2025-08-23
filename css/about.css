@@ -84,6 +84,7 @@ p {
         text-align: center;
         /* Centers the text */
     }
+
     .navbar-brand h6 {
         font-size: 14px;
         /* Adjust font size for smaller screens */
@@ -94,52 +95,71 @@ p {
         text-align: center;
         /* Ensures the slogan is centered */
     }
+
     .navbar-brand img {
         width: 30px;
         /* Adjust logo size for small screens */
         height: 30px;
         /* Adjust logo size for small screens */
     }
-/* Default styles for buttons */
-#showEnglish, #showAmharic {
-    font-size: 14px; /* Adjust the font size for a smaller look */
-    padding: 8px 12px; /* Adjust padding to make buttons smaller */
-    display: inline-flex; /* Ensure buttons appear side-by-side */
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px; /* Space between buttons */
-}
 
-/* Add icons and button text inline */
-#showEnglish i, #showAmharic i {
-    margin-right: 5px; /* Add some space between icon and text */
-}
-
-/* Styles for small devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    #showEnglish, #showAmharic {
-        font-size: 12px; /* Further reduce font size for smaller screens */
-        padding: 6px 10px; /* Reduce padding */
-        width: auto; /* Ensure buttons do not stretch */
-        margin-right: 5px; /* Reduce margin for tighter layout */
-     
+    /* Default styles for buttons */
+    #showEnglish,
+    #showAmharic {
+        font-size: 14px;
+        /* Adjust the font size for a smaller look */
+        padding: 8px 12px;
+        /* Adjust padding to make buttons smaller */
+        display: inline-flex;
+        /* Ensure buttons appear side-by-side */
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        /* Space between buttons */
     }
 
-    /* Display buttons side by side with flexbox on small screens */
-    .button-container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    /* Add icons and button text inline */
+    #showEnglish i,
+    #showAmharic i {
+        margin-right: 5px;
+        /* Add some space between icon and text */
     }
-}
 
-/* Styles for even smaller devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    #showEnglish, #showAmharic {
-        font-size: 10px; /* Further reduce font size for very small screens */
-        padding: 4px 8px; /* Smaller padding */
+    /* Styles for small devices (max-width: 768px) */
+    @media screen and (max-width: 768px) {
+
+        #showEnglish,
+        #showAmharic {
+            font-size: 12px;
+            /* Further reduce font size for smaller screens */
+            padding: 6px 10px;
+            /* Reduce padding */
+            width: auto;
+            /* Ensure buttons do not stretch */
+            margin-right: 5px;
+            /* Reduce margin for tighter layout */
+
+        }
+
+        /* Display buttons side by side with flexbox on small screens */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
     }
-}
+
+    /* Styles for even smaller devices (max-width: 480px) */
+    @media screen and (max-width: 480px) {
+
+        #showEnglish,
+        #showAmharic {
+            font-size: 10px;
+            /* Further reduce font size for very small screens */
+            padding: 4px 8px;
+            /* Smaller padding */
+        }
+    }
 
 }
 
@@ -153,11 +173,36 @@ p {
         white-space: normal;
         word-wrap: break-word;
     }
+
     .navbar-brand h6 {
         font-size: 16px;
         /* Adjust font size for tablet screens */
         white-space: normal;
         word-wrap: break-word;
+    }
+
+    .owner-info {
+        font-size: 1.5rem;
+        /* Adjust font size for mobile devices */
+    }
+
+    .ceo-image {
+        max-width: 100%;
+        /* never exceed container */
+        height: auto;
+        /* keep aspect ratio */
+        display: block;
+        /* allow margin auto centering */
+        margin: 5% auto 0;
+        /* top spacing, center horizontally */
+        border-radius: 10px;
+        /* optional: rounded corners */
+    }
+
+    #pro-id {
+        font-size: 1.5rem;
+        /* Smaller font size on medium screens like tablets */
+        margin-top: 15px;
     }
 }
 
@@ -169,6 +214,7 @@ p {
         font-size: 22px;
         /* Adjust font size for larger screens */
     }
+
     .navbar-brand h6 {
         font-size: 18px;
         /* Adjust font size for larger screens */
@@ -188,12 +234,6 @@ p {
 
 /* Media query for smaller devices */
 
-@media (max-width: 768px) {
-    .owner-info {
-        font-size: 1.5rem;
-        /* Adjust font size for mobile devices */
-    }
-}
 
 
 /* Media query for very small devices */
@@ -255,6 +295,7 @@ p {
     0% {
         width: 0;
     }
+
     100% {
         width: 100%;
     }
@@ -271,13 +312,7 @@ p {
 
 /* Responsive adjustments */
 
-@media (max-width: 768px) {
-    #pro-id {
-        font-size: 1.5rem;
-        /* Smaller font size on medium screens like tablets */
-        margin-top: 15px;
-    }
-}
+
 
 @media (max-width: 480px) {
     #pro-id {
