@@ -1,5 +1,4 @@
----
 deployment:
   tasks:
     - export DOCROOT=$HOME/public_html
-    - /bin/cp -R * $DOCROOT
+    - /bin/rsync -av --delete --exclude '.git*' --exclude '.cpanel.yml' ./ $DOCROOT
