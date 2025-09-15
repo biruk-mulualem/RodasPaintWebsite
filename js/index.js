@@ -80,11 +80,6 @@ showSlide(currentSlideIndex);
 // Start auto-slide after initialization
 startAutoSlide();
 
-
-
-
-
-
 // JavaScript for Product Pagination and Rendering
 const customProducts = [
   { name: "Water Tankers", description: "   Available in sizes ranging from 200L to 30,000L, our fiberglass water tankers are durable, corrosion-resistant, and ideal for storing water in diverse environments", image: "../images/tanker/t2.jpg" },
@@ -152,4 +147,7 @@ function renderPagination(page) {
 }
 
 renderProducts(currentPage);
+
+
+
 
