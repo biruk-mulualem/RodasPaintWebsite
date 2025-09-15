@@ -1,7 +1,0 @@
-RewriteEngine On
-
-# Allow you to view live site (replace with your IP)
-RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000$
-
-# Redirect everyone else to maintenance.html
-RewriteRule ^.*$ /maintenance.html [R=302,L]
