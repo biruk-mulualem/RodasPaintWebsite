@@ -454,7 +454,7 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
-    background-image: url(../../images/background/quartz.JPG);
+    background-image: url(../../images/background/quartz.png);
 }
 
 header h1 {
@@ -735,7 +735,7 @@ p {
 }
 
 .footer-section {
-    background-image: url(../../images/background/quartz.JPG);
+    background-image: url(../../images/background/quartz.png);
     padding-top: 2%;
 }
 

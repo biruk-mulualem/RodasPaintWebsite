@@ -82,19 +82,19 @@ startAutoSlide();
 
 // JavaScript for Product Pagination and Rendering
 const customProducts = [
-  { name: "Water Tankers", description: "   Available in sizes ranging from 200L to 30,000L, our fiberglass water tankers are durable, corrosion-resistant, and ideal for storing water in diverse environments", image: "../images/tanker/t2.JPG" },
-  { name: "Bathtubs", description: "We offer fiberglass bathtubs in various sizes and colors, providing a lightweight, durable, and low-maintenance option for your bathroom.", image: "../images/tanker/t2.JPG" },
-  { name: "Shower Trays", description: "   Available in different sizes and colors, our fiberglass shower trays are strong, water-resistant, and easy to install.", image: "../images/tanker/t3.JPG" },
-  { name: "Kitchen Sinks", description: "   Durable and easy to maintain, our fiberglass kitchen sinks are designed to withstand heavy use while maintaining their appearance.", image: "../images/tanker/t4.JPG" },
-  { name: "Transparent & Translucent Roof Sheets", description: "   These roof sheets provide excellent light transmission while offering the durability and weather resistance of fiberglass.", image: "../images/tanker/t5.JPG" },
-  { name: "Flower Pots", description: "Lightweight and weather-resistant, our fiberglass flower pots are available in various sizes and styles for both indoor and outdoor use.", image: "../images/tanker/t6.JPG" },
-  { name: "Dustbins & Garbage Bins", description: "   Durable and easy to clean, our fiberglass dustbins and garbage bins are ideal for commercial and residential use.", image: "../images/tanker/t2.JPG" },
-  { name: "Jacuzzi (Non-Electrical)", description: "   Our fiberglass Jacuzzis are perfect for relaxation, offering a non-electrical, low-maintenance alternative to traditional spa units.", image: "../images/tanker/t2.JPG" },
-  { name: "Car Parking Sheds", description: "Fiberglass parking sheds provide durable, weather-resistant cover for your vehicles, with easy installation and minimal maintenance", image: "../images/tanker/t2.JPG" },
-  { name: "Pick-Up Hard Tops", description: "These lightweight, strong fiberglass hardtops are designed to fit most pick-up trucks, offering weather protection and durability.", image: "../images/tanker/t2.JPG" },
-  { name: "Children’s Swings", description: "Safe and durable, our fiberglass swings are designed for long-lasting use in playgrounds or parks.", image: "../images/tanker/t2.JPG" },
-  { name: "Partitions", description: "    Strong, lightweight, and customizable, our fiberglass partitions are perfect for dividing spaces in commercial or industrial settings.", image: "../images/tanker/t2.JPG" },
-  { name: "Molds for Gypsum Boards", description: "Durable fiberglass molds for gypsum boards ensure consistent, high-quality results for construction and design projects.", image: "../images/tanker/t2.JPG" }
+  { name: "Water Tankers", description: "   Available in sizes ranging from 200L to 30,000L, our fiberglass water tankers are durable, corrosion-resistant, and ideal for storing water in diverse environments", image: "../images/tanker/t2.png" },
+  { name: "Bathtubs", description: "We offer fiberglass bathtubs in various sizes and colors, providing a lightweight, durable, and low-maintenance option for your bathroom.", image: "../images/tanker/t2.png" },
+  { name: "Shower Trays", description: "   Available in different sizes and colors, our fiberglass shower trays are strong, water-resistant, and easy to install.", image: "../images/tanker/t3.png" },
+  { name: "Kitchen Sinks", description: "   Durable and easy to maintain, our fiberglass kitchen sinks are designed to withstand heavy use while maintaining their appearance.", image: "../images/tanker/t4.png" },
+  { name: "Transparent & Translucent Roof Sheets", description: "   These roof sheets provide excellent light transmission while offering the durability and weather resistance of fiberglass.", image: "../images/tanker/t5.png" },
+  { name: "Flower Pots", description: "Lightweight and weather-resistant, our fiberglass flower pots are available in various sizes and styles for both indoor and outdoor use.", image: "../images/tanker/t6.png" },
+  { name: "Dustbins & Garbage Bins", description: "   Durable and easy to clean, our fiberglass dustbins and garbage bins are ideal for commercial and residential use.", image: "../images/tanker/t2.png" },
+  { name: "Jacuzzi (Non-Electrical)", description: "   Our fiberglass Jacuzzis are perfect for relaxation, offering a non-electrical, low-maintenance alternative to traditional spa units.", image: "../images/tanker/t2.png" },
+  { name: "Car Parking Sheds", description: "Fiberglass parking sheds provide durable, weather-resistant cover for your vehicles, with easy installation and minimal maintenance", image: "../images/tanker/t2.png" },
+  { name: "Pick-Up Hard Tops", description: "These lightweight, strong fiberglass hardtops are designed to fit most pick-up trucks, offering weather protection and durability.", image: "../images/tanker/t2.png" },
+  { name: "Children’s Swings", description: "Safe and durable, our fiberglass swings are designed for long-lasting use in playgrounds or parks.", image: "../images/tanker/t2.png" },
+  { name: "Partitions", description: "    Strong, lightweight, and customizable, our fiberglass partitions are perfect for dividing spaces in commercial or industrial settings.", image: "../images/tanker/t2.png" },
+  { name: "Molds for Gypsum Boards", description: "Durable fiberglass molds for gypsum boards ensure consistent, high-quality results for construction and design projects.", image: "../images/tanker/t2.png" }
 ];
 
 const itemsPerPage = 3;
