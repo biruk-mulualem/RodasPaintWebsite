@@ -112,7 +112,7 @@ function renderProducts(page) {
     const productCard = document.createElement('div');
     productCard.classList.add('product');
     productCard.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
+                <img loading="lazy" src="${product.image}" alt="${product.name}">
                 <div class="product-content">
                     <h3><a href="http://">${product.name}</a></h3>
                     <p>${product.description}</p>

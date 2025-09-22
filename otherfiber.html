@@ -41,13 +41,13 @@
 
 <body>
     <!-- Your page content here -->
-    <img src="example.png" onclick="openModal(this.src)" style="width:150px;cursor:pointer;">
+    <img loading="lazy" src="example.png" onclick="openModal(this.src)" style="width:150px;cursor:pointer;">
 
     <!-- Modal (put this at the end of body) -->
     <div id="imageModal">
         <span id="closeModal"
             style="color:white; font-size:40px; position:absolute; top:20px; right:30px; cursor:pointer;">&times;</span>
-        <img id="modalImg" src="" alt="Modal Image">
+        <img loading="lazy" id="modalImg" src="" alt="Modal Image">
         <span id="checkmark" class="checkmark">✔</span>
     </div>
 
@@ -55,7 +55,7 @@
 
         <a href="index.html" class="navbar-brand p-0 d-flex flex-column align-items-center">
             <h5 class="m-0 text-secondary d-flex flex-wrap">
-                <img class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo"
+                <img loading="lazy" class="img-fluid" src="img/super/background/logo.png" alt="Super Double 'T' Logo"
                     style="width: 220px; height: 100px;">
             </h5>
             <h5 class="m-0 text-center" style="font-weight: bolder;">
@@ -176,25 +176,25 @@
                         <!-- English -->
                         <li>
                             <a class="dropdown-item" href="#">
-                                <img src="img/eng.png" alt="English " style="width: 20px; height: 15px;"> English
+                                <img loading="lazy" src="img/eng.png" alt="English " style="width: 20px; height: 15px;"> English
                             </a>
                         </li>
                         <!-- Amharic -->
                         <li>
                             <a class="dropdown-item" href="amharic/water-tanker.html">
-                                <img src="img/ethiopia.png" alt="Amharic " style="width: 20px; height: 15px;"> አማርኛ
+                                <img loading="lazy" src="img/ethiopia.png" alt="Amharic " style="width: 20px; height: 15px;"> አማርኛ
                             </a>
                         </li>
                         <!-- afaan oromo -->
                         <li>
                             <a class="dropdown-item" href="afanoromo/water-tanker.html">
-                                <img src="img/oromiya.png" alt="oromic " style="width: 20px; height: 15px;"> Afaan
+                                <img loading="lazy" src="img/oromiya.png" alt="oromic " style="width: 20px; height: 15px;"> Afaan
                                 Oromoo
                             </a>
                         </li>
                         <!-- Chinese -->
                         <!-- <li><a class="dropdown-item" href="chinese/index.html">
-                        <img src="img/china.png" alt="Chinese " style="width: 20px; height: 15px;"> 中文
+                        <img loading="lazy" src="img/china.png" alt="Chinese " style="width: 20px; height: 15px;"> 中文
                     </a></li> -->
 
                     </ul>
@@ -236,7 +236,7 @@
                 <button class="close-btn" onclick="closePopup()">X</button>
                 <!-- LEFT: IMAGE -->
                 <div class="modal-image">
-                    <img id="popupImage" src alt="Product Image" class="popup-img" />
+                    <img loading="lazy" id="popupImage" src alt="Product Image" class="popup-img" />
                 </div>
 
                 <!-- RIGHT: STATIC TEXT INFO -->
@@ -271,7 +271,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/7.png"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/7.png"
                             alt="Shower Tray 1" data-id="F1" onclick="openPopup('F1')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Duck Decor
@@ -285,7 +285,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/bin/1.PNG"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/bin/1.PNG"
                             alt="Shower Tray 2" data-id="F2" onclick="openPopup('F2')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Reactangle Garbage Bin</h6>
@@ -297,7 +297,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/bin/17.PNG"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/bin/17.PNG"
                             alt="Shower Tray 2" data-id="F2" onclick="openPopup('F7')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Garbage Bin</h6>
@@ -310,7 +310,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/wb21.png"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/wb21.png"
                             alt="Shower Tray 4" data-id="F3" onclick="openPopup('F3')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Flower Pot</h6>
@@ -326,7 +326,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/car.png"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/car.png"
                             alt="Shower Tray 1" data-id="F5" onclick="openPopup('F5')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Mobile car wash</h6>
@@ -338,7 +338,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/w.png"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/w.png"
                             alt="Shower Tray 1" data-id="F1" onclick="openPopup('F6')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Duck Decor-1
@@ -352,7 +352,7 @@
             <div class="col-auto wow slideInUp" data-wow-delay="0.03s" style="padding: 0 0.75rem;">
                 <div class="team-item p-3" style="border: 1px solid rgb(161, 236, 236); width: 270px; margin: 0 auto;">
                     <div class="position-relative rounded-top" style="z-index: 1;">
-                        <img class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/tr1.png"
+                        <img loading="lazy" class="img-fluid rounded-top clickable-img" src="img/super/fiber/otherfiber/tr1.png"
                             alt="Shower Tray 5" data-id="F4" onclick="openPopup('F4')">
                         <div class="position-absolute top-100 start-50 translate-middle rounded p-2 d-flex bg-light">
                             <h6 class="mb-2" id="quartz">Transaparent Roofsheet</h6>
